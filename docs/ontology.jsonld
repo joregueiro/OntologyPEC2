@@ -2,181 +2,35 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#hasManufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#hasManufacturer"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/medical-device-catalogPEC2#CompetentAuthority"
+    }, {
+      "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
+    }, {
+      "@id" : "https://w3id.org/medical-device-catalogPEC2#Patient"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Identify incidents that affect digital infractustures"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Alerts for cibersecurity risks"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid16"
-    }, {
-      "@id" : "_:genid14"
-    }, {
-      "@id" : "_:genid12"
-    } ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid18"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.owl-ontologies.com/r"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CybersecurityRisk"
-  } ]
-}, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.owl-ontologies.com/i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.owl-ontologies.com/r"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#associatedRisk"
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.owl-ontologies.com/i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.owl-ontologies.com/i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#isCritical"
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Find incidents with associated risk as critical"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Priority high to critical incidents"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid25"
-    }, {
-      "@id" : "_:genid23"
-    }, {
-      "@id" : "_:genid21"
-    } ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid27"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#involvesDevice"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.owl-ontologies.com/r"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@value" : "Critical"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#severity"
-  } ]
-}, {
-  "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.owl-ontologies.com/i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.owl-ontologies.com/r"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#associatedRisk"
-  } ]
-}, {
-  "@id" : "_:genid25",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.owl-ontologies.com/i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
-  } ]
-}, {
-  "@id" : "_:genid27",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.owl-ontologies.com/i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#highPriority"
-  } ]
-}, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#Imp"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -187,47 +41,360 @@
     "@value" : "MedicalDecive as device if it is implantable"
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid7"
-    }, {
-      "@id" : "_:genid5"
-    } ]
+    "@id" : "_:genid20"
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid9"
-    } ]
+    "@id" : "_:genid22"
   } ]
 }, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "@id" : "_:genid18",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid19"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.owl-ontologies.com/d"
+    "@id" : "https://w3id.org/d"
   } ],
   "http://www.w3.org/2003/11/swrl#argument2" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#isImplantable"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#isImplantable"
   } ]
 }, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.owl-ontologies.com/d"
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#involvesDevice"
   } ]
 }, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "@id" : "_:genid20",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid21"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@id" : "_:genid18"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.owl-ontologies.com/d"
+    "@id" : "https://w3id.org/d"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#MedicalDevice"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid23"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#MedicalDevice"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#Imp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identify incidents that affect digital infractustures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Alerts for cibersecurity risks"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@id" : "_:genid29"
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid26"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid28"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@id" : "_:genid25"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://w3id.org/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#associatedRisk"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid30"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@id" : "_:genid27"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassA"
+    }, {
+      "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassB"
+    }, {
+      "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassC"
+    }, {
+      "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassD"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid32"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#isCritical"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#Imp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Find incidents with associated risk as critical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Priority high to critical incidents"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@id" : "_:genid38"
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@id" : "_:genid40"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid35"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#severity"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid37"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://w3id.org/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#associatedRisk"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid39"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@id" : "_:genid36"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid41"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#highPriority"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassI"
+    }, {
+      "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassIII"
+    }, {
+      "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassIIa"
+    }, {
+      "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassIIb"
+    } ]
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
@@ -236,22 +403,146 @@
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/d",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/i",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+  "@id" : "http://www.w3.org/2003/11/swrl#AtomList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a list of atoms in a SWRL rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SWRL Atom List"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#",
+  "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a class atom in a SWRL rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SWRL Class Atom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a property atom between an individual and a data value in a SWRL rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SWRL Datavalued Property Atom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#Imp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a SWRL implication or rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SWRL Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a property atom between individuals in a SWRL rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SWRL Individual Property Atom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#Variable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a variable used within a SWRL rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SWRL Variable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/d",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#Variable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/i",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#Variable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
@@ -261,6 +552,13 @@
     "@language" : "en",
     "@value" : "Comprehensive semantic model for the European catalog of medical devices under the MDR and IVDR regulations."
   } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Regueiro Janeiro, J. A. (2026). European Medical Device Catalog Ontology (MDR/IVDR). Version 1.0."
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-03"
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Jose Angel Regueiro Janeiro"
   } ],
@@ -268,18 +566,56 @@
     "@language" : "en",
     "@value" : "This ontology represents the European catalog of high-risk medical devices, including manufacturers, incidents, and corrective actions."
   } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://doi.org/10.5281/zenodo.1000001"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-05"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-05"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://github.com/joregueiro"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://github.com/joregueiro/OntologyPEC2"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ns"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/medical-device-catalogPEC2#"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Ontology for the European catalog of medical devices (MDR/IVDR)."
   } ],
+  "http://www.w3.org/2002/07/owl#backwardCompatibleWith" : [ {
+    "@id" : "https://w3id.org/medical-device-catalog/0.9.0#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2/1.0.0#"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "1.0"
   } ],
+  "http://xmlns.com/foaf/0.1/logo" : [ {
+    "@id" : "https://joregueiro.github.io/OntologyPEC2/logo.png"
+  } ],
   "https://w3id.org/mod#createdWith" : [ {
     "@id" : "https://chowlk.linkeddata.es/"
+  } ],
+  "https://w3id.org/mod#status" : [ {
+    "@value" : "Stable"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#ClassA",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassA",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -290,10 +626,10 @@
     "@value" : "Class A"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#IVDDevice"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#IVDDevice"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#ClassB",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassB",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -304,10 +640,10 @@
     "@value" : "Class B"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#IVDDevice"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#IVDDevice"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#ClassC",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassC",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -318,10 +654,10 @@
     "@value" : "Class C"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#IVDDevice"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#IVDDevice"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#ClassD",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassD",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -332,10 +668,10 @@
     "@value" : "Class D"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#IVDDevice"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#IVDDevice"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#ClassI",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassI",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -346,10 +682,10 @@
     "@value" : "Class I"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#MedicalDevice"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#MedicalDevice"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#ClassIII",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassIII",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -360,10 +696,10 @@
     "@value" : "Class III"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#MedicalDevice"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#MedicalDevice"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#ClassIIa",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassIIa",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -374,10 +710,10 @@
     "@value" : "Class IIa"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#MedicalDevice"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#MedicalDevice"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#ClassIIb",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassIIb",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -388,10 +724,10 @@
     "@value" : "Class IIb"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#MedicalDevice"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#MedicalDevice"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#CompetentAuthority",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#CompetentAuthority",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -402,10 +738,10 @@
     "@value" : "Competent Authority"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Participant"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Participant"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -416,7 +752,7 @@
     "@value" : "Corrective Action"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#CybersecurityRisk",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -427,23 +763,13 @@
     "@value" : "Cybersecurity Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#DEV-001",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#DEV-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.owl-ontologies.com/ns#deviceName" : [ {
-    "@value" : "HeartMate 3 LVAD"
-  } ],
-  "http://www.owl-ontologies.com/ns#hasManufacturer" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#MAN-001"
-  } ],
-  "http://www.owl-ontologies.com/ns#isImplantable" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#ClassIII"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassIII"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -452,9 +778,19 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "HeartMate 3 LVAD"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#deviceName" : [ {
+    "@value" : "HeartMate 3 LVAD"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#hasManufacturer" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#MAN-001"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#Device",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -468,10 +804,10 @@
     "@id" : "_:genid1"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#Germany",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#Germany",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Participant"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Participant"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -482,19 +818,10 @@
     "@value" : "Germany"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#INC-001",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#INC-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.owl-ontologies.com/ns#incidentId" : [ {
-    "@value" : "INC-001"
-  } ],
-  "http://www.owl-ontologies.com/ns#involvesDevice" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#DEV-001"
-  } ],
-  "http://www.owl-ontologies.com/ns#severity" : [ {
-    "@value" : "Critical"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -503,9 +830,18 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Incident 001"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#incidentId" : [ {
+    "@value" : "INC-001"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#involvesDevice" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#DEV-001"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#severity" : [ {
+    "@value" : "Critical"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#IVDDevice",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#IVDDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -516,10 +852,13 @@
     "@value" : "In Vitro Diagnostic Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#MedicalDevice"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#InSituCorrection",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#InSituCorrection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -530,10 +869,10 @@
     "@value" : "In Situ Correction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#Incident",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -547,7 +886,7 @@
     "@id" : "_:genid2"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#InfectionRisk",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#InfectionRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -558,10 +897,10 @@
     "@value" : "Infection Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#InjuryRisk",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#InjuryRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -572,20 +911,13 @@
     "@value" : "Injury Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#MAN-001",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#MAN-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.owl-ontologies.com/ns#country" : [ {
-    "@value" : "Ireland"
-  } ],
-  "http://www.owl-ontologies.com/ns#name" : [ {
-    "@language" : "en",
-    "@value" : "Medtronic plc"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -594,9 +926,15 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Medtronic plc"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#country" : [ {
+    "@value" : "Ireland"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#name" : [ {
+    "@value" : "Medtronic plc"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#MalfunctionRisk",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#MalfunctionRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -607,10 +945,10 @@
     "@value" : "Malfunction Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#Manufacturer",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -621,10 +959,10 @@
     "@value" : "Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Participant"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Participant"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#MedicalDevice",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#MedicalDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -635,10 +973,10 @@
     "@value" : "Medical Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#Participant",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#Participant",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -647,9 +985,12 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Participant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#Patient",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#Patient",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -660,17 +1001,13 @@
     "@value" : "Patient"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Participant"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Participant"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#RSK-018",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#RSK-018",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.owl-ontologies.com/ns#riskName" : [ {
-    "@language" : "en",
-    "@value" : "Cybersecurity vulnerability"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CybersecurityRisk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -679,9 +1016,12 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Cybersecurity Risk 018"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#riskName" : [ {
+    "@value" : "Cybersecurity vulnerability"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#Recall",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#Recall",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -692,10 +1032,10 @@
     "@value" : "Recall"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#Risk",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -706,7 +1046,7 @@
     "@value" : "Risk"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#SafetyAlert",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#SafetyAlert",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -717,10 +1057,10 @@
     "@value" : "Safety Alert"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#UserNotice",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#UserNotice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -731,217 +1071,221 @@
     "@value" : "User Notice"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#actionDate",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#actionDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Date of the action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "action_date"
+    "@value" : "action date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#actionType",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#actionType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Type of action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "action_type"
+    "@value" : "action type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#addressesIncident",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#addressesIncident",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Links a corrective action with its incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "addresses incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#affectedDevice",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#affectedDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Links a risk with the device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "affected device type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#affectsPatient",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#affectsPatient",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a reported incident to the specific patient affected by the event."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "affects patient"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Patient"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Patient"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#associatedRisk",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#associatedRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Links an incident with its risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "associated risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#authorizationNumber",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#authorizationNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Number of the authorization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "authorization_number"
+    "@value" : "authorization number"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#closureDate",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#closureDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Date of closure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "closure_date"
+    "@value" : "closure date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#competentAuthority",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#competentAuthority",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Authority that certified the manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "competent_authority"
+    "@value" : "competent authority"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#contactEmail",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#contactEmail",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Email of contact"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "contact_email"
+    "@value" : "contact email"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#correctiveAction_taken",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#correctiveActionTaken",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Corrective action taken for the incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "corrective_action_taken"
+    "@value" : "corrective action taken"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#countriesAffected",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#countriesAffected",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Countries affected by the corrective actions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "countries_affected"
+    "@value" : "countries affected"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#country",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#country",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Name of the country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Participant"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -951,31 +1295,31 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#countryReported",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#countryReported",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Name of the country that reported the incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "country_reported"
+    "@value" : "country reported"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#description",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#description",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Description"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -987,198 +1331,241 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#detectionDate",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#detectionDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The date that the incident was detected "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "detection_date"
+    "@value" : "detection date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#deviceId",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#deviceId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Id of the device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "device_id"
+    "@value" : "device id"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#deviceName",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#deviceName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Name of the device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "device_name"
+    "@value" : "device name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#deviceType",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#deviceType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Type of the device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "device_type"
+    "@value" : "device type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#devicesAffected",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#devicesAffected",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Devices affected by the corrective action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "devices_affected"
+    "@value" : "devices affected"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#eudamedFsca_ref",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#eudamedFscaRef",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Referenci of the eumed fsca"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "eudamed_fsca_ref"
+    "@value" : "eudamed fsca ref"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#eudamedIncident_ref",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#eudamedIncidentRef",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Reference of the incident in the eudamed"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "eudamed_incident_ref"
+    "@value" : "eudamed incident ref"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#eudomedSrn",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#eudomedSrn",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Eudomed srn"
+    "@value" : "The Single Registration Number assigned to the manufacturer in the EUDAMED"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "eudomed_srn"
+    "@value" : "eudomed srn"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#eventDate",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#eventDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Date of the event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "event_date"
+    "@value" : "event date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#fscaId",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#fscaId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Id of the FSCA"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "fsca_id"
+    "@value" : "fsca id"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#hasManufacturer",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#hasManufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Links a device to its manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#highPriority",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#hasReported",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of reportedBy. Links a manufacturer to the incidents they have reported."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has reported"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#reportedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#hasRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of affectedDevice. Links a medical device to the risks associated with it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#affectedDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#highPriority",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "High priority property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1188,113 +1575,156 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#imdrfCode",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#imdrfCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "IMDRF code"
+    "@value" : "Standardized adverse event terminology code"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "imdrf_code"
+    "@value" : "imdrf code"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#incidentId",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#incidentId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Incident identificator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "incident_id"
+    "@value" : "incident id"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#incidentType",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#incidentType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Type of the incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "incident_type"
+    "@value" : "incident type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#intendedPurpose",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#intendedPurpose",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Purpose of the intended"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "intended_purpose"
+    "@value" : "intended purpose"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#involvesDevice",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#involvesDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Links an incident with its device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "involves device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#isActive",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#isActive",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Boolean if the device is active or not"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "is_active"
+    "@value" : "is active"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#isCritical",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#isAddressedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of addressesIncident. Links an incident to the corrective action taken."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is addressed by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#addressesIncident"
+  } ]
+}, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of affectsPatient. Links a patient to the incidents that have affected them."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is affected by incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#affectsPatient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#isCritical",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Is critical property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1304,95 +1734,159 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#isImplantable",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#isImplantable",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Boolean if the device is implantable or not"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "is_implantable"
+    "@value" : "is implantable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#isIvd",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#isIvd",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Boolean if the device is ivd or not"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "is_ivd"
+    "@value" : "is ivd"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#isReusable",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#isReusable",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Boolean if the device is reusable or not"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "is_reusable"
+    "@value" : "is reusable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#isSupervisedBy",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#isRiskOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of associatedRisk. Links a risk to the incident it is associated with."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is risk of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#associatedRisk"
+  } ]
+}, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#isSupervisedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a manufacturer to the national competent authority responsible for its regulatory oversight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is supervised by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CompetentAuthority"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CompetentAuthority"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#manufacturerId",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#isUsedInIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of involvesDevice. Links a device to the incidents it was involved in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is used in incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#involvesDevice"
+  } ]
+}, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#manufacturerId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Manufacturer identificator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "manufacturer_id"
+    "@value" : "manufacturer id"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#name",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#manufactures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of hasManufacturer. Links a manufacturer to the devices it produces."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "manufactures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#hasManufacturer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Name of the manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Participant"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1402,14 +1896,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#outcome",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#outcome",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Outcome of the incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1419,48 +1913,48 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#patientAge",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#patientAge",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Age of the patient"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "patient_age"
+    "@value" : "patient age"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#patientSex",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#patientSex",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Sex of the pationt"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "patient_sex"
+    "@value" : "patient sex"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#probability",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#probability",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Probability of the risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1470,150 +1964,150 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#regulatoryFramework",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#regulatoryFramework",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Regulatory framework"
+    "@value" : "Legal framework for the device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "regulatory_framework"
+    "@value" : "regulatory framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#reportDate",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#reportDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Date when the incident was reported"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "report_date"
+    "@value" : "report date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#reportedBy",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#reportedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Links an incident with its manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Incident"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "reported by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Manufacturer"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#riskCategory",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#riskCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Category of the risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "risk_category"
+    "@value" : "risk category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#riskClass",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#riskClass",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Class of the risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "risk_class"
+    "@value" : "risk class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#riskId",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#riskId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Risk identificator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "risk_id"
+    "@value" : "risk id"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#riskName",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#riskName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Name of the risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "risk_name"
+    "@value" : "risk name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#riskType",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#riskType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Type of the risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "risk_type"
+    "@value" : "risk type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#scope",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#scope",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Scope of action "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1623,14 +2117,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#severity",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#severity",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Severity of the risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Risk"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1640,14 +2134,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#status",
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#status",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Information about the status of the corrective action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#CorrectiveAction"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1657,29 +2151,51 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/ns#udiDi",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#supervises",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "UDI"
+    "@value" : "Inverse of isSupervisedBy. Links a competent authority to the manufacturers it oversees."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.owl-ontologies.com/ns#Device"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#CompetentAuthority"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "udi_di"
+    "@value" : "supervises"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#isSupervisedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#udiDi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device Identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "udi di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.owl-ontologies.com/r",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
-}, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#date",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
   "@id" : "https://w3id.org/mod#createdWith",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/mod#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/r",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#Variable"
+  } ]
 } ]

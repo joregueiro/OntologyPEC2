@@ -1,19 +1,33 @@
-@prefix : <http://www.owl-ontologies.com/ns#> .
+@prefix : <https://w3id.org/medical-device-catalogPEC2#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.owl-ontologies.com/ns#> .
+@base <https://w3id.org/medical-device-catalogPEC2#> .
 
-<http://www.owl-ontologies.com/ns#> rdf:type owl:Ontology ;
-                                     <http://purl.org/dc/elements/1.1/title> "European Medical Device Catalog Ontology (MDR/IVDR)"@en ;
-                                     <http://purl.org/dc/terms/abstract> "Comprehensive semantic model for the European catalog of medical devices under the MDR and IVDR regulations."@en ;
-                                     <http://purl.org/dc/terms/creator> "Jose Angel Regueiro Janeiro" ;
-                                     <http://purl.org/dc/terms/description> "This ontology represents the European catalog of high-risk medical devices, including manufacturers, incidents, and corrective actions."@en ;
-                                     rdfs:comment "Ontology for the European catalog of medical devices (MDR/IVDR)."@en ;
-                                     owl:versionInfo "1.0" ;
-                                     <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+<https://w3id.org/medical-device-catalogPEC2#> rdf:type owl:Ontology ;
+                                                owl:versionIRI <https://w3id.org/medical-device-catalogPEC2/1.0.0#> ;
+                                                <http://purl.org/dc/elements/1.1/title> "European Medical Device Catalog Ontology (MDR/IVDR)"@en ;
+                                                <http://purl.org/dc/terms/abstract> "Comprehensive semantic model for the European catalog of medical devices under the MDR and IVDR regulations."@en ;
+                                                <http://purl.org/dc/terms/bibliographicCitation> "Regueiro Janeiro, J. A. (2026). European Medical Device Catalog Ontology (MDR/IVDR). Version 1.0." ;
+                                                <http://purl.org/dc/terms/created> "2026-04-03"^^xsd:date ;
+                                                <http://purl.org/dc/terms/creator> "Jose Angel Regueiro Janeiro" ;
+                                                <http://purl.org/dc/terms/description> "This ontology represents the European catalog of high-risk medical devices, including manufacturers, incidents, and corrective actions."@en ;
+                                                <http://purl.org/dc/terms/identifier> "https://doi.org/10.5281/zenodo.1000001" ;
+                                                <http://purl.org/dc/terms/issued> "2026-04-05"^^xsd:date ;
+                                                <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                <http://purl.org/dc/terms/modified> "2026-04-05"^^xsd:date ;
+                                                <http://purl.org/dc/terms/publisher> <https://github.com/joregueiro> ;
+                                                <http://purl.org/dc/terms/source> <https://github.com/joregueiro/OntologyPEC2> ;
+                                                <http://purl.org/vocab/vann/preferredNamespacePrefix> "ns" ;
+                                                <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/medical-device-catalogPEC2#" ;
+                                                rdfs:comment "Ontology for the European catalog of medical devices (MDR/IVDR)."@en ;
+                                                owl:backwardCompatibleWith <https://w3id.org/medical-device-catalog/0.9.0#> ;
+                                                owl:versionInfo "1.0" ;
+                                                <http://xmlns.com/foaf/0.1/logo> <https://joregueiro.github.io/OntologyPEC2/logo.png> ;
+                                                <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> ;
+                                                <https://w3id.org/mod#status> "Stable" .
 
 #################################################################
 #    Annotation properties
@@ -27,6 +41,14 @@
 <http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
@@ -35,12 +57,52 @@
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
 ###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
 
 
+###  http://xmlns.com/foaf/0.1/logo
+<http://xmlns.com/foaf/0.1/logo> rdf:type owl:AnnotationProperty .
+
+
 ###  https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#status
+<https://w3id.org/mod#status> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -55,7 +117,7 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://www.owl-ontologies.com/ns#addressesIncident
+###  https://w3id.org/medical-device-catalogPEC2#addressesIncident
 :addressesIncident rdf:type owl:ObjectProperty ;
                    rdfs:domain :CorrectiveAction ;
                    rdfs:range :Incident ;
@@ -63,7 +125,7 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "addresses incident"@en .
 
 
-###  http://www.owl-ontologies.com/ns#affectedDevice
+###  https://w3id.org/medical-device-catalogPEC2#affectedDevice
 :affectedDevice rdf:type owl:ObjectProperty ;
                 rdfs:domain :Risk ;
                 rdfs:range :Device ;
@@ -71,14 +133,15 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "affected device type"@en .
 
 
-###  http://www.owl-ontologies.com/ns#affectsPatient
+###  https://w3id.org/medical-device-catalogPEC2#affectsPatient
 :affectsPatient rdf:type owl:ObjectProperty ;
                 rdfs:domain :Incident ;
                 rdfs:range :Patient ;
+                rdfs:comment "Relates a reported incident to the specific patient affected by the event."@en ;
                 rdfs:label "affects patient"@en .
 
 
-###  http://www.owl-ontologies.com/ns#associatedRisk
+###  https://w3id.org/medical-device-catalogPEC2#associatedRisk
 :associatedRisk rdf:type owl:ObjectProperty ;
                 rdfs:domain :Incident ;
                 rdfs:range :Risk ;
@@ -86,7 +149,7 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "associated risk"@en .
 
 
-###  http://www.owl-ontologies.com/ns#hasManufacturer
+###  https://w3id.org/medical-device-catalogPEC2#hasManufacturer
 :hasManufacturer rdf:type owl:ObjectProperty ;
                  rdfs:domain :Device ;
                  rdfs:range :Manufacturer ;
@@ -94,7 +157,25 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "has manufacturer"@en .
 
 
-###  http://www.owl-ontologies.com/ns#involvesDevice
+###  https://w3id.org/medical-device-catalogPEC2#hasReported
+:hasReported rdf:type owl:ObjectProperty ;
+             owl:inverseOf :reportedBy ;
+             rdfs:domain :Manufacturer ;
+             rdfs:range :Incident ;
+             rdfs:comment "Inverse of reportedBy. Links a manufacturer to the incidents they have reported."@en ;
+             rdfs:label "has reported"@en .
+
+
+###  https://w3id.org/medical-device-catalogPEC2#hasRisk
+:hasRisk rdf:type owl:ObjectProperty ;
+         owl:inverseOf :affectedDevice ;
+         rdfs:domain :Device ;
+         rdfs:range :Risk ;
+         rdfs:comment "Inverse of affectedDevice. Links a medical device to the risks associated with it."@en ;
+         rdfs:label "has risk"@en .
+
+
+###  https://w3id.org/medical-device-catalogPEC2#involvesDevice
 :involvesDevice rdf:type owl:ObjectProperty ;
                 rdfs:domain :Incident ;
                 rdfs:range :Device ;
@@ -102,14 +183,60 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "involves device"@en .
 
 
-###  http://www.owl-ontologies.com/ns#isSupervisedBy
+###  https://w3id.org/medical-device-catalogPEC2#isAddressedBy
+:isAddressedBy rdf:type owl:ObjectProperty ;
+               owl:inverseOf :addressesIncident ;
+               rdfs:domain :Incident ;
+               rdfs:range :CorrectiveAction ;
+               rdfs:comment "Inverse of addressesIncident. Links an incident to the corrective action taken."@en ;
+               rdfs:label "is addressed by"@en .
+
+
+###  https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident
+:isAffectedByIncident rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :affectsPatient ;
+                      rdfs:domain :Patient ;
+                      rdfs:range :Incident ;
+                      rdfs:comment "Inverse of affectsPatient. Links a patient to the incidents that have affected them."@en ;
+                      rdfs:label "is affected by incident"@en .
+
+
+###  https://w3id.org/medical-device-catalogPEC2#isRiskOf
+:isRiskOf rdf:type owl:ObjectProperty ;
+          owl:inverseOf :associatedRisk ;
+          rdfs:domain :Risk ;
+          rdfs:range :Incident ;
+          rdfs:comment "Inverse of associatedRisk. Links a risk to the incident it is associated with."@en ;
+          rdfs:label "is risk of"@en .
+
+
+###  https://w3id.org/medical-device-catalogPEC2#isSupervisedBy
 :isSupervisedBy rdf:type owl:ObjectProperty ;
                 rdfs:domain :Manufacturer ;
                 rdfs:range :CompetentAuthority ;
+                rdfs:comment "Links a manufacturer to the national competent authority responsible for its regulatory oversight."@en ;
                 rdfs:label "is supervised by"@en .
 
 
-###  http://www.owl-ontologies.com/ns#reportedBy
+###  https://w3id.org/medical-device-catalogPEC2#isUsedInIncident
+:isUsedInIncident rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :involvesDevice ;
+                  rdfs:domain :Device ;
+                  rdfs:range :Incident ;
+                  rdfs:comment "Inverse of involvesDevice. Links a device to the incidents it was involved in."@en ;
+                  rdfs:label "is used in incident"@en .
+
+
+###  https://w3id.org/medical-device-catalogPEC2#manufactures
+:manufactures rdf:type owl:ObjectProperty ;
+              owl:inverseOf :hasManufacturer ;
+              rdfs:domain :Manufacturer ;
+              rdfs:range :Device ;
+              rdfs:comment "Inverse of hasManufacturer. Links a manufacturer to the devices it produces."@en ;
+              rdfs:label "manufactures"@en .
+
+
+###  https://w3id.org/medical-device-catalogPEC2#reportedBy
 :reportedBy rdf:type owl:ObjectProperty ;
             rdfs:domain :Incident ;
             rdfs:range :Manufacturer ;
@@ -117,91 +244,100 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:label "reported by"@en .
 
 
+###  https://w3id.org/medical-device-catalogPEC2#supervises
+:supervises rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isSupervisedBy ;
+            rdfs:domain :CompetentAuthority ;
+            rdfs:range :Manufacturer ;
+            rdfs:comment "Inverse of isSupervisedBy. Links a competent authority to the manufacturers it oversees."@en ;
+            rdfs:label "supervises"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.owl-ontologies.com/ns#actionDate
+###  https://w3id.org/medical-device-catalogPEC2#actionDate
 :actionDate rdf:type owl:DatatypeProperty ;
             rdfs:domain :CorrectiveAction ;
             rdfs:range xsd:date ;
             rdfs:comment "Date of the action"@en ;
-            rdfs:label "action_date"@en .
+            rdfs:label "action date"@en .
 
 
-###  http://www.owl-ontologies.com/ns#actionType
+###  https://w3id.org/medical-device-catalogPEC2#actionType
 :actionType rdf:type owl:DatatypeProperty ;
             rdfs:domain :CorrectiveAction ;
             rdfs:range xsd:string ;
             rdfs:comment "Type of action"@en ;
-            rdfs:label "action_type"@en .
+            rdfs:label "action type"@en .
 
 
-###  http://www.owl-ontologies.com/ns#authorizationNumber
+###  https://w3id.org/medical-device-catalogPEC2#authorizationNumber
 :authorizationNumber rdf:type owl:DatatypeProperty ;
                      rdfs:domain :Manufacturer ;
                      rdfs:range xsd:string ;
                      rdfs:comment "Number of the authorization"@en ;
-                     rdfs:label "authorization_number"@en .
+                     rdfs:label "authorization number"@en .
 
 
-###  http://www.owl-ontologies.com/ns#closureDate
+###  https://w3id.org/medical-device-catalogPEC2#closureDate
 :closureDate rdf:type owl:DatatypeProperty ;
              rdfs:domain :CorrectiveAction ;
              rdfs:range xsd:date ;
              rdfs:comment "Date of closure"@en ;
-             rdfs:label "closure_date"@en .
+             rdfs:label "closure date"@en .
 
 
-###  http://www.owl-ontologies.com/ns#competentAuthority
+###  https://w3id.org/medical-device-catalogPEC2#competentAuthority
 :competentAuthority rdf:type owl:DatatypeProperty ;
                     rdfs:domain :Manufacturer ;
                     rdfs:range xsd:string ;
                     rdfs:comment "Authority that certified the manufacturer"@en ;
-                    rdfs:label "competent_authority"@en .
+                    rdfs:label "competent authority"@en .
 
 
-###  http://www.owl-ontologies.com/ns#contactEmail
+###  https://w3id.org/medical-device-catalogPEC2#contactEmail
 :contactEmail rdf:type owl:DatatypeProperty ;
               rdfs:domain :Manufacturer ;
               rdfs:range xsd:string ;
               rdfs:comment "Email of contact"@en ;
-              rdfs:label "contact_email"@en .
+              rdfs:label "contact email"@en .
 
 
-###  http://www.owl-ontologies.com/ns#correctiveAction_taken
-:correctiveAction_taken rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :Incident ;
-                        rdfs:range xsd:boolean ;
-                        rdfs:comment "Corrective action taken for the incident"@en ;
-                        rdfs:label "corrective_action_taken"@en .
+###  https://w3id.org/medical-device-catalogPEC2#correctiveActionTaken
+:correctiveActionTaken rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Incident ;
+                       rdfs:range xsd:boolean ;
+                       rdfs:comment "Corrective action taken for the incident"@en ;
+                       rdfs:label "corrective action taken"@en .
 
 
-###  http://www.owl-ontologies.com/ns#countriesAffected
+###  https://w3id.org/medical-device-catalogPEC2#countriesAffected
 :countriesAffected rdf:type owl:DatatypeProperty ;
                    rdfs:domain :CorrectiveAction ;
                    rdfs:range xsd:string ;
                    rdfs:comment "Countries affected by the corrective actions"@en ;
-                   rdfs:label "countries_affected"@en .
+                   rdfs:label "countries affected"@en .
 
 
-###  http://www.owl-ontologies.com/ns#country
+###  https://w3id.org/medical-device-catalogPEC2#country
 :country rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Manufacturer ;
+         rdfs:domain :Participant ;
          rdfs:range xsd:string ;
          rdfs:comment "Name of the country"@en ;
          rdfs:label "country"@en .
 
 
-###  http://www.owl-ontologies.com/ns#countryReported
+###  https://w3id.org/medical-device-catalogPEC2#countryReported
 :countryReported rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Incident ;
                  rdfs:range xsd:string ;
                  rdfs:comment "Name of the country that reported the incident"@en ;
-                 rdfs:label "country_reported"@en .
+                 rdfs:label "country reported"@en .
 
 
-###  http://www.owl-ontologies.com/ns#description
+###  https://w3id.org/medical-device-catalogPEC2#description
 :description rdf:type owl:DatatypeProperty ;
              rdfs:domain :Risk ;
              rdfs:range xsd:string ;
@@ -210,181 +346,183 @@ xsd:date rdf:type rdfs:Datatype .
                         "device" .
 
 
-###  http://www.owl-ontologies.com/ns#detectionDate
+###  https://w3id.org/medical-device-catalogPEC2#detectionDate
 :detectionDate rdf:type owl:DatatypeProperty ;
                rdfs:domain :Incident ;
                rdfs:range xsd:date ;
                rdfs:comment "The date that the incident was detected "@en ;
-               rdfs:label "detection_date"@en .
+               rdfs:label "detection date"@en .
 
 
-###  http://www.owl-ontologies.com/ns#deviceId
+###  https://w3id.org/medical-device-catalogPEC2#deviceId
 :deviceId rdf:type owl:DatatypeProperty ;
           rdfs:domain :Device ;
           rdfs:range xsd:string ;
           rdfs:comment "Id of the device"@en ;
-          rdfs:label "device_id"@en .
+          rdfs:label "device id"@en .
 
 
-###  http://www.owl-ontologies.com/ns#deviceName
+###  https://w3id.org/medical-device-catalogPEC2#deviceName
 :deviceName rdf:type owl:DatatypeProperty ;
             rdfs:domain :Device ;
             rdfs:range xsd:string ;
             rdfs:comment "Name of the device"@en ;
-            rdfs:label "device_name"@en .
+            rdfs:label "device name"@en .
 
 
-###  http://www.owl-ontologies.com/ns#deviceType
+###  https://w3id.org/medical-device-catalogPEC2#deviceType
 :deviceType rdf:type owl:DatatypeProperty ;
             rdfs:domain :Device ;
             rdfs:range xsd:string ;
             rdfs:comment "Type of the device"@en ;
-            rdfs:label "device_type"@en .
+            rdfs:label "device type"@en .
 
 
-###  http://www.owl-ontologies.com/ns#devicesAffected
+###  https://w3id.org/medical-device-catalogPEC2#devicesAffected
 :devicesAffected rdf:type owl:DatatypeProperty ;
                  rdfs:domain :CorrectiveAction ;
                  rdfs:range xsd:integer ;
                  rdfs:comment "Devices affected by the corrective action"@en ;
-                 rdfs:label "devices_affected"@en .
+                 rdfs:label "devices affected"@en .
 
 
-###  http://www.owl-ontologies.com/ns#eudamedFsca_ref
-:eudamedFsca_ref rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :CorrectiveAction ;
-                 rdfs:range xsd:string ;
-                 rdfs:comment "Referenci of the eumed fsca"@en ;
-                 rdfs:label "eudamed_fsca_ref"@en .
+###  https://w3id.org/medical-device-catalogPEC2#eudamedFscaRef
+:eudamedFscaRef rdf:type owl:DatatypeProperty ;
+                rdfs:domain :CorrectiveAction ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Referenci of the eumed fsca"@en ;
+                rdfs:label "eudamed fsca ref"@en .
 
 
-###  http://www.owl-ontologies.com/ns#eudamedIncident_ref
-:eudamedIncident_ref rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :Incident ;
-                     rdfs:range xsd:string ;
-                     rdfs:comment "Reference of the incident in the eudamed"@en ;
-                     rdfs:label "eudamed_incident_ref"@en .
+###  https://w3id.org/medical-device-catalogPEC2#eudamedIncidentRef
+:eudamedIncidentRef rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Incident ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Reference of the incident in the eudamed"@en ;
+                    rdfs:label "eudamed incident ref"@en .
 
 
-###  http://www.owl-ontologies.com/ns#eudomedSrn
+###  https://w3id.org/medical-device-catalogPEC2#eudomedSrn
 :eudomedSrn rdf:type owl:DatatypeProperty ;
             rdfs:domain :Manufacturer ;
             rdfs:range xsd:string ;
-            rdfs:comment "Eudomed srn"@en ;
-            rdfs:label "eudomed_srn"@en .
+            rdfs:comment "The Single Registration Number assigned to the manufacturer in the EUDAMED"@en ;
+            rdfs:label "eudomed srn"@en .
 
 
-###  http://www.owl-ontologies.com/ns#eventDate
+###  https://w3id.org/medical-device-catalogPEC2#eventDate
 :eventDate rdf:type owl:DatatypeProperty ;
            rdfs:domain :Incident ;
            rdfs:range xsd:date ;
            rdfs:comment "Date of the event"@en ;
-           rdfs:label "event_date"@en .
+           rdfs:label "event date"@en .
 
 
-###  http://www.owl-ontologies.com/ns#fscaId
+###  https://w3id.org/medical-device-catalogPEC2#fscaId
 :fscaId rdf:type owl:DatatypeProperty ;
         rdfs:domain :CorrectiveAction ;
         rdfs:range xsd:string ;
         rdfs:comment "Id of the FSCA"@en ;
-        rdfs:label "fsca_id"@en .
+        rdfs:label "fsca id"@en .
 
 
-###  http://www.owl-ontologies.com/ns#highPriority
+###  https://w3id.org/medical-device-catalogPEC2#highPriority
 :highPriority rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Incident ;
               rdfs:range xsd:boolean ;
               rdfs:comment "High priority property."@en ;
               rdfs:label "High Priority"@en .
 
 
-###  http://www.owl-ontologies.com/ns#imdrfCode
+###  https://w3id.org/medical-device-catalogPEC2#imdrfCode
 :imdrfCode rdf:type owl:DatatypeProperty ;
            rdfs:domain :Risk ;
            rdfs:range xsd:string ;
-           rdfs:comment "IMDRF code"@en ;
-           rdfs:label "imdrf_code"@en .
+           rdfs:comment "Standardized adverse event terminology code"@en ;
+           rdfs:label "imdrf code"@en .
 
 
-###  http://www.owl-ontologies.com/ns#incidentId
+###  https://w3id.org/medical-device-catalogPEC2#incidentId
 :incidentId rdf:type owl:DatatypeProperty ;
             rdfs:domain :Incident ;
             rdfs:range xsd:string ;
             rdfs:comment "Incident identificator"@en ;
-            rdfs:label "incident_id"@en .
+            rdfs:label "incident id"@en .
 
 
-###  http://www.owl-ontologies.com/ns#incidentType
+###  https://w3id.org/medical-device-catalogPEC2#incidentType
 :incidentType rdf:type owl:DatatypeProperty ;
               rdfs:domain :Incident ;
               rdfs:range xsd:string ;
               rdfs:comment "Type of the incident"@en ;
-              rdfs:label "incident_type"@en .
+              rdfs:label "incident type"@en .
 
 
-###  http://www.owl-ontologies.com/ns#intendedPurpose
+###  https://w3id.org/medical-device-catalogPEC2#intendedPurpose
 :intendedPurpose rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Device ;
                  rdfs:range xsd:string ;
                  rdfs:comment "Purpose of the intended"@en ;
-                 rdfs:label "intended_purpose"@en .
+                 rdfs:label "intended purpose"@en .
 
 
-###  http://www.owl-ontologies.com/ns#isActive
+###  https://w3id.org/medical-device-catalogPEC2#isActive
 :isActive rdf:type owl:DatatypeProperty ;
           rdfs:domain :Device ;
           rdfs:range xsd:boolean ;
           rdfs:comment "Boolean if the device is active or not"@en ;
-          rdfs:label "is_active"@en .
+          rdfs:label "is active"@en .
 
 
-###  http://www.owl-ontologies.com/ns#isCritical
+###  https://w3id.org/medical-device-catalogPEC2#isCritical
 :isCritical rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Incident ;
             rdfs:range xsd:boolean ;
             rdfs:comment "Is critical property"@en ;
             rdfs:label "Is Critical"@en .
 
 
-###  http://www.owl-ontologies.com/ns#isImplantable
+###  https://w3id.org/medical-device-catalogPEC2#isImplantable
 :isImplantable rdf:type owl:DatatypeProperty ;
                rdfs:domain :Device ;
                rdfs:range xsd:boolean ;
                rdfs:comment "Boolean if the device is implantable or not"@en ;
-               rdfs:label "is_implantable"@en .
+               rdfs:label "is implantable"@en .
 
 
-###  http://www.owl-ontologies.com/ns#isIvd
+###  https://w3id.org/medical-device-catalogPEC2#isIvd
 :isIvd rdf:type owl:DatatypeProperty ;
        rdfs:domain :Device ;
        rdfs:range xsd:boolean ;
        rdfs:comment "Boolean if the device is ivd or not"@en ;
-       rdfs:label "is_ivd"@en .
+       rdfs:label "is ivd"@en .
 
 
-###  http://www.owl-ontologies.com/ns#isReusable
+###  https://w3id.org/medical-device-catalogPEC2#isReusable
 :isReusable rdf:type owl:DatatypeProperty ;
             rdfs:domain :Device ;
             rdfs:range xsd:boolean ;
             rdfs:comment "Boolean if the device is reusable or not"@en ;
-            rdfs:label "is_reusable"@en .
+            rdfs:label "is reusable"@en .
 
 
-###  http://www.owl-ontologies.com/ns#manufacturerId
+###  https://w3id.org/medical-device-catalogPEC2#manufacturerId
 :manufacturerId rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Manufacturer ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Manufacturer identificator"@en ;
-                rdfs:label "manufacturer_id"@en .
+                rdfs:label "manufacturer id"@en .
 
 
-###  http://www.owl-ontologies.com/ns#name
+###  https://w3id.org/medical-device-catalogPEC2#name
 :name rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Manufacturer ;
+      rdfs:domain :Participant ;
       rdfs:range xsd:string ;
       rdfs:comment "Name of the manufacturer"@en ;
       rdfs:label "name"@en .
 
 
-###  http://www.owl-ontologies.com/ns#outcome
+###  https://w3id.org/medical-device-catalogPEC2#outcome
 :outcome rdf:type owl:DatatypeProperty ;
          rdfs:domain :Incident ;
          rdfs:range xsd:string ;
@@ -392,23 +530,23 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "outcome"@en .
 
 
-###  http://www.owl-ontologies.com/ns#patientAge
+###  https://w3id.org/medical-device-catalogPEC2#patientAge
 :patientAge rdf:type owl:DatatypeProperty ;
             rdfs:domain :Incident ;
             rdfs:range xsd:integer ;
             rdfs:comment "Age of the patient"@en ;
-            rdfs:label "patient_age"@en .
+            rdfs:label "patient age"@en .
 
 
-###  http://www.owl-ontologies.com/ns#patientSex
+###  https://w3id.org/medical-device-catalogPEC2#patientSex
 :patientSex rdf:type owl:DatatypeProperty ;
             rdfs:domain :Incident ;
             rdfs:range xsd:string ;
             rdfs:comment "Sex of the pationt"@en ;
-            rdfs:label "patient_sex"@en .
+            rdfs:label "patient sex"@en .
 
 
-###  http://www.owl-ontologies.com/ns#probability
+###  https://w3id.org/medical-device-catalogPEC2#probability
 :probability rdf:type owl:DatatypeProperty ;
              rdfs:domain :Risk ;
              rdfs:range xsd:string ;
@@ -416,63 +554,63 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "probability"@en .
 
 
-###  http://www.owl-ontologies.com/ns#regulatoryFramework
+###  https://w3id.org/medical-device-catalogPEC2#regulatoryFramework
 :regulatoryFramework rdf:type owl:DatatypeProperty ;
                      rdfs:domain :Device ;
                      rdfs:range xsd:string ;
-                     rdfs:comment "Regulatory framework"@en ;
-                     rdfs:label "regulatory_framework"@en .
+                     rdfs:comment "Legal framework for the device"@en ;
+                     rdfs:label "regulatory framework"@en .
 
 
-###  http://www.owl-ontologies.com/ns#reportDate
+###  https://w3id.org/medical-device-catalogPEC2#reportDate
 :reportDate rdf:type owl:DatatypeProperty ;
             rdfs:domain :Incident ;
             rdfs:range xsd:date ;
             rdfs:comment "Date when the incident was reported"@en ;
-            rdfs:label "report_date"@en .
+            rdfs:label "report date"@en .
 
 
-###  http://www.owl-ontologies.com/ns#riskCategory
+###  https://w3id.org/medical-device-catalogPEC2#riskCategory
 :riskCategory rdf:type owl:DatatypeProperty ;
               rdfs:domain :Risk ;
               rdfs:range xsd:string ;
               rdfs:comment "Category of the risk"@en ;
-              rdfs:label "risk_category"@en .
+              rdfs:label "risk category"@en .
 
 
-###  http://www.owl-ontologies.com/ns#riskClass
+###  https://w3id.org/medical-device-catalogPEC2#riskClass
 :riskClass rdf:type owl:DatatypeProperty ;
            rdfs:domain :Device ;
            rdfs:range xsd:string ;
            rdfs:comment "Class of the risk"@en ;
-           rdfs:label "risk_class"@en .
+           rdfs:label "risk class"@en .
 
 
-###  http://www.owl-ontologies.com/ns#riskId
+###  https://w3id.org/medical-device-catalogPEC2#riskId
 :riskId rdf:type owl:DatatypeProperty ;
         rdfs:domain :Risk ;
         rdfs:range xsd:string ;
         rdfs:comment "Risk identificator"@en ;
-        rdfs:label "risk_id"@en .
+        rdfs:label "risk id"@en .
 
 
-###  http://www.owl-ontologies.com/ns#riskName
+###  https://w3id.org/medical-device-catalogPEC2#riskName
 :riskName rdf:type owl:DatatypeProperty ;
           rdfs:domain :Risk ;
           rdfs:range xsd:string ;
           rdfs:comment "Name of the risk"@en ;
-          rdfs:label "risk_name"@en .
+          rdfs:label "risk name"@en .
 
 
-###  http://www.owl-ontologies.com/ns#riskType
+###  https://w3id.org/medical-device-catalogPEC2#riskType
 :riskType rdf:type owl:DatatypeProperty ;
           rdfs:domain :Risk ;
           rdfs:range xsd:string ;
           rdfs:comment "Type of the risk"@en ;
-          rdfs:label "risk_type"@en .
+          rdfs:label "risk type"@en .
 
 
-###  http://www.owl-ontologies.com/ns#scope
+###  https://w3id.org/medical-device-catalogPEC2#scope
 :scope rdf:type owl:DatatypeProperty ;
        rdfs:domain :CorrectiveAction ;
        rdfs:range xsd:string ;
@@ -480,7 +618,7 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:label "scope"@en .
 
 
-###  http://www.owl-ontologies.com/ns#severity
+###  https://w3id.org/medical-device-catalogPEC2#severity
 :severity rdf:type owl:DatatypeProperty ;
           rdfs:domain :Risk ;
           rdfs:range xsd:string ;
@@ -488,7 +626,7 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:label "severity"@en .
 
 
-###  http://www.owl-ontologies.com/ns#status
+###  https://w3id.org/medical-device-catalogPEC2#status
 :status rdf:type owl:DatatypeProperty ;
         rdfs:domain :CorrectiveAction ;
         rdfs:range xsd:string ;
@@ -496,95 +634,137 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "status"@en .
 
 
-###  http://www.owl-ontologies.com/ns#udiDi
+###  https://w3id.org/medical-device-catalogPEC2#udiDi
 :udiDi rdf:type owl:DatatypeProperty ;
        rdfs:domain :Device ;
        rdfs:range xsd:string ;
-       rdfs:comment "UDI"@en ;
-       rdfs:label "udi_di"@en .
+       rdfs:comment "Device Identifier"@en ;
+       rdfs:label "udi di"@en .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.owl-ontologies.com/ns#ClassA
+###  http://www.w3.org/2003/11/swrl#AtomList
+<http://www.w3.org/2003/11/swrl#AtomList> rdf:type owl:Class ;
+                                          rdfs:subClassOf owl:Thing ;
+                                          rdfs:comment "Represents a list of atoms in a SWRL rule."@en ;
+                                          rdfs:label "SWRL Atom List"@en .
+
+
+###  http://www.w3.org/2003/11/swrl#ClassAtom
+<http://www.w3.org/2003/11/swrl#ClassAtom> rdf:type owl:Class ;
+                                           rdfs:subClassOf owl:Thing ;
+                                           rdfs:comment "Represents a class atom in a SWRL rule."@en ;
+                                           rdfs:label "SWRL Class Atom"@en .
+
+
+###  http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom
+<http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> rdf:type owl:Class ;
+                                                        rdfs:subClassOf owl:Thing ;
+                                                        rdfs:comment "Represents a property atom between an individual and a data value in a SWRL rule."@en ;
+                                                        rdfs:label "SWRL Datavalued Property Atom"@en .
+
+
+###  http://www.w3.org/2003/11/swrl#Imp
+<http://www.w3.org/2003/11/swrl#Imp> rdf:type owl:Class ;
+                                     rdfs:subClassOf owl:Thing ;
+                                     rdfs:comment "Represents a SWRL implication or rule."@en ;
+                                     rdfs:label "SWRL Rule"@en .
+
+
+###  http://www.w3.org/2003/11/swrl#IndividualPropertyAtom
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> rdf:type owl:Class ;
+                                                        rdfs:subClassOf owl:Thing ;
+                                                        rdfs:comment "Represents a property atom between individuals in a SWRL rule."@en ;
+                                                        rdfs:label "SWRL Individual Property Atom"@en .
+
+
+###  http://www.w3.org/2003/11/swrl#Variable
+<http://www.w3.org/2003/11/swrl#Variable> rdf:type owl:Class ;
+                                          rdfs:subClassOf owl:Thing ;
+                                          rdfs:comment "Represents a variable used within a SWRL rule."@en ;
+                                          rdfs:label "SWRL Variable"@en .
+
+
+###  https://w3id.org/medical-device-catalogPEC2#ClassA
 :ClassA rdf:type owl:Class ;
         rdfs:subClassOf :IVDDevice ;
         rdfs:comment "Class A."@en ;
         rdfs:label "Class A"@en .
 
 
-###  http://www.owl-ontologies.com/ns#ClassB
+###  https://w3id.org/medical-device-catalogPEC2#ClassB
 :ClassB rdf:type owl:Class ;
         rdfs:subClassOf :IVDDevice ;
         rdfs:comment "Class B."@en ;
         rdfs:label "Class B"@en .
 
 
-###  http://www.owl-ontologies.com/ns#ClassC
+###  https://w3id.org/medical-device-catalogPEC2#ClassC
 :ClassC rdf:type owl:Class ;
         rdfs:subClassOf :IVDDevice ;
         rdfs:comment "Class C."@en ;
         rdfs:label "Class C"@en .
 
 
-###  http://www.owl-ontologies.com/ns#ClassD
+###  https://w3id.org/medical-device-catalogPEC2#ClassD
 :ClassD rdf:type owl:Class ;
         rdfs:subClassOf :IVDDevice ;
         rdfs:comment "Class D."@en ;
         rdfs:label "Class D"@en .
 
 
-###  http://www.owl-ontologies.com/ns#ClassI
+###  https://w3id.org/medical-device-catalogPEC2#ClassI
 :ClassI rdf:type owl:Class ;
         rdfs:subClassOf :MedicalDevice ;
         rdfs:comment "Class I."@en ;
         rdfs:label "Class I"@en .
 
 
-###  http://www.owl-ontologies.com/ns#ClassIII
+###  https://w3id.org/medical-device-catalogPEC2#ClassIII
 :ClassIII rdf:type owl:Class ;
           rdfs:subClassOf :MedicalDevice ;
           rdfs:comment "Class III."@en ;
           rdfs:label "Class III"@en .
 
 
-###  http://www.owl-ontologies.com/ns#ClassIIa
+###  https://w3id.org/medical-device-catalogPEC2#ClassIIa
 :ClassIIa rdf:type owl:Class ;
           rdfs:subClassOf :MedicalDevice ;
           rdfs:comment "Class IIa."@en ;
           rdfs:label "Class IIa"@en .
 
 
-###  http://www.owl-ontologies.com/ns#ClassIIb
+###  https://w3id.org/medical-device-catalogPEC2#ClassIIb
 :ClassIIb rdf:type owl:Class ;
           rdfs:subClassOf :MedicalDevice ;
           rdfs:comment "Class IIb."@en ;
           rdfs:label "Class IIb"@en .
 
 
-###  http://www.owl-ontologies.com/ns#CompetentAuthority
+###  https://w3id.org/medical-device-catalogPEC2#CompetentAuthority
 :CompetentAuthority rdf:type owl:Class ;
                     rdfs:subClassOf :Participant ;
                     rdfs:comment "Responsible for regulation"@en ;
                     rdfs:label "Competent Authority"@en .
 
 
-###  http://www.owl-ontologies.com/ns#CorrectiveAction
+###  https://w3id.org/medical-device-catalogPEC2#CorrectiveAction
 :CorrectiveAction rdf:type owl:Class ;
                   rdfs:comment "Class for storing corrective action's information"@en ;
                   rdfs:label "Corrective Action"@en .
 
 
-###  http://www.owl-ontologies.com/ns#CybersecurityRisk
+###  https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk
 :CybersecurityRisk rdf:type owl:Class ;
                    rdfs:subClassOf :Risk ;
                    rdfs:comment "Risks related to software vulnerabilities in active medical devices."@en ;
                    rdfs:label "Cybersecurity Risk"@en .
 
 
-###  http://www.owl-ontologies.com/ns#Device
+###  https://w3id.org/medical-device-catalogPEC2#Device
 :Device rdf:type owl:Class ;
         rdfs:subClassOf [ rdf:type owl:Restriction ;
                           owl:onProperty :hasManufacturer ;
@@ -595,21 +775,22 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "Device"@en .
 
 
-###  http://www.owl-ontologies.com/ns#IVDDevice
+###  https://w3id.org/medical-device-catalogPEC2#IVDDevice
 :IVDDevice rdf:type owl:Class ;
            rdfs:subClassOf :Device ;
+           owl:disjointWith :MedicalDevice ;
            rdfs:comment "Device under IVDR regulation"@en ;
            rdfs:label "In Vitro Diagnostic Device"@en .
 
 
-###  http://www.owl-ontologies.com/ns#InSituCorrection
+###  https://w3id.org/medical-device-catalogPEC2#InSituCorrection
 :InSituCorrection rdf:type owl:Class ;
                   rdfs:subClassOf :CorrectiveAction ;
                   rdfs:comment "A FSCA performed at the location where the medical device is in use."@en ;
                   rdfs:label "In Situ Correction"@en .
 
 
-###  http://www.owl-ontologies.com/ns#Incident
+###  https://w3id.org/medical-device-catalogPEC2#Incident
 :Incident rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty :involvesDevice ;
@@ -620,75 +801,76 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:label "Incident"@en .
 
 
-###  http://www.owl-ontologies.com/ns#InfectionRisk
+###  https://w3id.org/medical-device-catalogPEC2#InfectionRisk
 :InfectionRisk rdf:type owl:Class ;
                rdfs:subClassOf :Risk ;
                rdfs:comment "Risk of device-related infections"@en ;
                rdfs:label "Infection Risk"@en .
 
 
-###  http://www.owl-ontologies.com/ns#InjuryRisk
+###  https://w3id.org/medical-device-catalogPEC2#InjuryRisk
 :InjuryRisk rdf:type owl:Class ;
             rdfs:subClassOf :Risk ;
             rdfs:comment "Risk of direct physical hurt to the patient."@en ;
             rdfs:label "Injury Risk"@en .
 
 
-###  http://www.owl-ontologies.com/ns#MalfunctionRisk
+###  https://w3id.org/medical-device-catalogPEC2#MalfunctionRisk
 :MalfunctionRisk rdf:type owl:Class ;
                  rdfs:subClassOf :Risk ;
                  rdfs:comment "Risk associated to a failure device."@en ;
                  rdfs:label "Malfunction Risk"@en .
 
 
-###  http://www.owl-ontologies.com/ns#Manufacturer
+###  https://w3id.org/medical-device-catalogPEC2#Manufacturer
 :Manufacturer rdf:type owl:Class ;
               rdfs:subClassOf :Participant ;
               rdfs:comment "Class for storing manufacture information"@en ;
               rdfs:label "Manufacturer"@en .
 
 
-###  http://www.owl-ontologies.com/ns#MedicalDevice
+###  https://w3id.org/medical-device-catalogPEC2#MedicalDevice
 :MedicalDevice rdf:type owl:Class ;
                rdfs:subClassOf :Device ;
                rdfs:comment "Device under MDR regulation"@en ;
                rdfs:label "Medical Device"@en .
 
 
-###  http://www.owl-ontologies.com/ns#Participant
+###  https://w3id.org/medical-device-catalogPEC2#Participant
 :Participant rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing ;
              rdfs:comment "Superclass for all entities involved in the regulatory process"@en ;
              rdfs:label "Participant"@en .
 
 
-###  http://www.owl-ontologies.com/ns#Patient
+###  https://w3id.org/medical-device-catalogPEC2#Patient
 :Patient rdf:type owl:Class ;
          rdfs:subClassOf :Participant ;
          rdfs:comment "The end user or subject of a incident"@en ;
          rdfs:label "Patient"@en .
 
 
-###  http://www.owl-ontologies.com/ns#Recall
+###  https://w3id.org/medical-device-catalogPEC2#Recall
 :Recall rdf:type owl:Class ;
         rdfs:subClassOf :CorrectiveAction ;
         rdfs:comment "A FSCA involving the return of a device to the supplier or its destruction/modification at the site."@en ;
         rdfs:label "Recall"@en .
 
 
-###  http://www.owl-ontologies.com/ns#Risk
+###  https://w3id.org/medical-device-catalogPEC2#Risk
 :Risk rdf:type owl:Class ;
       rdfs:comment "Class for storing risk information"@en ;
       rdfs:label "Risk"@en .
 
 
-###  http://www.owl-ontologies.com/ns#SafetyAlert
+###  https://w3id.org/medical-device-catalogPEC2#SafetyAlert
 :SafetyAlert rdf:type owl:Class ;
              rdfs:subClassOf :CorrectiveAction ;
              rdfs:comment "Safety issue that requires specific actions but not necessarily a recall."@en ;
              rdfs:label "Safety Alert"@en .
 
 
-###  http://www.owl-ontologies.com/ns#UserNotice
+###  https://w3id.org/medical-device-catalogPEC2#UserNotice
 :UserNotice rdf:type owl:Class ;
             rdfs:subClassOf :CorrectiveAction ;
             rdfs:comment "An advisory notice issued by a manufacturer to provide information on the safe use for a medical device."@en ;
@@ -699,7 +881,7 @@ xsd:date rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
-###  http://www.owl-ontologies.com/ns#DEV-001
+###  https://w3id.org/medical-device-catalogPEC2#DEV-001
 :DEV-001 rdf:type owl:NamedIndividual ,
                   :ClassIII ;
          :hasManufacturer :MAN-001 ;
@@ -709,14 +891,14 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "HeartMate 3 LVAD"@en .
 
 
-###  http://www.owl-ontologies.com/ns#Germany
+###  https://w3id.org/medical-device-catalogPEC2#Germany
 :Germany rdf:type owl:NamedIndividual ,
                   :Participant ;
          rdfs:comment "European country."@en ;
          rdfs:label "Germany"@en .
 
 
-###  http://www.owl-ontologies.com/ns#INC-001
+###  https://w3id.org/medical-device-catalogPEC2#INC-001
 :INC-001 rdf:type owl:NamedIndividual ,
                   :Incident ;
          :involvesDevice :DEV-001 ;
@@ -726,32 +908,89 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "Incident 001"@en .
 
 
-###  http://www.owl-ontologies.com/ns#MAN-001
+###  https://w3id.org/medical-device-catalogPEC2#MAN-001
 :MAN-001 rdf:type owl:NamedIndividual ,
                   :Manufacturer ;
          :country "Ireland" ;
-         :name "Medtronic plc"@en ;
+         :name "Medtronic plc" ;
          rdfs:comment "Manufacturer individual"@en ;
          rdfs:label "Medtronic plc"@en .
 
 
-###  http://www.owl-ontologies.com/ns#RSK-018
+###  https://w3id.org/medical-device-catalogPEC2#RSK-018
 :RSK-018 rdf:type owl:NamedIndividual ,
                   :CybersecurityRisk ;
-         :riskName "Cybersecurity vulnerability"@en ;
+         :riskName "Cybersecurity vulnerability" ;
          rdfs:comment "Vulnerability risk for digital devices"@en ;
          rdfs:label "Cybersecurity Risk 018"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ClassA
+                :ClassB
+                :ClassC
+                :ClassD
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ClassI
+                :ClassIII
+                :ClassIIa
+                :ClassIIb
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CompetentAuthority
+                :Manufacturer
+                :Patient
+              )
+] .
 
 
 #################################################################
 #    Rules
 #################################################################
 
-<http://www.owl-ontologies.com/d> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<https://w3id.org/d> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-<http://www.owl-ontologies.com/i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<https://w3id.org/i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-<http://www.owl-ontologies.com/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<https://w3id.org/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Mark medical devices as devices if the isImplatable property is true"@en ;
+   rdfs:label "MedicalDecive as device if it is implantable"@en ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/d>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isImplantable ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/d> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MedicalDevice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/d>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
 
 [ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
    rdfs:comment "Identify incidents that affect digital infractustures"@en ;
@@ -760,18 +999,18 @@ xsd:date rdf:type rdfs:Datatype .
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i>
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :associatedRisk ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/r>
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <https://w3id.org/r>
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> :CybersecurityRisk ;
-                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/r>
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/r>
                                                                            ] ;
                                                                  rdf:rest rdf:nil
                                                                ]
@@ -780,7 +1019,7 @@ xsd:date rdf:type rdfs:Datatype .
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :isCritical ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
                                                      ] ;
                                            rdf:rest rdf:nil
@@ -794,18 +1033,18 @@ xsd:date rdf:type rdfs:Datatype .
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i>
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :associatedRisk ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/r>
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <https://w3id.org/r>
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :severity ;
-                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/r> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/r> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument2> "Critical"
                                                                            ] ;
                                                                  rdf:rest rdf:nil
@@ -815,35 +1054,8 @@ xsd:date rdf:type rdfs:Datatype .
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :highPriority ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Mark medical devices as devices if the isImplatable property is true"@en ;
-   rdfs:label "MedicalDecive as device if it is implantable"@en ;
-   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d>
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isImplantable ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MedicalDevice ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d>
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]

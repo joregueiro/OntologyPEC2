@@ -1,11 +1,25 @@
-<http://www.owl-ontologies.com/ns#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.owl-ontologies.com/ns#> <http://purl.org/dc/elements/1.1/title> "European Medical Device Catalog Ontology (MDR/IVDR)"@en .
-<http://www.owl-ontologies.com/ns#> <http://purl.org/dc/terms/abstract> "Comprehensive semantic model for the European catalog of medical devices under the MDR and IVDR regulations."@en .
-<http://www.owl-ontologies.com/ns#> <http://purl.org/dc/terms/creator> "Jose Angel Regueiro Janeiro" .
-<http://www.owl-ontologies.com/ns#> <http://purl.org/dc/terms/description> "This ontology represents the European catalog of high-risk medical devices, including manufacturers, incidents, and corrective actions."@en .
-<http://www.owl-ontologies.com/ns#> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for the European catalog of medical devices (MDR/IVDR)."@en .
-<http://www.owl-ontologies.com/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
-<http://www.owl-ontologies.com/ns#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+<https://w3id.org/medical-device-catalogPEC2#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/medical-device-catalogPEC2#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/medical-device-catalogPEC2/1.0.0#> .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/elements/1.1/title> "European Medical Device Catalog Ontology (MDR/IVDR)"@en .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/terms/abstract> "Comprehensive semantic model for the European catalog of medical devices under the MDR and IVDR regulations."@en .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/terms/bibliographicCitation> "Regueiro Janeiro, J. A. (2026). European Medical Device Catalog Ontology (MDR/IVDR). Version 1.0." .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/terms/created> "2026-04-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/terms/creator> "Jose Angel Regueiro Janeiro" .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/terms/description> "This ontology represents the European catalog of high-risk medical devices, including manufacturers, incidents, and corrective actions."@en .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/terms/identifier> "https://doi.org/10.5281/zenodo.1000001" .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/terms/issued> "2026-04-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/terms/modified> "2026-04-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/terms/publisher> <https://github.com/joregueiro> .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/dc/terms/source> <https://github.com/joregueiro/OntologyPEC2> .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ns" .
+<https://w3id.org/medical-device-catalogPEC2#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/medical-device-catalogPEC2#" .
+<https://w3id.org/medical-device-catalogPEC2#> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for the European catalog of medical devices (MDR/IVDR)."@en .
+<https://w3id.org/medical-device-catalogPEC2#> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <https://w3id.org/medical-device-catalog/0.9.0#> .
+<https://w3id.org/medical-device-catalogPEC2#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<https://w3id.org/medical-device-catalogPEC2#> <http://xmlns.com/foaf/0.1/logo> <https://joregueiro.github.io/OntologyPEC2/logo.png> .
+<https://w3id.org/medical-device-catalogPEC2#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+<https://w3id.org/medical-device-catalogPEC2#> <https://w3id.org/mod#status> "Stable" .
 # 
 # 
 # #################################################################
@@ -21,17 +35,53 @@
 # http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://xmlns.com/foaf/0.1/logo
+<http://xmlns.com/foaf/0.1/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#status
+<https://w3id.org/mod#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -54,59 +104,125 @@
 # #################################################################
 # 
 # 
-# http://www.owl-ontologies.com/ns#addressesIncident
-<http://www.owl-ontologies.com/ns#addressesIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.owl-ontologies.com/ns#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a corrective action with its incident"@en .
-<http://www.owl-ontologies.com/ns#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#label> "addresses incident"@en .
+# https://w3id.org/medical-device-catalogPEC2#addressesIncident
+<https://w3id.org/medical-device-catalogPEC2#addressesIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a corrective action with its incident"@en .
+<https://w3id.org/medical-device-catalogPEC2#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#label> "addresses incident"@en .
 # 
-# http://www.owl-ontologies.com/ns#affectedDevice
-<http://www.owl-ontologies.com/ns#affectedDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.owl-ontologies.com/ns#affectedDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#affectedDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#affectedDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a risk with the device"@en .
-<http://www.owl-ontologies.com/ns#affectedDevice> <http://www.w3.org/2000/01/rdf-schema#label> "affected device type"@en .
+# https://w3id.org/medical-device-catalogPEC2#affectedDevice
+<https://w3id.org/medical-device-catalogPEC2#affectedDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#affectedDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#affectedDevice> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#affectedDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a risk with the device"@en .
+<https://w3id.org/medical-device-catalogPEC2#affectedDevice> <http://www.w3.org/2000/01/rdf-schema#label> "affected device type"@en .
 # 
-# http://www.owl-ontologies.com/ns#affectsPatient
-<http://www.owl-ontologies.com/ns#affectsPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.owl-ontologies.com/ns#affectsPatient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#affectsPatient> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#Patient> .
-<http://www.owl-ontologies.com/ns#affectsPatient> <http://www.w3.org/2000/01/rdf-schema#label> "affects patient"@en .
+# https://w3id.org/medical-device-catalogPEC2#affectsPatient
+<https://w3id.org/medical-device-catalogPEC2#affectsPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#affectsPatient> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#affectsPatient> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Patient> .
+<https://w3id.org/medical-device-catalogPEC2#affectsPatient> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a reported incident to the specific patient affected by the event."@en .
+<https://w3id.org/medical-device-catalogPEC2#affectsPatient> <http://www.w3.org/2000/01/rdf-schema#label> "affects patient"@en .
 # 
-# http://www.owl-ontologies.com/ns#associatedRisk
-<http://www.owl-ontologies.com/ns#associatedRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.owl-ontologies.com/ns#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident with its risk"@en .
-<http://www.owl-ontologies.com/ns#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#label> "associated risk"@en .
+# https://w3id.org/medical-device-catalogPEC2#associatedRisk
+<https://w3id.org/medical-device-catalogPEC2#associatedRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident with its risk"@en .
+<https://w3id.org/medical-device-catalogPEC2#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#label> "associated risk"@en .
 # 
-# http://www.owl-ontologies.com/ns#hasManufacturer
-<http://www.owl-ontologies.com/ns#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.owl-ontologies.com/ns#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#Manufacturer> .
-<http://www.owl-ontologies.com/ns#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a device to its manufacturer"@en .
-<http://www.owl-ontologies.com/ns#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer"@en .
+# https://w3id.org/medical-device-catalogPEC2#hasManufacturer
+<https://w3id.org/medical-device-catalogPEC2#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a device to its manufacturer"@en .
+<https://w3id.org/medical-device-catalogPEC2#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer"@en .
 # 
-# http://www.owl-ontologies.com/ns#involvesDevice
-<http://www.owl-ontologies.com/ns#involvesDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.owl-ontologies.com/ns#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident with its device"@en .
-<http://www.owl-ontologies.com/ns#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#label> "involves device"@en .
+# https://w3id.org/medical-device-catalogPEC2#hasReported
+<https://w3id.org/medical-device-catalogPEC2#hasReported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#hasReported> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/medical-device-catalogPEC2#reportedBy> .
+<https://w3id.org/medical-device-catalogPEC2#hasReported> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#hasReported> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#hasReported> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of reportedBy. Links a manufacturer to the incidents they have reported."@en .
+<https://w3id.org/medical-device-catalogPEC2#hasReported> <http://www.w3.org/2000/01/rdf-schema#label> "has reported"@en .
 # 
-# http://www.owl-ontologies.com/ns#isSupervisedBy
-<http://www.owl-ontologies.com/ns#isSupervisedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.owl-ontologies.com/ns#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Manufacturer> .
-<http://www.owl-ontologies.com/ns#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#CompetentAuthority> .
-<http://www.owl-ontologies.com/ns#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is supervised by"@en .
+# https://w3id.org/medical-device-catalogPEC2#hasRisk
+<https://w3id.org/medical-device-catalogPEC2#hasRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#hasRisk> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/medical-device-catalogPEC2#affectedDevice> .
+<https://w3id.org/medical-device-catalogPEC2#hasRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#hasRisk> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#hasRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of affectedDevice. Links a medical device to the risks associated with it."@en .
+<https://w3id.org/medical-device-catalogPEC2#hasRisk> <http://www.w3.org/2000/01/rdf-schema#label> "has risk"@en .
 # 
-# http://www.owl-ontologies.com/ns#reportedBy
-<http://www.owl-ontologies.com/ns#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.owl-ontologies.com/ns#reportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#reportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#Manufacturer> .
-<http://www.owl-ontologies.com/ns#reportedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident with its manufacturer"@en .
-<http://www.owl-ontologies.com/ns#reportedBy> <http://www.w3.org/2000/01/rdf-schema#label> "reported by"@en .
+# https://w3id.org/medical-device-catalogPEC2#involvesDevice
+<https://w3id.org/medical-device-catalogPEC2#involvesDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident with its device"@en .
+<https://w3id.org/medical-device-catalogPEC2#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#label> "involves device"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#isAddressedBy
+<https://w3id.org/medical-device-catalogPEC2#isAddressedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isAddressedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/medical-device-catalogPEC2#addressesIncident> .
+<https://w3id.org/medical-device-catalogPEC2#isAddressedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#isAddressedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#isAddressedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of addressesIncident. Links an incident to the corrective action taken."@en .
+<https://w3id.org/medical-device-catalogPEC2#isAddressedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is addressed by"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident
+<https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/medical-device-catalogPEC2#affectsPatient> .
+<https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Patient> .
+<https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of affectsPatient. Links a patient to the incidents that have affected them."@en .
+<https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident> <http://www.w3.org/2000/01/rdf-schema#label> "is affected by incident"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#isRiskOf
+<https://w3id.org/medical-device-catalogPEC2#isRiskOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isRiskOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/medical-device-catalogPEC2#associatedRisk> .
+<https://w3id.org/medical-device-catalogPEC2#isRiskOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#isRiskOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#isRiskOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of associatedRisk. Links a risk to the incident it is associated with."@en .
+<https://w3id.org/medical-device-catalogPEC2#isRiskOf> <http://www.w3.org/2000/01/rdf-schema#label> "is risk of"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#isSupervisedBy
+<https://w3id.org/medical-device-catalogPEC2#isSupervisedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#CompetentAuthority> .
+<https://w3id.org/medical-device-catalogPEC2#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a manufacturer to the national competent authority responsible for its regulatory oversight."@en .
+<https://w3id.org/medical-device-catalogPEC2#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is supervised by"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#isUsedInIncident
+<https://w3id.org/medical-device-catalogPEC2#isUsedInIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isUsedInIncident> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/medical-device-catalogPEC2#involvesDevice> .
+<https://w3id.org/medical-device-catalogPEC2#isUsedInIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#isUsedInIncident> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#isUsedInIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of involvesDevice. Links a device to the incidents it was involved in."@en .
+<https://w3id.org/medical-device-catalogPEC2#isUsedInIncident> <http://www.w3.org/2000/01/rdf-schema#label> "is used in incident"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#manufactures
+<https://w3id.org/medical-device-catalogPEC2#manufactures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#manufactures> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/medical-device-catalogPEC2#hasManufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#manufactures> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#manufactures> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#manufactures> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasManufacturer. Links a manufacturer to the devices it produces."@en .
+<https://w3id.org/medical-device-catalogPEC2#manufactures> <http://www.w3.org/2000/01/rdf-schema#label> "manufactures"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#reportedBy
+<https://w3id.org/medical-device-catalogPEC2#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#reportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#reportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#reportedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident with its manufacturer"@en .
+<https://w3id.org/medical-device-catalogPEC2#reportedBy> <http://www.w3.org/2000/01/rdf-schema#label> "reported by"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#supervises
+<https://w3id.org/medical-device-catalogPEC2#supervises> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#supervises> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/medical-device-catalogPEC2#isSupervisedBy> .
+<https://w3id.org/medical-device-catalogPEC2#supervises> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#CompetentAuthority> .
+<https://w3id.org/medical-device-catalogPEC2#supervises> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#supervises> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of isSupervisedBy. Links a competent authority to the manufacturers it oversees."@en .
+<https://w3id.org/medical-device-catalogPEC2#supervises> <http://www.w3.org/2000/01/rdf-schema#label> "supervises"@en .
 # 
 # 
 # 
@@ -117,340 +233,342 @@
 # #################################################################
 # 
 # 
-# http://www.owl-ontologies.com/ns#actionDate
-<http://www.owl-ontologies.com/ns#actionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#actionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#actionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<http://www.owl-ontologies.com/ns#actionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of the action"@en .
-<http://www.owl-ontologies.com/ns#actionDate> <http://www.w3.org/2000/01/rdf-schema#label> "action_date"@en .
+# https://w3id.org/medical-device-catalogPEC2#actionDate
+<https://w3id.org/medical-device-catalogPEC2#actionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#actionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#actionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/medical-device-catalogPEC2#actionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of the action"@en .
+<https://w3id.org/medical-device-catalogPEC2#actionDate> <http://www.w3.org/2000/01/rdf-schema#label> "action date"@en .
 # 
-# http://www.owl-ontologies.com/ns#actionType
-<http://www.owl-ontologies.com/ns#actionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#actionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#actionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#actionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of action"@en .
-<http://www.owl-ontologies.com/ns#actionType> <http://www.w3.org/2000/01/rdf-schema#label> "action_type"@en .
+# https://w3id.org/medical-device-catalogPEC2#actionType
+<https://w3id.org/medical-device-catalogPEC2#actionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#actionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#actionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#actionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of action"@en .
+<https://w3id.org/medical-device-catalogPEC2#actionType> <http://www.w3.org/2000/01/rdf-schema#label> "action type"@en .
 # 
-# http://www.owl-ontologies.com/ns#authorizationNumber
-<http://www.owl-ontologies.com/ns#authorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Manufacturer> .
-<http://www.owl-ontologies.com/ns#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of the authorization"@en .
-<http://www.owl-ontologies.com/ns#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "authorization_number"@en .
+# https://w3id.org/medical-device-catalogPEC2#authorizationNumber
+<https://w3id.org/medical-device-catalogPEC2#authorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of the authorization"@en .
+<https://w3id.org/medical-device-catalogPEC2#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "authorization number"@en .
 # 
-# http://www.owl-ontologies.com/ns#closureDate
-<http://www.owl-ontologies.com/ns#closureDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#closureDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#closureDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<http://www.owl-ontologies.com/ns#closureDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of closure"@en .
-<http://www.owl-ontologies.com/ns#closureDate> <http://www.w3.org/2000/01/rdf-schema#label> "closure_date"@en .
+# https://w3id.org/medical-device-catalogPEC2#closureDate
+<https://w3id.org/medical-device-catalogPEC2#closureDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#closureDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#closureDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/medical-device-catalogPEC2#closureDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of closure"@en .
+<https://w3id.org/medical-device-catalogPEC2#closureDate> <http://www.w3.org/2000/01/rdf-schema#label> "closure date"@en .
 # 
-# http://www.owl-ontologies.com/ns#competentAuthority
-<http://www.owl-ontologies.com/ns#competentAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#competentAuthority> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Manufacturer> .
-<http://www.owl-ontologies.com/ns#competentAuthority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#competentAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "Authority that certified the manufacturer"@en .
-<http://www.owl-ontologies.com/ns#competentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "competent_authority"@en .
+# https://w3id.org/medical-device-catalogPEC2#competentAuthority
+<https://w3id.org/medical-device-catalogPEC2#competentAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#competentAuthority> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#competentAuthority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#competentAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "Authority that certified the manufacturer"@en .
+<https://w3id.org/medical-device-catalogPEC2#competentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "competent authority"@en .
 # 
-# http://www.owl-ontologies.com/ns#contactEmail
-<http://www.owl-ontologies.com/ns#contactEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#contactEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Manufacturer> .
-<http://www.owl-ontologies.com/ns#contactEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#contactEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "Email of contact"@en .
-<http://www.owl-ontologies.com/ns#contactEmail> <http://www.w3.org/2000/01/rdf-schema#label> "contact_email"@en .
+# https://w3id.org/medical-device-catalogPEC2#contactEmail
+<https://w3id.org/medical-device-catalogPEC2#contactEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#contactEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#contactEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#contactEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "Email of contact"@en .
+<https://w3id.org/medical-device-catalogPEC2#contactEmail> <http://www.w3.org/2000/01/rdf-schema#label> "contact email"@en .
 # 
-# http://www.owl-ontologies.com/ns#correctiveAction_taken
-<http://www.owl-ontologies.com/ns#correctiveAction_taken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#correctiveAction_taken> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#correctiveAction_taken> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://www.owl-ontologies.com/ns#correctiveAction_taken> <http://www.w3.org/2000/01/rdf-schema#comment> "Corrective action taken for the incident"@en .
-<http://www.owl-ontologies.com/ns#correctiveAction_taken> <http://www.w3.org/2000/01/rdf-schema#label> "corrective_action_taken"@en .
+# https://w3id.org/medical-device-catalogPEC2#correctiveActionTaken
+<https://w3id.org/medical-device-catalogPEC2#correctiveActionTaken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/medical-device-catalogPEC2#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#comment> "Corrective action taken for the incident"@en .
+<https://w3id.org/medical-device-catalogPEC2#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#label> "corrective action taken"@en .
 # 
-# http://www.owl-ontologies.com/ns#countriesAffected
-<http://www.owl-ontologies.com/ns#countriesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "Countries affected by the corrective actions"@en .
-<http://www.owl-ontologies.com/ns#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "countries_affected"@en .
+# https://w3id.org/medical-device-catalogPEC2#countriesAffected
+<https://w3id.org/medical-device-catalogPEC2#countriesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "Countries affected by the corrective actions"@en .
+<https://w3id.org/medical-device-catalogPEC2#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "countries affected"@en .
 # 
-# http://www.owl-ontologies.com/ns#country
-<http://www.owl-ontologies.com/ns#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#country> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Manufacturer> .
-<http://www.owl-ontologies.com/ns#country> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#country> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the country"@en .
-<http://www.owl-ontologies.com/ns#country> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
+# https://w3id.org/medical-device-catalogPEC2#country
+<https://w3id.org/medical-device-catalogPEC2#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#country> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Participant> .
+<https://w3id.org/medical-device-catalogPEC2#country> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#country> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the country"@en .
+<https://w3id.org/medical-device-catalogPEC2#country> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
 # 
-# http://www.owl-ontologies.com/ns#countryReported
-<http://www.owl-ontologies.com/ns#countryReported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#countryReported> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#countryReported> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#countryReported> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the country that reported the incident"@en .
-<http://www.owl-ontologies.com/ns#countryReported> <http://www.w3.org/2000/01/rdf-schema#label> "country_reported"@en .
+# https://w3id.org/medical-device-catalogPEC2#countryReported
+<https://w3id.org/medical-device-catalogPEC2#countryReported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#countryReported> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#countryReported> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#countryReported> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the country that reported the incident"@en .
+<https://w3id.org/medical-device-catalogPEC2#countryReported> <http://www.w3.org/2000/01/rdf-schema#label> "country reported"@en .
 # 
-# http://www.owl-ontologies.com/ns#description
-<http://www.owl-ontologies.com/ns#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#description> <http://www.w3.org/2000/01/rdf-schema#comment> "Description"@en .
-<http://www.owl-ontologies.com/ns#description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
-<http://www.owl-ontologies.com/ns#description> <http://www.w3.org/2000/01/rdf-schema#label> "device" .
+# https://w3id.org/medical-device-catalogPEC2#description
+<https://w3id.org/medical-device-catalogPEC2#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#description> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#description> <http://www.w3.org/2000/01/rdf-schema#comment> "Description"@en .
+<https://w3id.org/medical-device-catalogPEC2#description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+<https://w3id.org/medical-device-catalogPEC2#description> <http://www.w3.org/2000/01/rdf-schema#label> "device" .
 # 
-# http://www.owl-ontologies.com/ns#detectionDate
-<http://www.owl-ontologies.com/ns#detectionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#detectionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#detectionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<http://www.owl-ontologies.com/ns#detectionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date that the incident was detected "@en .
-<http://www.owl-ontologies.com/ns#detectionDate> <http://www.w3.org/2000/01/rdf-schema#label> "detection_date"@en .
+# https://w3id.org/medical-device-catalogPEC2#detectionDate
+<https://w3id.org/medical-device-catalogPEC2#detectionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#detectionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#detectionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/medical-device-catalogPEC2#detectionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date that the incident was detected "@en .
+<https://w3id.org/medical-device-catalogPEC2#detectionDate> <http://www.w3.org/2000/01/rdf-schema#label> "detection date"@en .
 # 
-# http://www.owl-ontologies.com/ns#deviceId
-<http://www.owl-ontologies.com/ns#deviceId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#deviceId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#deviceId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#deviceId> <http://www.w3.org/2000/01/rdf-schema#comment> "Id of the device"@en .
-<http://www.owl-ontologies.com/ns#deviceId> <http://www.w3.org/2000/01/rdf-schema#label> "device_id"@en .
+# https://w3id.org/medical-device-catalogPEC2#deviceId
+<https://w3id.org/medical-device-catalogPEC2#deviceId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#deviceId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#deviceId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#deviceId> <http://www.w3.org/2000/01/rdf-schema#comment> "Id of the device"@en .
+<https://w3id.org/medical-device-catalogPEC2#deviceId> <http://www.w3.org/2000/01/rdf-schema#label> "device id"@en .
 # 
-# http://www.owl-ontologies.com/ns#deviceName
-<http://www.owl-ontologies.com/ns#deviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#deviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#deviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#deviceName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the device"@en .
-<http://www.owl-ontologies.com/ns#deviceName> <http://www.w3.org/2000/01/rdf-schema#label> "device_name"@en .
+# https://w3id.org/medical-device-catalogPEC2#deviceName
+<https://w3id.org/medical-device-catalogPEC2#deviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#deviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#deviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#deviceName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the device"@en .
+<https://w3id.org/medical-device-catalogPEC2#deviceName> <http://www.w3.org/2000/01/rdf-schema#label> "device name"@en .
 # 
-# http://www.owl-ontologies.com/ns#deviceType
-<http://www.owl-ontologies.com/ns#deviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#deviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#deviceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#deviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of the device"@en .
-<http://www.owl-ontologies.com/ns#deviceType> <http://www.w3.org/2000/01/rdf-schema#label> "device_type"@en .
+# https://w3id.org/medical-device-catalogPEC2#deviceType
+<https://w3id.org/medical-device-catalogPEC2#deviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#deviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#deviceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#deviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of the device"@en .
+<https://w3id.org/medical-device-catalogPEC2#deviceType> <http://www.w3.org/2000/01/rdf-schema#label> "device type"@en .
 # 
-# http://www.owl-ontologies.com/ns#devicesAffected
-<http://www.owl-ontologies.com/ns#devicesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://www.owl-ontologies.com/ns#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "Devices affected by the corrective action"@en .
-<http://www.owl-ontologies.com/ns#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "devices_affected"@en .
+# https://w3id.org/medical-device-catalogPEC2#devicesAffected
+<https://w3id.org/medical-device-catalogPEC2#devicesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/medical-device-catalogPEC2#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "Devices affected by the corrective action"@en .
+<https://w3id.org/medical-device-catalogPEC2#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "devices affected"@en .
 # 
-# http://www.owl-ontologies.com/ns#eudamedFsca_ref
-<http://www.owl-ontologies.com/ns#eudamedFsca_ref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#eudamedFsca_ref> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#eudamedFsca_ref> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#eudamedFsca_ref> <http://www.w3.org/2000/01/rdf-schema#comment> "Referenci of the eumed fsca"@en .
-<http://www.owl-ontologies.com/ns#eudamedFsca_ref> <http://www.w3.org/2000/01/rdf-schema#label> "eudamed_fsca_ref"@en .
+# https://w3id.org/medical-device-catalogPEC2#eudamedFscaRef
+<https://w3id.org/medical-device-catalogPEC2#eudamedFscaRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Referenci of the eumed fsca"@en .
+<https://w3id.org/medical-device-catalogPEC2#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#label> "eudamed fsca ref"@en .
 # 
-# http://www.owl-ontologies.com/ns#eudamedIncident_ref
-<http://www.owl-ontologies.com/ns#eudamedIncident_ref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#eudamedIncident_ref> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#eudamedIncident_ref> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#eudamedIncident_ref> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference of the incident in the eudamed"@en .
-<http://www.owl-ontologies.com/ns#eudamedIncident_ref> <http://www.w3.org/2000/01/rdf-schema#label> "eudamed_incident_ref"@en .
+# https://w3id.org/medical-device-catalogPEC2#eudamedIncidentRef
+<https://w3id.org/medical-device-catalogPEC2#eudamedIncidentRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference of the incident in the eudamed"@en .
+<https://w3id.org/medical-device-catalogPEC2#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#label> "eudamed incident ref"@en .
 # 
-# http://www.owl-ontologies.com/ns#eudomedSrn
-<http://www.owl-ontologies.com/ns#eudomedSrn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#eudomedSrn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Manufacturer> .
-<http://www.owl-ontologies.com/ns#eudomedSrn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#eudomedSrn> <http://www.w3.org/2000/01/rdf-schema#comment> "Eudomed srn"@en .
-<http://www.owl-ontologies.com/ns#eudomedSrn> <http://www.w3.org/2000/01/rdf-schema#label> "eudomed_srn"@en .
+# https://w3id.org/medical-device-catalogPEC2#eudomedSrn
+<https://w3id.org/medical-device-catalogPEC2#eudomedSrn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#eudomedSrn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#eudomedSrn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#eudomedSrn> <http://www.w3.org/2000/01/rdf-schema#comment> "The Single Registration Number assigned to the manufacturer in the EUDAMED"@en .
+<https://w3id.org/medical-device-catalogPEC2#eudomedSrn> <http://www.w3.org/2000/01/rdf-schema#label> "eudomed srn"@en .
 # 
-# http://www.owl-ontologies.com/ns#eventDate
-<http://www.owl-ontologies.com/ns#eventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#eventDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#eventDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<http://www.owl-ontologies.com/ns#eventDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of the event"@en .
-<http://www.owl-ontologies.com/ns#eventDate> <http://www.w3.org/2000/01/rdf-schema#label> "event_date"@en .
+# https://w3id.org/medical-device-catalogPEC2#eventDate
+<https://w3id.org/medical-device-catalogPEC2#eventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#eventDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#eventDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/medical-device-catalogPEC2#eventDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of the event"@en .
+<https://w3id.org/medical-device-catalogPEC2#eventDate> <http://www.w3.org/2000/01/rdf-schema#label> "event date"@en .
 # 
-# http://www.owl-ontologies.com/ns#fscaId
-<http://www.owl-ontologies.com/ns#fscaId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#fscaId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#fscaId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#fscaId> <http://www.w3.org/2000/01/rdf-schema#comment> "Id of the FSCA"@en .
-<http://www.owl-ontologies.com/ns#fscaId> <http://www.w3.org/2000/01/rdf-schema#label> "fsca_id"@en .
+# https://w3id.org/medical-device-catalogPEC2#fscaId
+<https://w3id.org/medical-device-catalogPEC2#fscaId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#fscaId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#fscaId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#fscaId> <http://www.w3.org/2000/01/rdf-schema#comment> "Id of the FSCA"@en .
+<https://w3id.org/medical-device-catalogPEC2#fscaId> <http://www.w3.org/2000/01/rdf-schema#label> "fsca id"@en .
 # 
-# http://www.owl-ontologies.com/ns#highPriority
-<http://www.owl-ontologies.com/ns#highPriority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#highPriority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://www.owl-ontologies.com/ns#highPriority> <http://www.w3.org/2000/01/rdf-schema#comment> "High priority property."@en .
-<http://www.owl-ontologies.com/ns#highPriority> <http://www.w3.org/2000/01/rdf-schema#label> "High Priority"@en .
+# https://w3id.org/medical-device-catalogPEC2#highPriority
+<https://w3id.org/medical-device-catalogPEC2#highPriority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#highPriority> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#highPriority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/medical-device-catalogPEC2#highPriority> <http://www.w3.org/2000/01/rdf-schema#comment> "High priority property."@en .
+<https://w3id.org/medical-device-catalogPEC2#highPriority> <http://www.w3.org/2000/01/rdf-schema#label> "High Priority"@en .
 # 
-# http://www.owl-ontologies.com/ns#imdrfCode
-<http://www.owl-ontologies.com/ns#imdrfCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#comment> "IMDRF code"@en .
-<http://www.owl-ontologies.com/ns#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#label> "imdrf_code"@en .
+# https://w3id.org/medical-device-catalogPEC2#imdrfCode
+<https://w3id.org/medical-device-catalogPEC2#imdrfCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Standardized adverse event terminology code"@en .
+<https://w3id.org/medical-device-catalogPEC2#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#label> "imdrf code"@en .
 # 
-# http://www.owl-ontologies.com/ns#incidentId
-<http://www.owl-ontologies.com/ns#incidentId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#incidentId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#incidentId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#incidentId> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident identificator"@en .
-<http://www.owl-ontologies.com/ns#incidentId> <http://www.w3.org/2000/01/rdf-schema#label> "incident_id"@en .
+# https://w3id.org/medical-device-catalogPEC2#incidentId
+<https://w3id.org/medical-device-catalogPEC2#incidentId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#incidentId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#incidentId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#incidentId> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident identificator"@en .
+<https://w3id.org/medical-device-catalogPEC2#incidentId> <http://www.w3.org/2000/01/rdf-schema#label> "incident id"@en .
 # 
-# http://www.owl-ontologies.com/ns#incidentType
-<http://www.owl-ontologies.com/ns#incidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#incidentType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#incidentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#incidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of the incident"@en .
-<http://www.owl-ontologies.com/ns#incidentType> <http://www.w3.org/2000/01/rdf-schema#label> "incident_type"@en .
+# https://w3id.org/medical-device-catalogPEC2#incidentType
+<https://w3id.org/medical-device-catalogPEC2#incidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#incidentType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#incidentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#incidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of the incident"@en .
+<https://w3id.org/medical-device-catalogPEC2#incidentType> <http://www.w3.org/2000/01/rdf-schema#label> "incident type"@en .
 # 
-# http://www.owl-ontologies.com/ns#intendedPurpose
-<http://www.owl-ontologies.com/ns#intendedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Purpose of the intended"@en .
-<http://www.owl-ontologies.com/ns#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "intended_purpose"@en .
+# https://w3id.org/medical-device-catalogPEC2#intendedPurpose
+<https://w3id.org/medical-device-catalogPEC2#intendedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Purpose of the intended"@en .
+<https://w3id.org/medical-device-catalogPEC2#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "intended purpose"@en .
 # 
-# http://www.owl-ontologies.com/ns#isActive
-<http://www.owl-ontologies.com/ns#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#isActive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://www.owl-ontologies.com/ns#isActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean if the device is active or not"@en .
-<http://www.owl-ontologies.com/ns#isActive> <http://www.w3.org/2000/01/rdf-schema#label> "is_active"@en .
+# https://w3id.org/medical-device-catalogPEC2#isActive
+<https://w3id.org/medical-device-catalogPEC2#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isActive> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/medical-device-catalogPEC2#isActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean if the device is active or not"@en .
+<https://w3id.org/medical-device-catalogPEC2#isActive> <http://www.w3.org/2000/01/rdf-schema#label> "is active"@en .
 # 
-# http://www.owl-ontologies.com/ns#isCritical
-<http://www.owl-ontologies.com/ns#isCritical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#isCritical> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://www.owl-ontologies.com/ns#isCritical> <http://www.w3.org/2000/01/rdf-schema#comment> "Is critical property"@en .
-<http://www.owl-ontologies.com/ns#isCritical> <http://www.w3.org/2000/01/rdf-schema#label> "Is Critical"@en .
+# https://w3id.org/medical-device-catalogPEC2#isCritical
+<https://w3id.org/medical-device-catalogPEC2#isCritical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isCritical> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#isCritical> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/medical-device-catalogPEC2#isCritical> <http://www.w3.org/2000/01/rdf-schema#comment> "Is critical property"@en .
+<https://w3id.org/medical-device-catalogPEC2#isCritical> <http://www.w3.org/2000/01/rdf-schema#label> "Is Critical"@en .
 # 
-# http://www.owl-ontologies.com/ns#isImplantable
-<http://www.owl-ontologies.com/ns#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#isImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://www.owl-ontologies.com/ns#isImplantable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean if the device is implantable or not"@en .
-<http://www.owl-ontologies.com/ns#isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "is_implantable"@en .
+# https://w3id.org/medical-device-catalogPEC2#isImplantable
+<https://w3id.org/medical-device-catalogPEC2#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#isImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/medical-device-catalogPEC2#isImplantable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean if the device is implantable or not"@en .
+<https://w3id.org/medical-device-catalogPEC2#isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "is implantable"@en .
 # 
-# http://www.owl-ontologies.com/ns#isIvd
-<http://www.owl-ontologies.com/ns#isIvd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#isIvd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#isIvd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://www.owl-ontologies.com/ns#isIvd> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean if the device is ivd or not"@en .
-<http://www.owl-ontologies.com/ns#isIvd> <http://www.w3.org/2000/01/rdf-schema#label> "is_ivd"@en .
+# https://w3id.org/medical-device-catalogPEC2#isIvd
+<https://w3id.org/medical-device-catalogPEC2#isIvd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isIvd> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#isIvd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/medical-device-catalogPEC2#isIvd> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean if the device is ivd or not"@en .
+<https://w3id.org/medical-device-catalogPEC2#isIvd> <http://www.w3.org/2000/01/rdf-schema#label> "is ivd"@en .
 # 
-# http://www.owl-ontologies.com/ns#isReusable
-<http://www.owl-ontologies.com/ns#isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#isReusable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#isReusable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://www.owl-ontologies.com/ns#isReusable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean if the device is reusable or not"@en .
-<http://www.owl-ontologies.com/ns#isReusable> <http://www.w3.org/2000/01/rdf-schema#label> "is_reusable"@en .
+# https://w3id.org/medical-device-catalogPEC2#isReusable
+<https://w3id.org/medical-device-catalogPEC2#isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isReusable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#isReusable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/medical-device-catalogPEC2#isReusable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean if the device is reusable or not"@en .
+<https://w3id.org/medical-device-catalogPEC2#isReusable> <http://www.w3.org/2000/01/rdf-schema#label> "is reusable"@en .
 # 
-# http://www.owl-ontologies.com/ns#manufacturerId
-<http://www.owl-ontologies.com/ns#manufacturerId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Manufacturer> .
-<http://www.owl-ontologies.com/ns#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#comment> "Manufacturer identificator"@en .
-<http://www.owl-ontologies.com/ns#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturer_id"@en .
+# https://w3id.org/medical-device-catalogPEC2#manufacturerId
+<https://w3id.org/medical-device-catalogPEC2#manufacturerId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#comment> "Manufacturer identificator"@en .
+<https://w3id.org/medical-device-catalogPEC2#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturer id"@en .
 # 
-# http://www.owl-ontologies.com/ns#name
-<http://www.owl-ontologies.com/ns#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Manufacturer> .
-<http://www.owl-ontologies.com/ns#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the manufacturer"@en .
-<http://www.owl-ontologies.com/ns#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# https://w3id.org/medical-device-catalogPEC2#name
+<https://w3id.org/medical-device-catalogPEC2#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Participant> .
+<https://w3id.org/medical-device-catalogPEC2#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the manufacturer"@en .
+<https://w3id.org/medical-device-catalogPEC2#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
 # 
-# http://www.owl-ontologies.com/ns#outcome
-<http://www.owl-ontologies.com/ns#outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#outcome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#outcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Outcome of the incident"@en .
-<http://www.owl-ontologies.com/ns#outcome> <http://www.w3.org/2000/01/rdf-schema#label> "outcome"@en .
+# https://w3id.org/medical-device-catalogPEC2#outcome
+<https://w3id.org/medical-device-catalogPEC2#outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#outcome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#outcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Outcome of the incident"@en .
+<https://w3id.org/medical-device-catalogPEC2#outcome> <http://www.w3.org/2000/01/rdf-schema#label> "outcome"@en .
 # 
-# http://www.owl-ontologies.com/ns#patientAge
-<http://www.owl-ontologies.com/ns#patientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#patientAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://www.owl-ontologies.com/ns#patientAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Age of the patient"@en .
-<http://www.owl-ontologies.com/ns#patientAge> <http://www.w3.org/2000/01/rdf-schema#label> "patient_age"@en .
+# https://w3id.org/medical-device-catalogPEC2#patientAge
+<https://w3id.org/medical-device-catalogPEC2#patientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#patientAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/medical-device-catalogPEC2#patientAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Age of the patient"@en .
+<https://w3id.org/medical-device-catalogPEC2#patientAge> <http://www.w3.org/2000/01/rdf-schema#label> "patient age"@en .
 # 
-# http://www.owl-ontologies.com/ns#patientSex
-<http://www.owl-ontologies.com/ns#patientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#patientSex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#patientSex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#patientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "Sex of the pationt"@en .
-<http://www.owl-ontologies.com/ns#patientSex> <http://www.w3.org/2000/01/rdf-schema#label> "patient_sex"@en .
+# https://w3id.org/medical-device-catalogPEC2#patientSex
+<https://w3id.org/medical-device-catalogPEC2#patientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#patientSex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#patientSex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#patientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "Sex of the pationt"@en .
+<https://w3id.org/medical-device-catalogPEC2#patientSex> <http://www.w3.org/2000/01/rdf-schema#label> "patient sex"@en .
 # 
-# http://www.owl-ontologies.com/ns#probability
-<http://www.owl-ontologies.com/ns#probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#probability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#probability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#probability> <http://www.w3.org/2000/01/rdf-schema#comment> "Probability of the risk"@en .
-<http://www.owl-ontologies.com/ns#probability> <http://www.w3.org/2000/01/rdf-schema#label> "probability"@en .
+# https://w3id.org/medical-device-catalogPEC2#probability
+<https://w3id.org/medical-device-catalogPEC2#probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#probability> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#probability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#probability> <http://www.w3.org/2000/01/rdf-schema#comment> "Probability of the risk"@en .
+<https://w3id.org/medical-device-catalogPEC2#probability> <http://www.w3.org/2000/01/rdf-schema#label> "probability"@en .
 # 
-# http://www.owl-ontologies.com/ns#regulatoryFramework
-<http://www.owl-ontologies.com/ns#regulatoryFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#comment> "Regulatory framework"@en .
-<http://www.owl-ontologies.com/ns#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#label> "regulatory_framework"@en .
+# https://w3id.org/medical-device-catalogPEC2#regulatoryFramework
+<https://w3id.org/medical-device-catalogPEC2#regulatoryFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal framework for the device"@en .
+<https://w3id.org/medical-device-catalogPEC2#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#label> "regulatory framework"@en .
 # 
-# http://www.owl-ontologies.com/ns#reportDate
-<http://www.owl-ontologies.com/ns#reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#reportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<http://www.owl-ontologies.com/ns#reportDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the incident was reported"@en .
-<http://www.owl-ontologies.com/ns#reportDate> <http://www.w3.org/2000/01/rdf-schema#label> "report_date"@en .
+# https://w3id.org/medical-device-catalogPEC2#reportDate
+<https://w3id.org/medical-device-catalogPEC2#reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#reportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/medical-device-catalogPEC2#reportDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the incident was reported"@en .
+<https://w3id.org/medical-device-catalogPEC2#reportDate> <http://www.w3.org/2000/01/rdf-schema#label> "report date"@en .
 # 
-# http://www.owl-ontologies.com/ns#riskCategory
-<http://www.owl-ontologies.com/ns#riskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#riskCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#riskCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#riskCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of the risk"@en .
-<http://www.owl-ontologies.com/ns#riskCategory> <http://www.w3.org/2000/01/rdf-schema#label> "risk_category"@en .
+# https://w3id.org/medical-device-catalogPEC2#riskCategory
+<https://w3id.org/medical-device-catalogPEC2#riskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#riskCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#riskCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#riskCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of the risk"@en .
+<https://w3id.org/medical-device-catalogPEC2#riskCategory> <http://www.w3.org/2000/01/rdf-schema#label> "risk category"@en .
 # 
-# http://www.owl-ontologies.com/ns#riskClass
-<http://www.owl-ontologies.com/ns#riskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#riskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#riskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#riskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Class of the risk"@en .
-<http://www.owl-ontologies.com/ns#riskClass> <http://www.w3.org/2000/01/rdf-schema#label> "risk_class"@en .
+# https://w3id.org/medical-device-catalogPEC2#riskClass
+<https://w3id.org/medical-device-catalogPEC2#riskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#riskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#riskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#riskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Class of the risk"@en .
+<https://w3id.org/medical-device-catalogPEC2#riskClass> <http://www.w3.org/2000/01/rdf-schema#label> "risk class"@en .
 # 
-# http://www.owl-ontologies.com/ns#riskId
-<http://www.owl-ontologies.com/ns#riskId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#riskId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#riskId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#riskId> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk identificator"@en .
-<http://www.owl-ontologies.com/ns#riskId> <http://www.w3.org/2000/01/rdf-schema#label> "risk_id"@en .
+# https://w3id.org/medical-device-catalogPEC2#riskId
+<https://w3id.org/medical-device-catalogPEC2#riskId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#riskId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#riskId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#riskId> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk identificator"@en .
+<https://w3id.org/medical-device-catalogPEC2#riskId> <http://www.w3.org/2000/01/rdf-schema#label> "risk id"@en .
 # 
-# http://www.owl-ontologies.com/ns#riskName
-<http://www.owl-ontologies.com/ns#riskName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#riskName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#riskName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#riskName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the risk"@en .
-<http://www.owl-ontologies.com/ns#riskName> <http://www.w3.org/2000/01/rdf-schema#label> "risk_name"@en .
+# https://w3id.org/medical-device-catalogPEC2#riskName
+<https://w3id.org/medical-device-catalogPEC2#riskName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#riskName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#riskName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#riskName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the risk"@en .
+<https://w3id.org/medical-device-catalogPEC2#riskName> <http://www.w3.org/2000/01/rdf-schema#label> "risk name"@en .
 # 
-# http://www.owl-ontologies.com/ns#riskType
-<http://www.owl-ontologies.com/ns#riskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#riskType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#riskType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#riskType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of the risk"@en .
-<http://www.owl-ontologies.com/ns#riskType> <http://www.w3.org/2000/01/rdf-schema#label> "risk_type"@en .
+# https://w3id.org/medical-device-catalogPEC2#riskType
+<https://w3id.org/medical-device-catalogPEC2#riskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#riskType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#riskType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#riskType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of the risk"@en .
+<https://w3id.org/medical-device-catalogPEC2#riskType> <http://www.w3.org/2000/01/rdf-schema#label> "risk type"@en .
 # 
-# http://www.owl-ontologies.com/ns#scope
-<http://www.owl-ontologies.com/ns#scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#scope> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#scope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#scope> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope of action "@en .
-<http://www.owl-ontologies.com/ns#scope> <http://www.w3.org/2000/01/rdf-schema#label> "scope"@en .
+# https://w3id.org/medical-device-catalogPEC2#scope
+<https://w3id.org/medical-device-catalogPEC2#scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#scope> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#scope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#scope> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope of action "@en .
+<https://w3id.org/medical-device-catalogPEC2#scope> <http://www.w3.org/2000/01/rdf-schema#label> "scope"@en .
 # 
-# http://www.owl-ontologies.com/ns#severity
-<http://www.owl-ontologies.com/ns#severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#severity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#severity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#severity> <http://www.w3.org/2000/01/rdf-schema#comment> "Severity of the risk"@en .
-<http://www.owl-ontologies.com/ns#severity> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
+# https://w3id.org/medical-device-catalogPEC2#severity
+<https://w3id.org/medical-device-catalogPEC2#severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#severity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#severity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#severity> <http://www.w3.org/2000/01/rdf-schema#comment> "Severity of the risk"@en .
+<https://w3id.org/medical-device-catalogPEC2#severity> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
 # 
-# http://www.owl-ontologies.com/ns#status
-<http://www.owl-ontologies.com/ns#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#status> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about the status of the corrective action"@en .
-<http://www.owl-ontologies.com/ns#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
+# https://w3id.org/medical-device-catalogPEC2#status
+<https://w3id.org/medical-device-catalogPEC2#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#status> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#status> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about the status of the corrective action"@en .
+<https://w3id.org/medical-device-catalogPEC2#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
 # 
-# http://www.owl-ontologies.com/ns#udiDi
-<http://www.owl-ontologies.com/ns#udiDi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.owl-ontologies.com/ns#udiDi> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#udiDi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.owl-ontologies.com/ns#udiDi> <http://www.w3.org/2000/01/rdf-schema#comment> "UDI"@en .
-<http://www.owl-ontologies.com/ns#udiDi> <http://www.w3.org/2000/01/rdf-schema#label> "udi_di"@en .
+# https://w3id.org/medical-device-catalogPEC2#udiDi
+<https://w3id.org/medical-device-catalogPEC2#udiDi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/medical-device-catalogPEC2#udiDi> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#udiDi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/medical-device-catalogPEC2#udiDi> <http://www.w3.org/2000/01/rdf-schema#comment> "Device Identifier"@en .
+<https://w3id.org/medical-device-catalogPEC2#udiDi> <http://www.w3.org/2000/01/rdf-schema#label> "udi di"@en .
 # 
 # 
 # 
@@ -461,166 +579,204 @@
 # #################################################################
 # 
 # 
-# http://www.owl-ontologies.com/ns#ClassA
-<http://www.owl-ontologies.com/ns#ClassA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#ClassA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#IVDDevice> .
-<http://www.owl-ontologies.com/ns#ClassA> <http://www.w3.org/2000/01/rdf-schema#comment> "Class A."@en .
-<http://www.owl-ontologies.com/ns#ClassA> <http://www.w3.org/2000/01/rdf-schema#label> "Class A"@en .
+# http://www.w3.org/2003/11/swrl#AtomList
+<http://www.w3.org/2003/11/swrl#AtomList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/11/swrl#AtomList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/2003/11/swrl#AtomList> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a list of atoms in a SWRL rule."@en .
+<http://www.w3.org/2003/11/swrl#AtomList> <http://www.w3.org/2000/01/rdf-schema#label> "SWRL Atom List"@en .
 # 
-# http://www.owl-ontologies.com/ns#ClassB
-<http://www.owl-ontologies.com/ns#ClassB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#ClassB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#IVDDevice> .
-<http://www.owl-ontologies.com/ns#ClassB> <http://www.w3.org/2000/01/rdf-schema#comment> "Class B."@en .
-<http://www.owl-ontologies.com/ns#ClassB> <http://www.w3.org/2000/01/rdf-schema#label> "Class B"@en .
+# http://www.w3.org/2003/11/swrl#ClassAtom
+<http://www.w3.org/2003/11/swrl#ClassAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/11/swrl#ClassAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/2003/11/swrl#ClassAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a class atom in a SWRL rule."@en .
+<http://www.w3.org/2003/11/swrl#ClassAtom> <http://www.w3.org/2000/01/rdf-schema#label> "SWRL Class Atom"@en .
 # 
-# http://www.owl-ontologies.com/ns#ClassC
-<http://www.owl-ontologies.com/ns#ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#ClassC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#IVDDevice> .
-<http://www.owl-ontologies.com/ns#ClassC> <http://www.w3.org/2000/01/rdf-schema#comment> "Class C."@en .
-<http://www.owl-ontologies.com/ns#ClassC> <http://www.w3.org/2000/01/rdf-schema#label> "Class C"@en .
+# http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom
+<http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a property atom between an individual and a data value in a SWRL rule."@en .
+<http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> <http://www.w3.org/2000/01/rdf-schema#label> "SWRL Datavalued Property Atom"@en .
 # 
-# http://www.owl-ontologies.com/ns#ClassD
-<http://www.owl-ontologies.com/ns#ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#ClassD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#IVDDevice> .
-<http://www.owl-ontologies.com/ns#ClassD> <http://www.w3.org/2000/01/rdf-schema#comment> "Class D."@en .
-<http://www.owl-ontologies.com/ns#ClassD> <http://www.w3.org/2000/01/rdf-schema#label> "Class D"@en .
+# http://www.w3.org/2003/11/swrl#Imp
+<http://www.w3.org/2003/11/swrl#Imp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/11/swrl#Imp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/2003/11/swrl#Imp> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a SWRL implication or rule."@en .
+<http://www.w3.org/2003/11/swrl#Imp> <http://www.w3.org/2000/01/rdf-schema#label> "SWRL Rule"@en .
 # 
-# http://www.owl-ontologies.com/ns#ClassI
-<http://www.owl-ontologies.com/ns#ClassI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#ClassI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#MedicalDevice> .
-<http://www.owl-ontologies.com/ns#ClassI> <http://www.w3.org/2000/01/rdf-schema#comment> "Class I."@en .
-<http://www.owl-ontologies.com/ns#ClassI> <http://www.w3.org/2000/01/rdf-schema#label> "Class I"@en .
+# http://www.w3.org/2003/11/swrl#IndividualPropertyAtom
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a property atom between individuals in a SWRL rule."@en .
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> <http://www.w3.org/2000/01/rdf-schema#label> "SWRL Individual Property Atom"@en .
 # 
-# http://www.owl-ontologies.com/ns#ClassIII
-<http://www.owl-ontologies.com/ns#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#ClassIII> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#MedicalDevice> .
-<http://www.owl-ontologies.com/ns#ClassIII> <http://www.w3.org/2000/01/rdf-schema#comment> "Class III."@en .
-<http://www.owl-ontologies.com/ns#ClassIII> <http://www.w3.org/2000/01/rdf-schema#label> "Class III"@en .
+# http://www.w3.org/2003/11/swrl#Variable
+<http://www.w3.org/2003/11/swrl#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/11/swrl#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/2003/11/swrl#Variable> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a variable used within a SWRL rule."@en .
+<http://www.w3.org/2003/11/swrl#Variable> <http://www.w3.org/2000/01/rdf-schema#label> "SWRL Variable"@en .
 # 
-# http://www.owl-ontologies.com/ns#ClassIIa
-<http://www.owl-ontologies.com/ns#ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#MedicalDevice> .
-<http://www.owl-ontologies.com/ns#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#comment> "Class IIa."@en .
-<http://www.owl-ontologies.com/ns#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIa"@en .
+# https://w3id.org/medical-device-catalogPEC2#ClassA
+<https://w3id.org/medical-device-catalogPEC2#ClassA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#ClassA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#IVDDevice> .
+<https://w3id.org/medical-device-catalogPEC2#ClassA> <http://www.w3.org/2000/01/rdf-schema#comment> "Class A."@en .
+<https://w3id.org/medical-device-catalogPEC2#ClassA> <http://www.w3.org/2000/01/rdf-schema#label> "Class A"@en .
 # 
-# http://www.owl-ontologies.com/ns#ClassIIb
-<http://www.owl-ontologies.com/ns#ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#MedicalDevice> .
-<http://www.owl-ontologies.com/ns#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#comment> "Class IIb."@en .
-<http://www.owl-ontologies.com/ns#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIb"@en .
+# https://w3id.org/medical-device-catalogPEC2#ClassB
+<https://w3id.org/medical-device-catalogPEC2#ClassB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#ClassB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#IVDDevice> .
+<https://w3id.org/medical-device-catalogPEC2#ClassB> <http://www.w3.org/2000/01/rdf-schema#comment> "Class B."@en .
+<https://w3id.org/medical-device-catalogPEC2#ClassB> <http://www.w3.org/2000/01/rdf-schema#label> "Class B"@en .
 # 
-# http://www.owl-ontologies.com/ns#CompetentAuthority
-<http://www.owl-ontologies.com/ns#CompetentAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#Participant> .
-<http://www.owl-ontologies.com/ns#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "Responsible for regulation"@en .
-<http://www.owl-ontologies.com/ns#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "Competent Authority"@en .
+# https://w3id.org/medical-device-catalogPEC2#ClassC
+<https://w3id.org/medical-device-catalogPEC2#ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#ClassC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#IVDDevice> .
+<https://w3id.org/medical-device-catalogPEC2#ClassC> <http://www.w3.org/2000/01/rdf-schema#comment> "Class C."@en .
+<https://w3id.org/medical-device-catalogPEC2#ClassC> <http://www.w3.org/2000/01/rdf-schema#label> "Class C"@en .
 # 
-# http://www.owl-ontologies.com/ns#CorrectiveAction
-<http://www.owl-ontologies.com/ns#CorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for storing corrective action's information"@en .
-<http://www.owl-ontologies.com/ns#CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "Corrective Action"@en .
+# https://w3id.org/medical-device-catalogPEC2#ClassD
+<https://w3id.org/medical-device-catalogPEC2#ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#ClassD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#IVDDevice> .
+<https://w3id.org/medical-device-catalogPEC2#ClassD> <http://www.w3.org/2000/01/rdf-schema#comment> "Class D."@en .
+<https://w3id.org/medical-device-catalogPEC2#ClassD> <http://www.w3.org/2000/01/rdf-schema#label> "Class D"@en .
 # 
-# http://www.owl-ontologies.com/ns#CybersecurityRisk
-<http://www.owl-ontologies.com/ns#CybersecurityRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risks related to software vulnerabilities in active medical devices."@en .
-<http://www.owl-ontologies.com/ns#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Cybersecurity Risk"@en .
+# https://w3id.org/medical-device-catalogPEC2#ClassI
+<https://w3id.org/medical-device-catalogPEC2#ClassI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#ClassI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#MedicalDevice> .
+<https://w3id.org/medical-device-catalogPEC2#ClassI> <http://www.w3.org/2000/01/rdf-schema#comment> "Class I."@en .
+<https://w3id.org/medical-device-catalogPEC2#ClassI> <http://www.w3.org/2000/01/rdf-schema#label> "Class I"@en .
 # 
-# http://www.owl-ontologies.com/ns#Device
-<http://www.owl-ontologies.com/ns#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/ns#Manufacturer> .
+# https://w3id.org/medical-device-catalogPEC2#ClassIII
+<https://w3id.org/medical-device-catalogPEC2#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#ClassIII> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#MedicalDevice> .
+<https://w3id.org/medical-device-catalogPEC2#ClassIII> <http://www.w3.org/2000/01/rdf-schema#comment> "Class III."@en .
+<https://w3id.org/medical-device-catalogPEC2#ClassIII> <http://www.w3.org/2000/01/rdf-schema#label> "Class III"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#ClassIIa
+<https://w3id.org/medical-device-catalogPEC2#ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#MedicalDevice> .
+<https://w3id.org/medical-device-catalogPEC2#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#comment> "Class IIa."@en .
+<https://w3id.org/medical-device-catalogPEC2#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIa"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#ClassIIb
+<https://w3id.org/medical-device-catalogPEC2#ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#MedicalDevice> .
+<https://w3id.org/medical-device-catalogPEC2#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#comment> "Class IIb."@en .
+<https://w3id.org/medical-device-catalogPEC2#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIb"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#CompetentAuthority
+<https://w3id.org/medical-device-catalogPEC2#CompetentAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#Participant> .
+<https://w3id.org/medical-device-catalogPEC2#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "Responsible for regulation"@en .
+<https://w3id.org/medical-device-catalogPEC2#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "Competent Authority"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#CorrectiveAction
+<https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for storing corrective action's information"@en .
+<https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "Corrective Action"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk
+<https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risks related to software vulnerabilities in active medical devices."@en .
+<https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Cybersecurity Risk"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#Device
+<https://w3id.org/medical-device-catalogPEC2#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
 _:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ns#hasManufacturer> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/medical-device-catalogPEC2#hasManufacturer> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.owl-ontologies.com/ns#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for storing device information"@en .
-<http://www.owl-ontologies.com/ns#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+<https://w3id.org/medical-device-catalogPEC2#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for storing device information"@en .
+<https://w3id.org/medical-device-catalogPEC2#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
 # 
-# http://www.owl-ontologies.com/ns#IVDDevice
-<http://www.owl-ontologies.com/ns#IVDDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#IVDDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#IVDDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Device under IVDR regulation"@en .
-<http://www.owl-ontologies.com/ns#IVDDevice> <http://www.w3.org/2000/01/rdf-schema#label> "In Vitro Diagnostic Device"@en .
+# https://w3id.org/medical-device-catalogPEC2#IVDDevice
+<https://w3id.org/medical-device-catalogPEC2#IVDDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#IVDDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#IVDDevice> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/medical-device-catalogPEC2#MedicalDevice> .
+<https://w3id.org/medical-device-catalogPEC2#IVDDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Device under IVDR regulation"@en .
+<https://w3id.org/medical-device-catalogPEC2#IVDDevice> <http://www.w3.org/2000/01/rdf-schema#label> "In Vitro Diagnostic Device"@en .
 # 
-# http://www.owl-ontologies.com/ns#InSituCorrection
-<http://www.owl-ontologies.com/ns#InSituCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "A FSCA performed at the location where the medical device is in use."@en .
-<http://www.owl-ontologies.com/ns#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "In Situ Correction"@en .
+# https://w3id.org/medical-device-catalogPEC2#InSituCorrection
+<https://w3id.org/medical-device-catalogPEC2#InSituCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "A FSCA performed at the location where the medical device is in use."@en .
+<https://w3id.org/medical-device-catalogPEC2#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "In Situ Correction"@en .
 # 
-# http://www.owl-ontologies.com/ns#Incident
-<http://www.owl-ontologies.com/ns#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/ns#Device> .
+# https://w3id.org/medical-device-catalogPEC2#Incident
+<https://w3id.org/medical-device-catalogPEC2#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/medical-device-catalogPEC2#Device> .
 _:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ns#involvesDevice> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/medical-device-catalogPEC2#involvesDevice> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.owl-ontologies.com/ns#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for storing incidents"@en .
-<http://www.owl-ontologies.com/ns#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
+<https://w3id.org/medical-device-catalogPEC2#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for storing incidents"@en .
+<https://w3id.org/medical-device-catalogPEC2#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
 # 
-# http://www.owl-ontologies.com/ns#InfectionRisk
-<http://www.owl-ontologies.com/ns#InfectionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of device-related infections"@en .
-<http://www.owl-ontologies.com/ns#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Infection Risk"@en .
+# https://w3id.org/medical-device-catalogPEC2#InfectionRisk
+<https://w3id.org/medical-device-catalogPEC2#InfectionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of device-related infections"@en .
+<https://w3id.org/medical-device-catalogPEC2#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Infection Risk"@en .
 # 
-# http://www.owl-ontologies.com/ns#InjuryRisk
-<http://www.owl-ontologies.com/ns#InjuryRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of direct physical hurt to the patient."@en .
-<http://www.owl-ontologies.com/ns#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Injury Risk"@en .
+# https://w3id.org/medical-device-catalogPEC2#InjuryRisk
+<https://w3id.org/medical-device-catalogPEC2#InjuryRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of direct physical hurt to the patient."@en .
+<https://w3id.org/medical-device-catalogPEC2#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Injury Risk"@en .
 # 
-# http://www.owl-ontologies.com/ns#MalfunctionRisk
-<http://www.owl-ontologies.com/ns#MalfunctionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#Risk> .
-<http://www.owl-ontologies.com/ns#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk associated to a failure device."@en .
-<http://www.owl-ontologies.com/ns#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Malfunction Risk"@en .
+# https://w3id.org/medical-device-catalogPEC2#MalfunctionRisk
+<https://w3id.org/medical-device-catalogPEC2#MalfunctionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#Risk> .
+<https://w3id.org/medical-device-catalogPEC2#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk associated to a failure device."@en .
+<https://w3id.org/medical-device-catalogPEC2#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Malfunction Risk"@en .
 # 
-# http://www.owl-ontologies.com/ns#Manufacturer
-<http://www.owl-ontologies.com/ns#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#Participant> .
-<http://www.owl-ontologies.com/ns#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for storing manufacture information"@en .
-<http://www.owl-ontologies.com/ns#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
+# https://w3id.org/medical-device-catalogPEC2#Manufacturer
+<https://w3id.org/medical-device-catalogPEC2#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#Participant> .
+<https://w3id.org/medical-device-catalogPEC2#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for storing manufacture information"@en .
+<https://w3id.org/medical-device-catalogPEC2#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
 # 
-# http://www.owl-ontologies.com/ns#MedicalDevice
-<http://www.owl-ontologies.com/ns#MedicalDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#Device> .
-<http://www.owl-ontologies.com/ns#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Device under MDR regulation"@en .
-<http://www.owl-ontologies.com/ns#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Medical Device"@en .
+# https://w3id.org/medical-device-catalogPEC2#MedicalDevice
+<https://w3id.org/medical-device-catalogPEC2#MedicalDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Device under MDR regulation"@en .
+<https://w3id.org/medical-device-catalogPEC2#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Medical Device"@en .
 # 
-# http://www.owl-ontologies.com/ns#Participant
-<http://www.owl-ontologies.com/ns#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#Participant> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass for all entities involved in the regulatory process"@en .
-<http://www.owl-ontologies.com/ns#Participant> <http://www.w3.org/2000/01/rdf-schema#label> "Participant"@en .
+# https://w3id.org/medical-device-catalogPEC2#Participant
+<https://w3id.org/medical-device-catalogPEC2#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/medical-device-catalogPEC2#Participant> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass for all entities involved in the regulatory process"@en .
+<https://w3id.org/medical-device-catalogPEC2#Participant> <http://www.w3.org/2000/01/rdf-schema#label> "Participant"@en .
 # 
-# http://www.owl-ontologies.com/ns#Patient
-<http://www.owl-ontologies.com/ns#Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#Participant> .
-<http://www.owl-ontologies.com/ns#Patient> <http://www.w3.org/2000/01/rdf-schema#comment> "The end user or subject of a incident"@en .
-<http://www.owl-ontologies.com/ns#Patient> <http://www.w3.org/2000/01/rdf-schema#label> "Patient"@en .
+# https://w3id.org/medical-device-catalogPEC2#Patient
+<https://w3id.org/medical-device-catalogPEC2#Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#Participant> .
+<https://w3id.org/medical-device-catalogPEC2#Patient> <http://www.w3.org/2000/01/rdf-schema#comment> "The end user or subject of a incident"@en .
+<https://w3id.org/medical-device-catalogPEC2#Patient> <http://www.w3.org/2000/01/rdf-schema#label> "Patient"@en .
 # 
-# http://www.owl-ontologies.com/ns#Recall
-<http://www.owl-ontologies.com/ns#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "A FSCA involving the return of a device to the supplier or its destruction/modification at the site."@en .
-<http://www.owl-ontologies.com/ns#Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall"@en .
+# https://w3id.org/medical-device-catalogPEC2#Recall
+<https://w3id.org/medical-device-catalogPEC2#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "A FSCA involving the return of a device to the supplier or its destruction/modification at the site."@en .
+<https://w3id.org/medical-device-catalogPEC2#Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall"@en .
 # 
-# http://www.owl-ontologies.com/ns#Risk
-<http://www.owl-ontologies.com/ns#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for storing risk information"@en .
-<http://www.owl-ontologies.com/ns#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
+# https://w3id.org/medical-device-catalogPEC2#Risk
+<https://w3id.org/medical-device-catalogPEC2#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for storing risk information"@en .
+<https://w3id.org/medical-device-catalogPEC2#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
 # 
-# http://www.owl-ontologies.com/ns#SafetyAlert
-<http://www.owl-ontologies.com/ns#SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "Safety issue that requires specific actions but not necessarily a recall."@en .
-<http://www.owl-ontologies.com/ns#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert"@en .
+# https://w3id.org/medical-device-catalogPEC2#SafetyAlert
+<https://w3id.org/medical-device-catalogPEC2#SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "Safety issue that requires specific actions but not necessarily a recall."@en .
+<https://w3id.org/medical-device-catalogPEC2#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert"@en .
 # 
-# http://www.owl-ontologies.com/ns#UserNotice
-<http://www.owl-ontologies.com/ns#UserNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.owl-ontologies.com/ns#UserNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ns#CorrectiveAction> .
-<http://www.owl-ontologies.com/ns#UserNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "An advisory notice issued by a manufacturer to provide information on the safe use for a medical device."@en .
-<http://www.owl-ontologies.com/ns#UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "User Notice"@en .
+# https://w3id.org/medical-device-catalogPEC2#UserNotice
+<https://w3id.org/medical-device-catalogPEC2#UserNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/medical-device-catalogPEC2#UserNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/medical-device-catalogPEC2#CorrectiveAction> .
+<https://w3id.org/medical-device-catalogPEC2#UserNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "An advisory notice issued by a manufacturer to provide information on the safe use for a medical device."@en .
+<https://w3id.org/medical-device-catalogPEC2#UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "User Notice"@en .
 # 
 # 
 # 
@@ -631,44 +787,95 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# http://www.owl-ontologies.com/ns#DEV-001
-<http://www.owl-ontologies.com/ns#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.owl-ontologies.com/ns#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ns#ClassIII> .
-<http://www.owl-ontologies.com/ns#DEV-001> <http://www.owl-ontologies.com/ns#hasManufacturer> <http://www.owl-ontologies.com/ns#MAN-001> .
-<http://www.owl-ontologies.com/ns#DEV-001> <http://www.owl-ontologies.com/ns#deviceName> "HeartMate 3 LVAD" .
-<http://www.owl-ontologies.com/ns#DEV-001> <http://www.owl-ontologies.com/ns#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://www.owl-ontologies.com/ns#DEV-001> <http://www.w3.org/2000/01/rdf-schema#comment> "High-risk active implantable device"@en .
-<http://www.owl-ontologies.com/ns#DEV-001> <http://www.w3.org/2000/01/rdf-schema#label> "HeartMate 3 LVAD"@en .
+# https://w3id.org/medical-device-catalogPEC2#DEV-001
+<https://w3id.org/medical-device-catalogPEC2#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/medical-device-catalogPEC2#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/medical-device-catalogPEC2#ClassIII> .
+<https://w3id.org/medical-device-catalogPEC2#DEV-001> <https://w3id.org/medical-device-catalogPEC2#hasManufacturer> <https://w3id.org/medical-device-catalogPEC2#MAN-001> .
+<https://w3id.org/medical-device-catalogPEC2#DEV-001> <https://w3id.org/medical-device-catalogPEC2#deviceName> "HeartMate 3 LVAD" .
+<https://w3id.org/medical-device-catalogPEC2#DEV-001> <https://w3id.org/medical-device-catalogPEC2#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/medical-device-catalogPEC2#DEV-001> <http://www.w3.org/2000/01/rdf-schema#comment> "High-risk active implantable device"@en .
+<https://w3id.org/medical-device-catalogPEC2#DEV-001> <http://www.w3.org/2000/01/rdf-schema#label> "HeartMate 3 LVAD"@en .
 # 
-# http://www.owl-ontologies.com/ns#Germany
-<http://www.owl-ontologies.com/ns#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.owl-ontologies.com/ns#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ns#Participant> .
-<http://www.owl-ontologies.com/ns#Germany> <http://www.w3.org/2000/01/rdf-schema#comment> "European country."@en .
-<http://www.owl-ontologies.com/ns#Germany> <http://www.w3.org/2000/01/rdf-schema#label> "Germany"@en .
+# https://w3id.org/medical-device-catalogPEC2#Germany
+<https://w3id.org/medical-device-catalogPEC2#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/medical-device-catalogPEC2#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/medical-device-catalogPEC2#Participant> .
+<https://w3id.org/medical-device-catalogPEC2#Germany> <http://www.w3.org/2000/01/rdf-schema#comment> "European country."@en .
+<https://w3id.org/medical-device-catalogPEC2#Germany> <http://www.w3.org/2000/01/rdf-schema#label> "Germany"@en .
 # 
-# http://www.owl-ontologies.com/ns#INC-001
-<http://www.owl-ontologies.com/ns#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.owl-ontologies.com/ns#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ns#Incident> .
-<http://www.owl-ontologies.com/ns#INC-001> <http://www.owl-ontologies.com/ns#involvesDevice> <http://www.owl-ontologies.com/ns#DEV-001> .
-<http://www.owl-ontologies.com/ns#INC-001> <http://www.owl-ontologies.com/ns#incidentId> "INC-001" .
-<http://www.owl-ontologies.com/ns#INC-001> <http://www.owl-ontologies.com/ns#severity> "Critical" .
-<http://www.owl-ontologies.com/ns#INC-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious incident reported for HeartMate 3"@en .
-<http://www.owl-ontologies.com/ns#INC-001> <http://www.w3.org/2000/01/rdf-schema#label> "Incident 001"@en .
+# https://w3id.org/medical-device-catalogPEC2#INC-001
+<https://w3id.org/medical-device-catalogPEC2#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/medical-device-catalogPEC2#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#INC-001> <https://w3id.org/medical-device-catalogPEC2#involvesDevice> <https://w3id.org/medical-device-catalogPEC2#DEV-001> .
+<https://w3id.org/medical-device-catalogPEC2#INC-001> <https://w3id.org/medical-device-catalogPEC2#incidentId> "INC-001" .
+<https://w3id.org/medical-device-catalogPEC2#INC-001> <https://w3id.org/medical-device-catalogPEC2#severity> "Critical" .
+<https://w3id.org/medical-device-catalogPEC2#INC-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious incident reported for HeartMate 3"@en .
+<https://w3id.org/medical-device-catalogPEC2#INC-001> <http://www.w3.org/2000/01/rdf-schema#label> "Incident 001"@en .
 # 
-# http://www.owl-ontologies.com/ns#MAN-001
-<http://www.owl-ontologies.com/ns#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.owl-ontologies.com/ns#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ns#Manufacturer> .
-<http://www.owl-ontologies.com/ns#MAN-001> <http://www.owl-ontologies.com/ns#country> "Ireland" .
-<http://www.owl-ontologies.com/ns#MAN-001> <http://www.owl-ontologies.com/ns#name> "Medtronic plc"@en .
-<http://www.owl-ontologies.com/ns#MAN-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Manufacturer individual"@en .
-<http://www.owl-ontologies.com/ns#MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic plc"@en .
+# https://w3id.org/medical-device-catalogPEC2#MAN-001
+<https://w3id.org/medical-device-catalogPEC2#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/medical-device-catalogPEC2#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+<https://w3id.org/medical-device-catalogPEC2#MAN-001> <https://w3id.org/medical-device-catalogPEC2#country> "Ireland" .
+<https://w3id.org/medical-device-catalogPEC2#MAN-001> <https://w3id.org/medical-device-catalogPEC2#name> "Medtronic plc" .
+<https://w3id.org/medical-device-catalogPEC2#MAN-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Manufacturer individual"@en .
+<https://w3id.org/medical-device-catalogPEC2#MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic plc"@en .
 # 
-# http://www.owl-ontologies.com/ns#RSK-018
-<http://www.owl-ontologies.com/ns#RSK-018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.owl-ontologies.com/ns#RSK-018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ns#CybersecurityRisk> .
-<http://www.owl-ontologies.com/ns#RSK-018> <http://www.owl-ontologies.com/ns#riskName> "Cybersecurity vulnerability"@en .
-<http://www.owl-ontologies.com/ns#RSK-018> <http://www.w3.org/2000/01/rdf-schema#comment> "Vulnerability risk for digital devices"@en .
-<http://www.owl-ontologies.com/ns#RSK-018> <http://www.w3.org/2000/01/rdf-schema#label> "Cybersecurity Risk 018"@en .
+# https://w3id.org/medical-device-catalogPEC2#RSK-018
+<https://w3id.org/medical-device-catalogPEC2#RSK-018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/medical-device-catalogPEC2#RSK-018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk> .
+<https://w3id.org/medical-device-catalogPEC2#RSK-018> <https://w3id.org/medical-device-catalogPEC2#riskName> "Cybersecurity vulnerability" .
+<https://w3id.org/medical-device-catalogPEC2#RSK-018> <http://www.w3.org/2000/01/rdf-schema#comment> "Vulnerability risk for digital devices"@en .
+<https://w3id.org/medical-device-catalogPEC2#RSK-018> <http://www.w3.org/2000/01/rdf-schema#label> "Cybersecurity Risk 018"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid3 <http://www.w3.org/2002/07/owl#members> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/medical-device-catalogPEC2#ClassD> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/medical-device-catalogPEC2#ClassC> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/medical-device-catalogPEC2#ClassB> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/medical-device-catalogPEC2#ClassA> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid8 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/medical-device-catalogPEC2#ClassIIb> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/medical-device-catalogPEC2#ClassIIa> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/medical-device-catalogPEC2#ClassIII> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/medical-device-catalogPEC2#ClassI> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid13 <http://www.w3.org/2002/07/owl#members> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/medical-device-catalogPEC2#Patient> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/medical-device-catalogPEC2#Manufacturer> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/medical-device-catalogPEC2#CompetentAuthority> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # 
 # 
@@ -679,97 +886,97 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-<http://www.owl-ontologies.com/d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
-<http://www.owl-ontologies.com/i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
-<http://www.owl-ontologies.com/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
-_:genid10 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#comment> "Identify incidents that affect digital infractustures"@en .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Alerts for cibersecurity risks"@en .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
-_:genid10 <http://www.w3.org/2003/11/swrl#body> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
-_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/r> .
-_:genid12 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/ns#CybersecurityRisk> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
-_:genid14 <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/r> .
-_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
-_:genid14 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/ns#associatedRisk> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
-_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
-_:genid16 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/ns#Incident> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid10 <http://www.w3.org/2003/11/swrl#head> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
-_:genid18 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
-_:genid18 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/ns#isCritical> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid19 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid19 <http://www.w3.org/2000/01/rdf-schema#comment> "Find incidents with associated risk as critical"@en .
-_:genid19 <http://www.w3.org/2000/01/rdf-schema#label> "Priority high to critical incidents"@en .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
-_:genid19 <http://www.w3.org/2003/11/swrl#body> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<https://w3id.org/i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<https://w3id.org/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid17 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#comment> "Mark medical devices as devices if the isImplatable property is true"@en .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#label> "MedicalDecive as device if it is implantable"@en .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid17 <http://www.w3.org/2003/11/swrl#body> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/d> .
+_:genid19 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/medical-device-catalogPEC2#isImplantable> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
-_:genid21 <http://www.w3.org/2003/11/swrl#argument2> "Critical" .
-_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/r> .
-_:genid21 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/ns#severity> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/d> .
+_:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/medical-device-catalogPEC2#Device> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/2003/11/swrl#head> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
-_:genid23 <http://www.w3.org/2003/11/swrl#argument2> <http://www.owl-ontologies.com/r> .
-_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
-_:genid23 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/ns#associatedRisk> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/d> .
+_:genid23 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/medical-device-catalogPEC2#MedicalDevice> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
-_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
-_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/ns#Incident> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid19 <http://www.w3.org/2003/11/swrl#head> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
-_:genid27 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/i> .
-_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/ns#highPriority> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid3 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid3 <http://www.w3.org/2000/01/rdf-schema#comment> "Mark medical devices as devices if the isImplatable property is true"@en .
-_:genid3 <http://www.w3.org/2000/01/rdf-schema#label> "MedicalDecive as device if it is implantable"@en .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
-_:genid3 <http://www.w3.org/2003/11/swrl#body> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
-_:genid5 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid5 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> .
-_:genid5 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.owl-ontologies.com/ns#isImplantable> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
-_:genid7 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> .
-_:genid7 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/ns#Device> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid3 <http://www.w3.org/2003/11/swrl#head> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
-_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <http://www.owl-ontologies.com/d> .
-_:genid9 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.owl-ontologies.com/ns#MedicalDevice> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid24 <http://www.w3.org/2000/01/rdf-schema#comment> "Identify incidents that affect digital infractustures"@en .
+_:genid24 <http://www.w3.org/2000/01/rdf-schema#label> "Alerts for cibersecurity risks"@en .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid24 <http://www.w3.org/2003/11/swrl#body> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/r> .
+_:genid26 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument2> <https://w3id.org/r> .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i> .
+_:genid28 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/medical-device-catalogPEC2#associatedRisk> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i> .
+_:genid30 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/2003/11/swrl#head> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i> .
+_:genid32 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/medical-device-catalogPEC2#isCritical> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid33 <http://www.w3.org/2000/01/rdf-schema#comment> "Find incidents with associated risk as critical"@en .
+_:genid33 <http://www.w3.org/2000/01/rdf-schema#label> "Priority high to critical incidents"@en .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid33 <http://www.w3.org/2003/11/swrl#body> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument2> "Critical" .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/r> .
+_:genid35 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/medical-device-catalogPEC2#severity> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument2> <https://w3id.org/r> .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i> .
+_:genid37 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/medical-device-catalogPEC2#associatedRisk> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i> .
+_:genid39 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/2003/11/swrl#head> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/i> .
+_:genid41 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/medical-device-catalogPEC2#highPriority> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

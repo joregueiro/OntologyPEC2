@@ -2,11 +2,11 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.owl-ontologies.com/ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/medical-device-catalogPEC2", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2003/11/swrl" ],
     "title" : {
       "en" : "European Medical Device Catalog Ontology (MDR/IVDR)"
     },
-    "iri" : "http://www.owl-ontologies.com/ns#",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#",
     "version" : "1.0",
     "author" : [ "Jose Angel Regueiro Janeiro" ],
     "description" : {
@@ -16,6 +16,12 @@
       "en" : "Ontology for the European catalog of medical devices (MDR/IVDR)."
     },
     "other" : {
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://doi.org/10.5281/zenodo.1000001",
+        "type" : "label"
+      } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
@@ -28,11 +34,17 @@
         "value" : "https://chowlk.linkeddata.es/",
         "type" : "iri"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
+      "created" : [ {
+        "identifier" : "created",
         "language" : "undefined",
-        "value" : "1.0",
+        "value" : "2026-04-03",
         "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "https://github.com/joregueiro/OntologyPEC2",
+        "type" : "iri"
       } ],
       "abstract" : [ {
         "identifier" : "abstract",
@@ -40,10 +52,76 @@
         "value" : "Comprehensive semantic model for the European catalog of medical devices under the MDR and IVDR regulations.",
         "type" : "label"
       } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
         "value" : "European Medical Device Catalog Ontology (MDR/IVDR)",
+        "type" : "label"
+      } ],
+      "backwardCompatibleWith" : [ {
+        "identifier" : "backwardCompatibleWith",
+        "language" : "undefined",
+        "value" : "https://w3id.org/medical-device-catalog/0.9.0#",
+        "type" : "iri"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ns",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2026-04-05",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://github.com/joregueiro",
+        "type" : "iri"
+      } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://joregueiro.github.io/OntologyPEC2/logo.png",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/medical-device-catalogPEC2#",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "Regueiro Janeiro, J. A. (2026). European Medical Device Catalog Ontology (MDR/IVDR). Version 1.0.",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-04-05",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "undefined",
+        "value" : "Stable",
         "type" : "label"
       } ]
     }
@@ -51,677 +129,263 @@
   "namespace" : [ ],
   "class" : [ {
     "id" : "3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "5",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "9",
-    "type" : "owl:Class"
-  }, {
-    "id" : "12",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "19",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "24",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "25",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "29",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "34",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "28",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "35",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "38",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "14",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "46",
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "40",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "56",
+    "id" : "25",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "33",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "63",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "64",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "53",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "65",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "8",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "61",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "66",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "52",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "74",
+    "id" : "26",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "27",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "49",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "78",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "4",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
+    "id" : "6",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "37",
+    "id" : "34",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
+    "id" : "35",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "83",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "86",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "89",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "91",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "79",
-    "type" : "owl:Class"
-  }, {
-    "id" : "77",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "94",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "54",
-    "type" : "owl:Class"
-  }, {
-    "id" : "95",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "96",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "72",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "98",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "39",
-    "type" : "owl:Class"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "129",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "59",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "144",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "82",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "121",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "142",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "139",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "80",
-    "type" : "owl:Class"
-  }, {
-    "id" : "105",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "147",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "17",
-    "type" : "owl:Class"
-  }, {
-    "id" : "93",
+    "id" : "38",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "30",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "171",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "175",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.owl-ontologies.com/ns#ClassIIa",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ClassIIa",
-      "en" : "Class IIa"
-    },
-    "comment" : {
-      "en" : "Class IIa."
-    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "3",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "5",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#ClassIIb",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ClassIIb",
-      "en" : "Class IIb"
-    },
-    "comment" : {
-      "en" : "Class IIb."
-    },
-    "id" : "9",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#IVDDevice",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IVDDevice",
-      "en" : "In Vitro Diagnostic Device"
-    },
-    "subClasses" : [ "14", "15", "16", "17" ],
-    "comment" : {
-      "en" : "Device under IVDR regulation"
-    },
-    "id" : "12",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "18",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#UserNotice",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UserNotice",
-      "en" : "User Notice"
-    },
-    "comment" : {
-      "en" : "An advisory notice issued by a manufacturer to provide information on the safe use for a medical device."
-    },
-    "id" : "20",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "24",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "25",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "29",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "34",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "28",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "35",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "38",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#Risk",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Risk",
-      "en" : "Risk"
-    },
-    "subClasses" : [ "39", "40", "41", "42" ],
-    "comment" : {
-      "en" : "Class for storing risk information"
-    },
-    "id" : "7"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "43",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#Participant",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Participant",
-      "en" : "Participant"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.owl-ontologies.com/ns#Germany",
-      "baseIri" : "http://www.owl-ontologies.com/ns",
-      "comment" : {
-        "en" : "European country."
-      },
-      "labels" : {
-        "IRI-based" : "Germany",
-        "en" : "Germany"
-      }
-    } ],
-    "subClasses" : [ "22", "47", "23" ],
-    "comment" : {
-      "en" : "Superclass for all entities involved in the regulatory process"
-    },
-    "id" : "46"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#InjuryRisk",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "InjuryRisk",
-      "en" : "Injury Risk"
-    },
-    "comment" : {
-      "en" : "Risk of direct physical hurt to the patient."
-    },
-    "id" : "40",
-    "superClasses" : [ "7" ]
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#CorrectiveAction",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CorrectiveAction",
-      "en" : "Corrective Action"
-    },
-    "subClasses" : [ "52", "20", "53", "54" ],
-    "comment" : {
-      "en" : "Class for storing corrective action's information"
-    },
-    "id" : "1"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#Device",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Device",
-      "en" : "Device"
-    },
-    "subClasses" : [ "12", "4" ],
-    "comment" : {
-      "en" : "Class for storing device information"
-    },
-    "id" : "13"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "56",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "33",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "62",
-    "label" : {
-      "IRI-based" : "date"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "63",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "64",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#SafetyAlert",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SafetyAlert",
-      "en" : "Safety Alert"
-    },
-    "comment" : {
-      "en" : "Safety issue that requires specific actions but not necessarily a recall."
-    },
-    "id" : "53",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "45",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "65",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "8",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "61",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "66",
-    "label" : {
-      "IRI-based" : "date"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#Recall",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Recall",
-      "en" : "Recall"
-    },
-    "comment" : {
-      "en" : "A FSCA involving the return of a device to the supplier or its destruction/modification at the site."
-    },
-    "id" : "52",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "73",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "74",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "27",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "49",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "78",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#MedicalDevice",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MedicalDevice",
-      "en" : "Medical Device"
-    },
-    "subClasses" : [ "3", "9", "79", "80" ],
-    "comment" : {
-      "en" : "Device under MDR regulation"
-    },
-    "id" : "4",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "31",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "37",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#Incident",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Incident",
-      "en" : "Incident"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.owl-ontologies.com/ns#INC-001",
-      "baseIri" : "http://www.owl-ontologies.com/ns",
-      "comment" : {
-        "en" : "Serious incident reported for HeartMate 3"
-      },
-      "labels" : {
-        "IRI-based" : "INC-001",
-        "en" : "Incident 001"
-      }
-    } ],
-    "comment" : {
-      "en" : "Class for storing incidents"
-    },
-    "id" : "2"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "11",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "83",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#Patient",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Patient",
-      "en" : "Patient"
-    },
-    "comment" : {
-      "en" : "The end user or subject of a incident"
-    },
-    "id" : "47",
-    "superClasses" : [ "46" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "86",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "89",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "91",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#ClassIII",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#ClassIII",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
     "instances" : 0,
     "label" : {
       "IRI-based" : "ClassIII",
       "en" : "Class III"
     },
     "individuals" : [ {
-      "iri" : "http://www.owl-ontologies.com/ns#DEV-001",
-      "baseIri" : "http://www.owl-ontologies.com/ns",
+      "iri" : "https://w3id.org/medical-device-catalogPEC2#DEV-001",
+      "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
       "comment" : {
         "en" : "High-risk active implantable device"
       },
@@ -733,246 +397,115 @@
     "comment" : {
       "en" : "Class III."
     },
-    "id" : "79",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "77",
-    "label" : {
-      "IRI-based" : "date"
-    }
+    "id" : "7",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "94",
+    "id" : "14",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#InSituCorrection",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "InSituCorrection",
-      "en" : "In Situ Correction"
+      "IRI-based" : "IndividualPropertyAtom",
+      "en" : "SWRL Individual Property Atom"
     },
     "comment" : {
-      "en" : "A FSCA performed at the location where the medical device is in use."
+      "en" : "Represents a property atom between individuals in a SWRL rule."
     },
-    "id" : "54",
-    "superClasses" : [ "1" ]
+    "attributes" : [ "external" ],
+    "id" : "24"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "95",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "96",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "72",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "98",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#MalfunctionRisk",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MalfunctionRisk",
-      "en" : "Malfunction Risk"
-    },
-    "comment" : {
-      "en" : "Risk associated to a failure device."
-    },
-    "id" : "39",
-    "superClasses" : [ "7" ]
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#Manufacturer",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Manufacturer",
-      "en" : "Manufacturer"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.owl-ontologies.com/ns#MAN-001",
-      "baseIri" : "http://www.owl-ontologies.com/ns",
-      "comment" : {
-        "en" : "Manufacturer individual"
-      },
-      "labels" : {
-        "IRI-based" : "MAN-001",
-        "en" : "Medtronic plc"
-      }
-    } ],
-    "comment" : {
-      "en" : "Class for storing manufacture information"
-    },
-    "id" : "22",
-    "superClasses" : [ "46" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "129",
+    "id" : "25",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "59",
+    "id" : "26",
     "label" : {
       "IRI-based" : "date"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "144",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveAction",
+      "en" : "Corrective Action"
+    },
+    "subClasses" : [ "28", "29", "30", "31" ],
+    "comment" : {
+      "en" : "Class for storing corrective action's information"
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "82",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "121",
+    "id" : "38",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "142",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "139",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#ClassI",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ClassI",
-      "en" : "Class I"
-    },
-    "comment" : {
-      "en" : "Class I."
-    },
-    "id" : "80",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "105",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#ClassD",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ClassD",
-      "en" : "Class D"
-    },
-    "comment" : {
-      "en" : "Class D."
-    },
-    "id" : "14",
-    "superClasses" : [ "12" ]
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#ClassC",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ClassC",
-      "en" : "Class C"
-    },
-    "comment" : {
-      "en" : "Class C."
-    },
-    "id" : "15",
-    "superClasses" : [ "12" ]
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#ClassB",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ClassB",
-      "en" : "Class B"
-    },
-    "comment" : {
-      "en" : "Class B."
-    },
-    "id" : "16",
-    "superClasses" : [ "12" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "147",
-    "label" : {
-      "IRI-based" : "date"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#ClassA",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ClassA",
-      "en" : "Class A"
-    },
-    "comment" : {
-      "en" : "Class A."
-    },
-    "id" : "17",
-    "superClasses" : [ "12" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "93",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#CybersecurityRisk",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
     "instances" : 0,
     "label" : {
       "IRI-based" : "CybersecurityRisk",
       "en" : "Cybersecurity Risk"
     },
     "individuals" : [ {
-      "iri" : "http://www.owl-ontologies.com/ns#RSK-018",
-      "baseIri" : "http://www.owl-ontologies.com/ns",
+      "iri" : "https://w3id.org/medical-device-catalogPEC2#RSK-018",
+      "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
       "comment" : {
         "en" : "Vulnerability risk for digital devices"
       },
@@ -985,10 +518,537 @@
       "en" : "Risks related to software vulnerabilities in active medical devices."
     },
     "id" : "41",
-    "superClasses" : [ "7" ]
+    "superClasses" : [ "10" ]
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#CompetentAuthority",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#Recall",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recall",
+      "en" : "Recall"
+    },
+    "comment" : {
+      "en" : "A FSCA involving the return of a device to the supplier or its destruction/modification at the site."
+    },
+    "id" : "30",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/medical-device-catalogPEC2#MAN-001",
+      "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+      "comment" : {
+        "en" : "Manufacturer individual"
+      },
+      "labels" : {
+        "IRI-based" : "MAN-001",
+        "en" : "Medtronic plc"
+      }
+    } ],
+    "comment" : {
+      "en" : "Class for storing manufacture information"
+    },
+    "id" : "5",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#MedicalDevice",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalDevice",
+      "en" : "Medical Device"
+    },
+    "subClasses" : [ "7", "52", "53", "54" ],
+    "comment" : {
+      "en" : "Device under MDR regulation"
+    },
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#Device",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "en" : "Device"
+    },
+    "subClasses" : [ "63", "8" ],
+    "comment" : {
+      "en" : "Class for storing device information"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#Variable",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variable",
+      "en" : "SWRL Variable"
+    },
+    "comment" : {
+      "en" : "Represents a variable used within a SWRL rule."
+    },
+    "attributes" : [ "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#InjuryRisk",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InjuryRisk",
+      "en" : "Injury Risk"
+    },
+    "comment" : {
+      "en" : "Risk of direct physical hurt to the patient."
+    },
+    "id" : "82",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#Patient",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Patient",
+      "en" : "Patient"
+    },
+    "comment" : {
+      "en" : "The end user or subject of a incident"
+    },
+    "id" : "67",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#SafetyAlert",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SafetyAlert",
+      "en" : "Safety Alert"
+    },
+    "comment" : {
+      "en" : "Safety issue that requires specific actions but not necessarily a recall."
+    },
+    "id" : "31",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#InSituCorrection",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InSituCorrection",
+      "en" : "In Situ Correction"
+    },
+    "comment" : {
+      "en" : "A FSCA performed at the location where the medical device is in use."
+    },
+    "id" : "28",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#Risk",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk"
+    },
+    "subClasses" : [ "41", "106", "82", "107" ],
+    "comment" : {
+      "en" : "Class for storing risk information"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#ClassIIb",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassIIb",
+      "en" : "Class IIb"
+    },
+    "comment" : {
+      "en" : "Class IIb."
+    },
+    "id" : "52",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#Incident",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "en" : "Incident"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/medical-device-catalogPEC2#INC-001",
+      "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+      "comment" : {
+        "en" : "Serious incident reported for HeartMate 3"
+      },
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "en" : "Incident 001"
+      }
+    } ],
+    "comment" : {
+      "en" : "Class for storing incidents"
+    },
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#IVDDevice",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDDevice",
+      "en" : "In Vitro Diagnostic Device"
+    },
+    "subClasses" : [ "111", "112", "113", "114" ],
+    "comment" : {
+      "en" : "Device under IVDR regulation"
+    },
+    "id" : "63",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#ClassIIa",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassIIa",
+      "en" : "Class IIa"
+    },
+    "comment" : {
+      "en" : "Class IIa."
+    },
+    "id" : "53",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#ClassAtom",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassAtom",
+      "en" : "SWRL Class Atom"
+    },
+    "comment" : {
+      "en" : "Represents a class atom in a SWRL rule."
+    },
+    "attributes" : [ "external" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "139",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#MalfunctionRisk",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "en" : "Malfunction Risk"
+    },
+    "comment" : {
+      "en" : "Risk associated to a failure device."
+    },
+    "id" : "107",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DatavaluedPropertyAtom",
+      "en" : "SWRL Datavalued Property Atom"
+    },
+    "comment" : {
+      "en" : "Represents a property atom between an individual and a data value in a SWRL rule."
+    },
+    "attributes" : [ "external" ],
+    "id" : "143"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#Participant",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Participant",
+      "en" : "Participant"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/medical-device-catalogPEC2#Germany",
+      "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+      "comment" : {
+        "en" : "European country."
+      },
+      "labels" : {
+        "IRI-based" : "Germany",
+        "en" : "Germany"
+      }
+    } ],
+    "subClasses" : [ "69", "5", "67" ],
+    "comment" : {
+      "en" : "Superclass for all entities involved in the regulatory process"
+    },
+    "id" : "40"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "147",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#CompetentAuthority",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
     "instances" : 0,
     "label" : {
       "IRI-based" : "CompetentAuthority",
@@ -997,11 +1057,102 @@
     "comment" : {
       "en" : "Responsible for regulation"
     },
-    "id" : "23",
-    "superClasses" : [ "46" ]
+    "id" : "69",
+    "superClasses" : [ "40" ]
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#InfectionRisk",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#ClassA",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassA",
+      "en" : "Class A"
+    },
+    "comment" : {
+      "en" : "Class A."
+    },
+    "id" : "111",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#ClassC",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassC",
+      "en" : "Class C"
+    },
+    "comment" : {
+      "en" : "Class C."
+    },
+    "id" : "112",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#ClassB",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassB",
+      "en" : "Class B"
+    },
+    "comment" : {
+      "en" : "Class B."
+    },
+    "id" : "113",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#ClassD",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassD",
+      "en" : "Class D"
+    },
+    "comment" : {
+      "en" : "Class D."
+    },
+    "id" : "114",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#ClassI",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassI",
+      "en" : "Class I"
+    },
+    "comment" : {
+      "en" : "Class I."
+    },
+    "id" : "54",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#UserNotice",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserNotice",
+      "en" : "User Notice"
+    },
+    "comment" : {
+      "en" : "An advisory notice issued by a manufacturer to provide information on the safe use for a medical device."
+    },
+    "id" : "29",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#AtomList",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AtomList",
+      "en" : "SWRL Atom List"
+    },
+    "comment" : {
+      "en" : "Represents a list of atoms in a SWRL rule."
+    },
+    "attributes" : [ "external" ],
+    "id" : "171"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#InfectionRisk",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
     "instances" : 0,
     "label" : {
       "IRI-based" : "InfectionRisk",
@@ -1010,26 +1161,42 @@
     "comment" : {
       "en" : "Risk of device-related infections"
     },
-    "id" : "42",
-    "superClasses" : [ "7" ]
+    "id" : "106",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#Imp",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Imp",
+      "en" : "SWRL Rule"
+    },
+    "comment" : {
+      "en" : "Represents a SWRL implication or rule."
+    },
+    "attributes" : [ "external" ],
+    "id" : "175"
   } ],
   "property" : [ {
     "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "6",
+    "id" : "11",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "10",
+    "id" : "15",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "21",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "26",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "30",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "32",
@@ -1038,16 +1205,25 @@
     "id" : "36",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "44",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "48",
+    "id" : "46",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "50",
+    "id" : "48",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "51",
+    "id" : "50",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "55",
@@ -1056,43 +1232,49 @@
     "id" : "57",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "58",
+    "id" : "59",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "60",
+    "id" : "64",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "67",
-    "type" : "owl:datatypeProperty"
+    "id" : "66",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "68",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "69",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "70",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "71",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "72",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "73",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "75",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "76",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "81",
-    "type" : "owl:datatypeProperty"
+    "id" : "77",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "84",
+    "id" : "83",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "85",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "87",
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
     "type" : "owl:objectProperty"
   }, {
     "id" : "88",
@@ -1102,103 +1284,73 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "97",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "99",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "100",
+    "id" : "95",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "101",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "102",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "103",
+    "id" : "104",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "104",
-    "type" : "owl:datatypeProperty"
+    "id" : "105",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "106",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "107",
-    "type" : "rdfs:SubClassOf"
+    "id" : "78",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "108",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "109",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "110",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "111",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "112",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "113",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "114",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "115",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "116",
+    "id" : "93",
     "type" : "owl:objectProperty"
   }, {
     "id" : "117",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "118",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "119",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "120",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "122",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "123",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "124",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "125",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "126",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "127",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "129",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "130",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "131",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "132",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "133",
     "type" : "rdfs:SubClassOf"
@@ -1207,7 +1359,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "135",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "136",
     "type" : "rdfs:SubClassOf"
@@ -1216,15 +1368,15 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "138",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "140",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "141",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "143",
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "144",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "145",
@@ -1243,891 +1395,1181 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "151",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://www.owl-ontologies.com/ns#addressesIncident",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#isImplantable",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
     "range" : "2",
     "label" : {
-      "IRI-based" : "addressesIncident",
-      "en" : "addresses incident"
+      "IRI-based" : "isImplantable",
+      "en" : "is implantable"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "Links a corrective action with its incident"
+      "en" : "Boolean if the device is implantable or not"
     },
-    "attributes" : [ "object" ],
+    "attributes" : [ "datatype" ],
     "id" : "0"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#description",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "8",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#contactEmail",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "contactEmail",
+      "en" : "contact email"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Email of contact"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#affectedDevice",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "affectedDevice",
+      "en" : "affected device type"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Links a risk with the device"
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#actionDate",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "actionDate",
+      "en" : "action date"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Date of the action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#highPriority",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "highPriority",
+      "en" : "High Priority"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "High priority property."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#hasReported",
+    "inverse" : "20",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasReported",
+      "en" : "has reported"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Inverse of reportedBy. Links a manufacturer to the incidents they have reported."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#patientAge",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "patientAge",
+      "en" : "patient age"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Age of the patient"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#riskType",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "riskType",
+      "en" : "risk type"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Type of the risk"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#eudamedFscaRef",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "eudamedFscaRef",
+      "en" : "eudamed fsca ref"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Referenci of the eumed fsca"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#country",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "country",
+      "en" : "country"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "Name of the country"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#competentAuthority",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "competentAuthority",
+      "en" : "competent authority"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Authority that certified the manufacturer"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#description",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "27",
     "label" : {
       "IRI-based" : "description",
       "en" : "description",
       "undefined" : "device"
     },
-    "domain" : "7",
+    "domain" : "10",
     "comment" : {
       "en" : "Description"
     },
     "attributes" : [ "datatype" ],
-    "id" : "6"
+    "id" : "43"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#riskId",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "11",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#riskId",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "45",
     "label" : {
       "IRI-based" : "riskId",
-      "en" : "risk_id"
+      "en" : "risk id"
     },
-    "domain" : "7",
+    "domain" : "10",
     "comment" : {
       "en" : "Risk identificator"
     },
     "attributes" : [ "datatype" ],
-    "id" : "10"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#isSupervisedBy",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "isSupervisedBy",
-      "en" : "is supervised by"
-    },
-    "domain" : "22",
-    "attributes" : [ "object" ],
-    "id" : "21"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#highPriority",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "highPriority",
-      "en" : "High Priority"
-    },
-    "domain" : "27",
-    "comment" : {
-      "en" : "High priority property."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "26"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#severity",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "31",
-    "label" : {
-      "IRI-based" : "severity",
-      "en" : "severity"
-    },
-    "domain" : "7",
-    "comment" : {
-      "en" : "Severity of the risk"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "30"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#eudamedIncident_ref",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "33",
-    "label" : {
-      "IRI-based" : "eudamedIncident_ref",
-      "en" : "eudamed_incident_ref"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Reference of the incident in the eudamed"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "32"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#scope",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "37",
-    "label" : {
-      "IRI-based" : "scope",
-      "en" : "scope"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Scope of action "
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "36"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#eudamedFsca_ref",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "45",
-    "label" : {
-      "IRI-based" : "eudamedFsca_ref",
-      "en" : "eudamed_fsca_ref"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Referenci of the eumed fsca"
-    },
-    "attributes" : [ "datatype" ],
     "id" : "44"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#riskType",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "49",
-    "label" : {
-      "IRI-based" : "riskType",
-      "en" : "risk_type"
-    },
-    "domain" : "7",
-    "comment" : {
-      "en" : "Type of the risk"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "48"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#affectedDevice",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "affectedDevice",
-      "en" : "affected device type"
-    },
-    "domain" : "7",
-    "comment" : {
-      "en" : "Links a risk with the device"
-    },
-    "attributes" : [ "object" ],
-    "id" : "50"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#imdrfCode",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "43",
-    "label" : {
-      "IRI-based" : "imdrfCode",
-      "en" : "imdrf_code"
-    },
-    "domain" : "7",
-    "comment" : {
-      "en" : "IMDRF code"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "51"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#eudomedSrn",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "56",
-    "label" : {
-      "IRI-based" : "eudomedSrn",
-      "en" : "eudomed_srn"
-    },
-    "domain" : "22",
-    "comment" : {
-      "en" : "Eudomed srn"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "55"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#intendedPurpose",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "24",
-    "label" : {
-      "IRI-based" : "intendedPurpose",
-      "en" : "intended_purpose"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Purpose of the intended"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "57"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#closureDate",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "59",
-    "label" : {
-      "IRI-based" : "closureDate",
-      "en" : "closure_date"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Date of closure"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "58"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#deviceId",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "61",
-    "label" : {
-      "IRI-based" : "deviceId",
-      "en" : "device_id"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Id of the device"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "60"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#incidentType",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "25",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#incidentType",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "47",
     "label" : {
       "IRI-based" : "incidentType",
-      "en" : "incident_type"
+      "en" : "incident type"
     },
-    "domain" : "2",
+    "domain" : "16",
     "comment" : {
       "en" : "Type of the incident"
     },
     "attributes" : [ "datatype" ],
-    "id" : "67"
+    "id" : "46"
   }, {
-    "range" : "12",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#isUsedInIncident",
+    "inverse" : "49",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "isUsedInIncident",
+      "en" : "is used in incident"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Inverse of involvesDevice. Links a device to the incidents it was involved in."
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#intendedPurpose",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "intendedPurpose",
+      "en" : "intended purpose"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Purpose of the intended"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#riskCategory",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "riskCategory",
+      "en" : "risk category"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Category of the risk"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#eventDate",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "eventDate",
+      "en" : "event date"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Date of the event"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#detectionDate",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "detectionDate",
+      "en" : "detection date"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "The date that the incident was detected "
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#eudomedSrn",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "eudomedSrn",
+      "en" : "eudomed srn"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "The Single Registration Number assigned to the manufacturer in the EUDAMED"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "range" : "67",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "67",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "68"
   }, {
-    "range" : "12",
-    "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "69"
-  }, {
-    "range" : "12",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "8",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "70"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#patientAge",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "72",
-    "label" : {
-      "IRI-based" : "patientAge",
-      "en" : "patient_age"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Age of the patient"
-    },
-    "attributes" : [ "datatype" ],
+    "range" : "52",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "71"
   }, {
-    "range" : "12",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "75"
+    "range" : "5",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#reportDate",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "77",
-    "label" : {
-      "IRI-based" : "reportDate",
-      "en" : "report_date"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Date when the incident was reported"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "76"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#contactEmail",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "82",
-    "label" : {
-      "IRI-based" : "contactEmail",
-      "en" : "contact_email"
-    },
-    "domain" : "22",
-    "comment" : {
-      "en" : "Email of contact"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "81"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#isCritical",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "29",
-    "label" : {
-      "IRI-based" : "isCritical",
-      "en" : "Is Critical"
-    },
-    "domain" : "27",
-    "comment" : {
-      "en" : "Is critical property"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "84"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#associatedRisk",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "associatedRisk",
-      "en" : "associated risk"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Links an incident with its risk"
-    },
-    "attributes" : [ "object" ],
-    "id" : "85"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#hasManufacturer",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "22",
-    "label" : {
-      "IRI-based" : "hasManufacturer",
-      "en" : "has manufacturer"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Links a device to its manufacturer"
-    },
-    "attributes" : [ "object" ],
-    "id" : "87"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#incidentId",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#correctiveActionTaken",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
     "range" : "38",
     "label" : {
-      "IRI-based" : "incidentId",
-      "en" : "incident_id"
+      "IRI-based" : "correctiveActionTaken",
+      "en" : "corrective action taken"
     },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Incident identificator"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "88"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#riskName",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "78",
-    "label" : {
-      "IRI-based" : "riskName",
-      "en" : "risk_name"
-    },
-    "domain" : "7",
-    "comment" : {
-      "en" : "Name of the risk"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "90"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#actionType",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "93",
-    "label" : {
-      "IRI-based" : "actionType",
-      "en" : "action_type"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Type of action"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "92"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#fscaId",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "35",
-    "label" : {
-      "IRI-based" : "fscaId",
-      "en" : "fsca_id"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Id of the FSCA"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "97"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#regulatoryFramework",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "94",
-    "label" : {
-      "IRI-based" : "regulatoryFramework",
-      "en" : "regulatory_framework"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Regulatory framework"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "99"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#outcome",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "98",
-    "label" : {
-      "IRI-based" : "outcome",
-      "en" : "outcome"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Outcome of the incident"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "100"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#udiDi",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "73",
-    "label" : {
-      "IRI-based" : "udiDi",
-      "en" : "udi_di"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "UDI"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "101"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#isIvd",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "isIvd",
-      "en" : "is_ivd"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Boolean if the device is ivd or not"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "102"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#affectsPatient",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "affectsPatient",
-      "en" : "affects patient"
-    },
-    "domain" : "2",
-    "attributes" : [ "object" ],
-    "id" : "103"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#countryReported",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "105",
-    "label" : {
-      "IRI-based" : "countryReported",
-      "en" : "country_reported"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Name of the country that reported the incident"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "104"
-  }, {
-    "range" : "4",
-    "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "106"
-  }, {
-    "range" : "4",
-    "domain" : "79",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "107"
-  }, {
-    "range" : "13",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "108"
-  }, {
-    "range" : "13",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "109"
-  }, {
-    "range" : "4",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "110"
-  }, {
-    "range" : "4",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "111"
-  }, {
-    "range" : "1",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "112"
-  }, {
-    "range" : "1",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "113"
-  }, {
-    "range" : "1",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "114"
-  }, {
-    "range" : "1",
-    "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "115"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#reportedBy",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "22",
-    "label" : {
-      "IRI-based" : "reportedBy",
-      "en" : "reported by"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Links an incident with its manufacturer"
-    },
-    "attributes" : [ "object" ],
-    "id" : "116"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#status",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "74",
-    "label" : {
-      "IRI-based" : "status",
-      "en" : "status"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Information about the status of the corrective action"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "117"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#deviceType",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "63",
-    "label" : {
-      "IRI-based" : "deviceType",
-      "en" : "device_type"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Type of the device"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "118"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#riskClass",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "83",
-    "label" : {
-      "IRI-based" : "riskClass",
-      "en" : "risk_class"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Class of the risk"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "119"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#correctiveAction_taken",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "121",
-    "label" : {
-      "IRI-based" : "correctiveAction_taken",
-      "en" : "corrective_action_taken"
-    },
-    "domain" : "2",
+    "domain" : "16",
     "comment" : {
       "en" : "Corrective action taken for the incident"
     },
     "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "range" : "52",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#severity",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "severity",
+      "en" : "severity"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Severity of the risk"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#supervises",
+    "inverse" : "78",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "supervises",
+      "en" : "supervises"
+    },
+    "domain" : "69",
+    "comment" : {
+      "en" : "Inverse of isSupervisedBy. Links a competent authority to the manufacturers it oversees."
+    },
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#isCritical",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "isCritical",
+      "en" : "Is Critical"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Is critical property"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#closureDate",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "closureDate",
+      "en" : "closure date"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Date of closure"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#fscaId",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "fscaId",
+      "en" : "fsca id"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Id of the FSCA"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#involvesDevice",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "involvesDevice",
+      "en" : "involves device"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Links an incident with its device"
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#scope",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "scope",
+      "en" : "scope"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Scope of action "
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#reportDate",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "reportDate",
+      "en" : "report date"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Date when the incident was reported"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident",
+    "inverse" : "93",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "isAffectedByIncident",
+      "en" : "is affected by incident"
+    },
+    "domain" : "67",
+    "comment" : {
+      "en" : "Inverse of affectsPatient. Links a patient to the incidents that have affected them."
+    },
+    "attributes" : [ "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#deviceId",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "deviceId",
+      "en" : "device id"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Id of the device"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#isActive",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "isActive",
+      "en" : "is active"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Boolean if the device is active or not"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#imdrfCode",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "imdrfCode",
+      "en" : "imdrf code"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Standardized adverse event terminology code"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#hasRisk",
+    "inverse" : "9",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasRisk",
+      "en" : "has risk"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Inverse of affectedDevice. Links a medical device to the risks associated with it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#associatedRisk",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "associatedRisk",
+      "en" : "associated risk"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Links an incident with its risk"
+    },
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#isSupervisedBy",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "isSupervisedBy",
+      "en" : "is supervised by"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Links a manufacturer to the national competent authority responsible for its regulatory oversight."
+    },
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#riskName",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "riskName",
+      "en" : "risk name"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Name of the risk"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#affectsPatient",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "affectsPatient",
+      "en" : "affects patient"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Relates a reported incident to the specific patient affected by the event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "range" : "1",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#isRiskOf",
+    "inverse" : "105",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "isRiskOf",
+      "en" : "is risk of"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Inverse of associatedRisk. Links a risk to the incident it is associated with."
+    },
+    "attributes" : [ "object" ],
+    "id" : "118"
+  }, {
+    "range" : "8",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#deviceType",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "deviceType",
+      "en" : "device type"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Type of the device"
+    },
+    "attributes" : [ "datatype" ],
     "id" : "120"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#probability",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "89",
+    "range" : "10",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#probability",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "79",
     "label" : {
       "IRI-based" : "probability",
       "en" : "probability"
     },
-    "domain" : "7",
+    "domain" : "10",
     "comment" : {
       "en" : "Probability of the risk"
     },
     "attributes" : [ "datatype" ],
     "id" : "122"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#devicesAffected",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "65",
-    "label" : {
-      "IRI-based" : "devicesAffected",
-      "en" : "devices_affected"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Devices affected by the corrective action"
-    },
-    "attributes" : [ "datatype" ],
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "123"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#name",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "95",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#incidentId",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "110",
     "label" : {
-      "IRI-based" : "name",
-      "en" : "name"
+      "IRI-based" : "incidentId",
+      "en" : "incident id"
     },
-    "domain" : "22",
+    "domain" : "16",
     "comment" : {
-      "en" : "Name of the manufacturer"
+      "en" : "Incident identificator"
     },
     "attributes" : [ "datatype" ],
     "id" : "124"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#isReusable",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "isReusable",
-      "en" : "is_reusable"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Boolean if the device is reusable or not"
-    },
-    "attributes" : [ "datatype" ],
+    "range" : "8",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "125"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#isActive",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "34",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#hasManufacturer",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "5",
     "label" : {
-      "IRI-based" : "isActive",
-      "en" : "is_active"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Boolean if the device is active or not"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "126"
-  }, {
-    "range" : "46",
-    "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "127"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#authorizationNumber",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "129",
-    "label" : {
-      "IRI-based" : "authorizationNumber",
-      "en" : "authorization_number"
-    },
-    "domain" : "22",
-    "comment" : {
-      "en" : "Number of the authorization"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "128"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#detectionDate",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "66",
-    "label" : {
-      "IRI-based" : "detectionDate",
-      "en" : "detection_date"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "The date that the incident was detected "
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "130"
-  }, {
-    "range" : "46",
-    "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "131"
-  }, {
-    "range" : "46",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "132"
-  }, {
-    "range" : "7",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "133"
-  }, {
-    "range" : "7",
-    "domain" : "39",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "134"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#involvesDevice",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "involvesDevice",
-      "en" : "involves device"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Links an incident with its device"
-    },
-    "attributes" : [ "object" ],
-    "id" : "135"
-  }, {
-    "range" : "7",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "136"
-  }, {
-    "range" : "7",
-    "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "137"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#country",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "139",
-    "label" : {
-      "IRI-based" : "country",
-      "en" : "country"
-    },
-    "domain" : "22",
-    "comment" : {
-      "en" : "Name of the country"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "138"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#riskCategory",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "86",
-    "label" : {
-      "IRI-based" : "riskCategory",
-      "en" : "risk_category"
-    },
-    "domain" : "7",
-    "comment" : {
-      "en" : "Category of the risk"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "140"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#countriesAffected",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "142",
-    "label" : {
-      "IRI-based" : "countriesAffected",
-      "en" : "countries_affected"
+      "IRI-based" : "hasManufacturer",
+      "en" : "has manufacturer"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "Countries affected by the corrective actions"
+      "en" : "Links a device to its manufacturer"
     },
-    "attributes" : [ "datatype" ],
-    "id" : "141"
+    "attributes" : [ "object" ],
+    "id" : "126"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#eventDate",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "62",
-    "label" : {
-      "IRI-based" : "eventDate",
-      "en" : "event_date"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Date of the event"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "143"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#competentAuthority",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "144",
-    "label" : {
-      "IRI-based" : "competentAuthority",
-      "en" : "competent_authority"
-    },
-    "domain" : "22",
-    "comment" : {
-      "en" : "Authority that certified the manufacturer"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "145"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#patientSex",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "91",
-    "label" : {
-      "IRI-based" : "patientSex",
-      "en" : "patient_sex"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Sex of the pationt"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "146"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#deviceName",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "64",
-    "label" : {
-      "IRI-based" : "deviceName",
-      "en" : "device_name"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Name of the device"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "148"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#isImplantable",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : "isImplantable",
-      "en" : "is_implantable"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Boolean if the device is implantable or not"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "149"
-  }, {
-    "iri" : "http://www.owl-ontologies.com/ns#manufacturerId",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "96",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#manufacturerId",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "97",
     "label" : {
       "IRI-based" : "manufacturerId",
-      "en" : "manufacturer_id"
+      "en" : "manufacturer id"
     },
-    "domain" : "22",
+    "domain" : "5",
     "comment" : {
       "en" : "Manufacturer identificator"
     },
     "attributes" : [ "datatype" ],
-    "id" : "150"
+    "id" : "128"
   }, {
-    "iri" : "http://www.owl-ontologies.com/ns#actionDate",
-    "baseIri" : "http://www.owl-ontologies.com/ns",
-    "range" : "147",
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#authorizationNumber",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "60",
     "label" : {
-      "IRI-based" : "actionDate",
-      "en" : "action_date"
+      "IRI-based" : "authorizationNumber",
+      "en" : "authorization number"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Number of the authorization"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#riskClass",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "riskClass",
+      "en" : "risk class"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "Date of the action"
+      "en" : "Class of the risk"
     },
     "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#actionType",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "actionType",
+      "en" : "action type"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Type of action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "range" : "8",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "12",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "12",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "12",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "12",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#countryReported",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "countryReported",
+      "en" : "country reported"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Name of the country that reported the incident"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#isReusable",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "isReusable",
+      "en" : "is reusable"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Boolean if the device is reusable or not"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#isIvd",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "isIvd",
+      "en" : "is ivd"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Boolean if the device is ivd or not"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#name",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "Name of the manufacturer"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "145"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#status",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "140",
+    "label" : {
+      "IRI-based" : "status",
+      "en" : "status"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Information about the status of the corrective action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "146"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#devicesAffected",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "devicesAffected",
+      "en" : "devices affected"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Devices affected by the corrective action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "148"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#regulatoryFramework",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "147",
+    "label" : {
+      "IRI-based" : "regulatoryFramework",
+      "en" : "regulatory framework"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Legal framework for the device"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#patientSex",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "patientSex",
+      "en" : "patient sex"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Sex of the pationt"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "150"
+  }, {
+    "range" : "114",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "151"
+  }, {
+    "range" : "112",
+    "domain" : "113",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#reportedBy",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "reportedBy",
+      "en" : "reported by"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Links an incident with its manufacturer"
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "range" : "114",
+    "domain" : "113",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "114",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "7",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "range" : "53",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "52",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "53",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#eudamedIncidentRef",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "eudamedIncidentRef",
+      "en" : "eudamed incident ref"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Reference of the incident in the eudamed"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "159"
+  }, {
+    "range" : "113",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "112",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#addressesIncident",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "addressesIncident",
+      "en" : "addresses incident"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Links a corrective action with its incident"
+    },
+    "attributes" : [ "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#outcome",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "outcome",
+      "en" : "outcome"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Outcome of the incident"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "163"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#isAddressedBy",
+    "inverse" : "162",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isAddressedBy",
+      "en" : "is addressed by"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Inverse of addressesIncident. Links an incident to the corrective action taken."
+    },
+    "attributes" : [ "object" ],
+    "id" : "164"
+  }, {
+    "range" : "40",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#udiDi",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "udiDi",
+      "en" : "udi di"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Device Identifier"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "166"
+  }, {
+    "range" : "40",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "40",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "63",
+    "domain" : "114",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "63",
+    "domain" : "113",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#manufactures",
+    "inverse" : "126",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "manufactures",
+      "en" : "manufactures"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Inverse of hasManufacturer. Links a manufacturer to the devices it produces."
+    },
+    "attributes" : [ "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#countriesAffected",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "countriesAffected",
+      "en" : "countries affected"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Countries affected by the corrective actions"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "173"
+  }, {
+    "iri" : "https://w3id.org/medical-device-catalogPEC2#deviceName",
+    "baseIri" : "https://w3id.org/medical-device-catalogPEC2",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "deviceName",
+      "en" : "device name"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Name of the device"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "174"
+  }, {
+    "range" : "63",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "10",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "10",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "range" : "63",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  }, {
+    "range" : "10",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
   } ]
 }

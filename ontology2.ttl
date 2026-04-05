@@ -1,5 +1,8 @@
-@prefix : <http://www.owl-ontologies.com/ns#> .
-@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix : <https://w3id.org/medical-device-catalogPEC2#> .
+@prefix ns: <https://w3id.org/medical-device-catalogPEC2#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +11,34 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://www.owl-ontologies.com/ns#> .
+@base <https://w3id.org/medical-device-catalog#> .
 
-<http://www.owl-ontologies.com/ns#> rdf:type owl:Ontology ;
+<https://w3id.org/medical-device-catalogPEC2#> rdf:type owl:Ontology ;
+    owl:versionIRI <https://w3id.org/medical-device-catalogPEC2/1.0.0#> ;
+
+    dcterms:identifier "https://doi.org/10.5281/zenodo.1000001" ; 
+    dcterms:publisher <https://github.com/joregueiro> ; 
+    foaf:logo <https://joregueiro.github.io/OntologyPEC2/logo.png> ;
+
+    mod:status "Stable" ; 
+    dcterms:source <https://github.com/joregueiro/OntologyPEC2> ;
+
+    dcterms:issued "2026-04-05"^^xsd:date ;
+
+    dcterms:modified "2026-04-05"^^xsd:date ;
+    owl:backwardCompatibleWith <https://w3id.org/medical-device-catalog/0.9.0#> ;
+
+    vann:preferredNamespaceUri "https://w3id.org/medical-device-catalogPEC2#" ;
+    vann:preferredNamespacePrefix "ns" ; 
+    dcterms:created "2026-04-03"^^xsd:date ;
+    dcterms:bibliographicCitation "Regueiro Janeiro, J. A. (2026). European Medical Device Catalog Ontology (MDR/IVDR). Version 1.0." ;
+    
     dc:title "European Medical Device Catalog Ontology (MDR/IVDR)"@en ;
     dcterms:abstract "Comprehensive semantic model for the European catalog of medical devices under the MDR and IVDR regulations."@en ;
     dcterms:description "This ontology represents the European catalog of high-risk medical devices, including manufacturers, incidents, and corrective actions."@en ;
     dcterms:creator "Jose Angel Regueiro Janeiro" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    
     owl:versionInfo "1.0" ;
     rdfs:comment "Ontology for the European catalog of medical devices (MDR/IVDR)."@en ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
@@ -26,6 +50,35 @@
 ###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
 
+<http://www.w3.org/2003/11/swrl#Imp> rdf:type owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "SWRL Rule"@en ;
+    rdfs:comment "Represents a SWRL implication or rule."@en .
+
+<http://www.w3.org/2003/11/swrl#Variable> rdf:type owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "SWRL Variable"@en ;
+    rdfs:comment "Represents a variable used within a SWRL rule."@en .
+
+<http://www.w3.org/2003/11/swrl#AtomList> rdf:type owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "SWRL Atom List"@en ;
+    rdfs:comment "Represents a list of atoms in a SWRL rule."@en .
+
+<http://www.w3.org/2003/11/swrl#ClassAtom> rdf:type owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "SWRL Class Atom"@en ;
+    rdfs:comment "Represents a class atom in a SWRL rule."@en .
+
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> rdf:type owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "SWRL Individual Property Atom"@en ;
+    rdfs:comment "Represents a property atom between individuals in a SWRL rule."@en .
+
+<http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> rdf:type owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:label "SWRL Datavalued Property Atom"@en ;
+    rdfs:comment "Represents a property atom between an individual and a data value in a SWRL rule."@en .
 
 ###  https://w3id.org/mod#createdWith
 mod:createdWith rdf:type owl:AnnotationProperty .
@@ -50,6 +103,12 @@ ns:addressesIncident rdf:type owl:ObjectProperty ;
                      rdfs:comment "Links a corrective action with its incident"@en ;
                      rdfs:label "addresses incident"@en .
 
+ns:isAddressedBy rdf:type owl:ObjectProperty ;
+                 owl:inverseOf ns:addressesIncident ;
+                 rdfs:domain ns:Incident ; 
+                 rdfs:range ns:CorrectiveAction ;
+                 rdfs:label "is addressed by"@en ;
+                 rdfs:comment "Inverse of addressesIncident. Links an incident to the corrective action taken."@en .
 
 ###  http://www.owl-ontologies.com/ns#affectedDevice
 ns:affectedDevice rdf:type owl:ObjectProperty ;
@@ -58,13 +117,26 @@ ns:affectedDevice rdf:type owl:ObjectProperty ;
                   rdfs:comment "Links a risk with the device"@en ;
                   rdfs:label "affected device type"@en .
 
+ns:hasRisk rdf:type owl:ObjectProperty ;
+           owl:inverseOf ns:affectedDevice ;
+           rdfs:domain ns:Device ;
+           rdfs:range ns:Risk ;
+           rdfs:label "has risk"@en ;
+           rdfs:comment "Inverse of affectedDevice. Links a medical device to the risks associated with it."@en .
 
 ###  http://www.owl-ontologies.com/ns#affectsPatient
 ns:affectsPatient rdf:type owl:ObjectProperty ;
                   rdfs:domain ns:Incident ;
                   rdfs:range ns:Patient ;
-                  rdfs:label "affects patient"@en .
+                  rdfs:label "affects patient"@en ;
+                  rdfs:comment "Relates a reported incident to the specific patient affected by the event."@en .
 
+ns:isAffectedByIncident rdf:type owl:ObjectProperty ;
+                        owl:inverseOf ns:affectsPatient ;
+                        rdfs:domain ns:Patient ;
+                        rdfs:range ns:Incident ;
+                        rdfs:label "is affected by incident"@en ;
+                        rdfs:comment "Inverse of affectsPatient. Links a patient to the incidents that have affected them."@en .
 
 ###  http://www.owl-ontologies.com/ns#associatedRisk
 ns:associatedRisk rdf:type owl:ObjectProperty ;
@@ -73,6 +145,12 @@ ns:associatedRisk rdf:type owl:ObjectProperty ;
                   rdfs:comment "Links an incident with its risk"@en ;
                   rdfs:label "associated risk"@en .
 
+ns:isRiskOf rdf:type owl:ObjectProperty ;
+            owl:inverseOf ns:associatedRisk ;
+            rdfs:domain ns:Risk ;
+            rdfs:range ns:Incident ;
+            rdfs:label "is risk of"@en ;
+            rdfs:comment "Inverse of associatedRisk. Links a risk to the incident it is associated with."@en .
 
 ###  http://www.owl-ontologies.com/ns#hasManufacturer
 ns:hasManufacturer rdf:type owl:ObjectProperty ;
@@ -81,6 +159,12 @@ ns:hasManufacturer rdf:type owl:ObjectProperty ;
                    rdfs:comment "Links a device to its manufacturer"@en ;
                    rdfs:label "has manufacturer"@en .
 
+ns:manufactures rdf:type owl:ObjectProperty ;
+                owl:inverseOf ns:hasManufacturer ;
+                rdfs:domain ns:Manufacturer ;  
+                rdfs:range ns:Device ;
+                rdfs:label "manufactures"@en ;
+                rdfs:comment "Inverse of hasManufacturer. Links a manufacturer to the devices it produces."@en .
 
 ###  http://www.owl-ontologies.com/ns#involvesDevice
 ns:involvesDevice rdf:type owl:ObjectProperty ;
@@ -89,13 +173,26 @@ ns:involvesDevice rdf:type owl:ObjectProperty ;
                   rdfs:comment "Links an incident with its device"@en ;
                   rdfs:label "involves device"@en .
 
+ns:isUsedInIncident rdf:type owl:ObjectProperty ;
+                    owl:inverseOf ns:involvesDevice ;
+                    rdfs:domain ns:Device ;  
+                    rdfs:range ns:Incident ;
+                    rdfs:label "is used in incident"@en ;
+                    rdfs:comment "Inverse of involvesDevice. Links a device to the incidents it was involved in."@en .
 
 ###  http://www.owl-ontologies.com/ns#isSupervisedBy
 ns:isSupervisedBy rdf:type owl:ObjectProperty ;
                   rdfs:domain ns:Manufacturer ;
                   rdfs:range ns:CompetentAuthority ;
-                  rdfs:label "is supervised by"@en .
+                  rdfs:label "is supervised by"@en ;
+                  rdfs:comment "Links a manufacturer to the national competent authority responsible for its regulatory oversight."@en .
 
+ns:supervises rdf:type owl:ObjectProperty ;
+              owl:inverseOf ns:isSupervisedBy ;
+              rdfs:domain ns:CompetentAuthority ;
+              rdfs:range ns:Manufacturer ;
+              rdfs:label "supervises"@en ;
+              rdfs:comment "Inverse of isSupervisedBy. Links a competent authority to the manufacturers it oversees."@en .
 
 ###  http://www.owl-ontologies.com/ns#reportedBy
 ns:reportedBy rdf:type owl:ObjectProperty ;
@@ -103,6 +200,14 @@ ns:reportedBy rdf:type owl:ObjectProperty ;
               rdfs:range ns:Manufacturer ;
               rdfs:comment "Links an incident with its manufacturer"@en ;
               rdfs:label "reported by"@en .
+
+ns:hasReported rdf:type owl:ObjectProperty ;
+               owl:inverseOf ns:reportedBy ;
+               rdfs:domain ns:Manufacturer ; 
+               rdfs:range ns:Incident ;
+               rdfs:label "has reported"@en ;
+               rdfs:comment "Inverse of reportedBy. Links a manufacturer to the incidents they have reported."@en .
+
 
 
 #################################################################
@@ -114,7 +219,7 @@ ns:actionDate rdf:type owl:DatatypeProperty ;
               rdfs:domain ns:CorrectiveAction ;
               rdfs:range xsd:date ;
               rdfs:comment "Date of the action"@en ;
-              rdfs:label "action_date"@en .
+              rdfs:label "action date"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#actionType
@@ -122,7 +227,7 @@ ns:actionType rdf:type owl:DatatypeProperty ;
               rdfs:domain ns:CorrectiveAction ;
               rdfs:range xsd:string ;
               rdfs:comment "Type of action"@en ;
-              rdfs:label "action_type"@en .
+              rdfs:label "action type"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#authorizationNumber
@@ -130,7 +235,7 @@ ns:authorizationNumber rdf:type owl:DatatypeProperty ;
                        rdfs:domain ns:Manufacturer ;
                        rdfs:range xsd:string ;
                        rdfs:comment "Number of the authorization"@en ;
-                       rdfs:label "authorization_number"@en .
+                       rdfs:label "authorization number"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#closureDate
@@ -138,7 +243,7 @@ ns:closureDate rdf:type owl:DatatypeProperty ;
                rdfs:domain ns:CorrectiveAction ;
                rdfs:range xsd:date ;
                rdfs:comment "Date of closure"@en ;
-               rdfs:label "closure_date"@en .
+               rdfs:label "closure date"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#competentAuthority
@@ -146,7 +251,7 @@ ns:competentAuthority rdf:type owl:DatatypeProperty ;
                       rdfs:domain ns:Manufacturer ;
                       rdfs:range xsd:string ;
                       rdfs:comment "Authority that certified the manufacturer"@en ;
-                      rdfs:label "competent_authority"@en .
+                      rdfs:label "competent authority"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#contactEmail
@@ -154,15 +259,15 @@ ns:contactEmail rdf:type owl:DatatypeProperty ;
                 rdfs:domain ns:Manufacturer ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Email of contact"@en ;
-                rdfs:label "contact_email"@en .
+                rdfs:label "contact email"@en .
 
 
-###  http://www.owl-ontologies.com/ns#correctiveAction_taken
-ns:correctiveAction_taken rdf:type owl:DatatypeProperty ;
+###  http://www.owl-ontologies.com/ns#correctiveActionTaken
+ns:correctiveActionTaken rdf:type owl:DatatypeProperty ;
                           rdfs:domain ns:Incident ;
                           rdfs:range xsd:boolean ;
                           rdfs:comment "Corrective action taken for the incident"@en ;
-                          rdfs:label "corrective_action_taken"@en .
+                          rdfs:label "corrective action taken"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#countriesAffected
@@ -170,12 +275,12 @@ ns:countriesAffected rdf:type owl:DatatypeProperty ;
                      rdfs:domain ns:CorrectiveAction ;
                      rdfs:range xsd:string ;
                      rdfs:comment "Countries affected by the corrective actions"@en ;
-                     rdfs:label "countries_affected"@en .
+                     rdfs:label "countries affected"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#country
 ns:country rdf:type owl:DatatypeProperty ;
-           rdfs:domain ns:Manufacturer ;
+           rdfs:domain ns:Participant ;
            rdfs:range xsd:string ;
            rdfs:comment "Name of the country"@en ;
            rdfs:label "country"@en .
@@ -186,7 +291,7 @@ ns:countryReported rdf:type owl:DatatypeProperty ;
                    rdfs:domain ns:Incident ;
                    rdfs:range xsd:string ;
                    rdfs:comment "Name of the country that reported the incident"@en ;
-                   rdfs:label "country_reported"@en .
+                   rdfs:label "country reported"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#description
@@ -203,7 +308,7 @@ ns:detectionDate rdf:type owl:DatatypeProperty ;
                  rdfs:domain ns:Incident ;
                  rdfs:range xsd:date ;
                  rdfs:comment "The date that the incident was detected "@en ;
-                 rdfs:label "detection_date"@en .
+                 rdfs:label "detection date"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#deviceId
@@ -211,7 +316,7 @@ ns:deviceId rdf:type owl:DatatypeProperty ;
             rdfs:domain ns:Device ;
             rdfs:range xsd:string ;
             rdfs:comment "Id of the device"@en ;
-            rdfs:label "device_id"@en .
+            rdfs:label "device id"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#deviceName
@@ -219,7 +324,7 @@ ns:deviceName rdf:type owl:DatatypeProperty ;
               rdfs:domain ns:Device ;
               rdfs:range xsd:string ;
               rdfs:comment "Name of the device"@en ;
-              rdfs:label "device_name"@en .
+              rdfs:label "device name"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#deviceType
@@ -227,7 +332,7 @@ ns:deviceType rdf:type owl:DatatypeProperty ;
               rdfs:domain ns:Device ;
               rdfs:range xsd:string ;
               rdfs:comment "Type of the device"@en ;
-              rdfs:label "device_type"@en .
+              rdfs:label "device type"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#devicesAffected
@@ -235,31 +340,31 @@ ns:devicesAffected rdf:type owl:DatatypeProperty ;
                    rdfs:domain ns:CorrectiveAction ;
                    rdfs:range xsd:integer ;
                    rdfs:comment "Devices affected by the corrective action"@en ;
-                   rdfs:label "devices_affected"@en .
+                   rdfs:label "devices affected"@en .
 
 
-###  http://www.owl-ontologies.com/ns#eudamedFsca_ref
-ns:eudamedFsca_ref rdf:type owl:DatatypeProperty ;
+###  http://www.owl-ontologies.com/ns#eudamedFscaRef
+ns:eudamedFscaRef rdf:type owl:DatatypeProperty ;
                    rdfs:domain ns:CorrectiveAction ;
                    rdfs:range xsd:string ;
                    rdfs:comment "Referenci of the eumed fsca"@en ;
-                   rdfs:label "eudamed_fsca_ref"@en .
+                   rdfs:label "eudamed fsca ref"@en .
 
 
-###  http://www.owl-ontologies.com/ns#eudamedIncident_ref
-ns:eudamedIncident_ref rdf:type owl:DatatypeProperty ;
+###  http://www.owl-ontologies.com/ns#eudamedIncidentRef
+ns:eudamedIncidentRef rdf:type owl:DatatypeProperty ;
                        rdfs:domain ns:Incident ;
                        rdfs:range xsd:string ;
                        rdfs:comment "Reference of the incident in the eudamed"@en ;
-                       rdfs:label "eudamed_incident_ref"@en .
+                       rdfs:label "eudamed incident ref"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#eudomedSrn
 ns:eudomedSrn rdf:type owl:DatatypeProperty ;
               rdfs:domain ns:Manufacturer ;
               rdfs:range xsd:string ;
-              rdfs:comment "Eudomed srn"@en ;
-              rdfs:label "eudomed_srn"@en .
+              rdfs:comment "The Single Registration Number assigned to the manufacturer in the EUDAMED"@en ;
+              rdfs:label "eudomed srn"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#eventDate
@@ -267,7 +372,7 @@ ns:eventDate rdf:type owl:DatatypeProperty ;
              rdfs:domain ns:Incident ;
              rdfs:range xsd:date ;
              rdfs:comment "Date of the event"@en ;
-             rdfs:label "event_date"@en .
+             rdfs:label "event date"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#fscaId
@@ -275,11 +380,12 @@ ns:fscaId rdf:type owl:DatatypeProperty ;
           rdfs:domain ns:CorrectiveAction ;
           rdfs:range xsd:string ;
           rdfs:comment "Id of the FSCA"@en ;
-          rdfs:label "fsca_id"@en .
+          rdfs:label "fsca id"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#highPriority
 ns:highPriority rdf:type owl:DatatypeProperty ;
+                rdfs:domain ns:Incident ; 
                 rdfs:range xsd:boolean ;
                 rdfs:label "High Priority"@en ;
                 rdfs:comment "High priority property."@en .
@@ -289,8 +395,8 @@ ns:highPriority rdf:type owl:DatatypeProperty ;
 ns:imdrfCode rdf:type owl:DatatypeProperty ;
              rdfs:domain ns:Risk ;
              rdfs:range xsd:string ;
-             rdfs:comment "IMDRF code"@en ;
-             rdfs:label "imdrf_code"@en .
+             rdfs:comment "Standardized adverse event terminology code"@en ;
+             rdfs:label "imdrf code"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#incidentId
@@ -298,7 +404,7 @@ ns:incidentId rdf:type owl:DatatypeProperty ;
               rdfs:domain ns:Incident ;
               rdfs:range xsd:string ;
               rdfs:comment "Incident identificator"@en ;
-              rdfs:label "incident_id"@en .
+              rdfs:label "incident id"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#incidentType
@@ -306,7 +412,7 @@ ns:incidentType rdf:type owl:DatatypeProperty ;
                 rdfs:domain ns:Incident ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Type of the incident"@en ;
-                rdfs:label "incident_type"@en .
+                rdfs:label "incident type"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#intendedPurpose
@@ -314,7 +420,7 @@ ns:intendedPurpose rdf:type owl:DatatypeProperty ;
                    rdfs:domain ns:Device ;
                    rdfs:range xsd:string ;
                    rdfs:comment "Purpose of the intended"@en ;
-                   rdfs:label "intended_purpose"@en .
+                   rdfs:label "intended purpose"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#isActive
@@ -322,11 +428,12 @@ ns:isActive rdf:type owl:DatatypeProperty ;
             rdfs:domain ns:Device ;
             rdfs:range xsd:boolean ;
             rdfs:comment "Boolean if the device is active or not"@en ;
-            rdfs:label "is_active"@en .
+            rdfs:label "is active"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#isCritical
 ns:isCritical rdf:type owl:DatatypeProperty ;
+              rdfs:domain ns:Incident ;
               rdfs:range xsd:boolean ;
               rdfs:label "Is Critical"@en ;
               rdfs:comment "Is critical property"@en .
@@ -337,7 +444,7 @@ ns:isImplantable rdf:type owl:DatatypeProperty ;
                  rdfs:domain ns:Device ;
                  rdfs:range xsd:boolean ;
                  rdfs:comment "Boolean if the device is implantable or not"@en ;
-                 rdfs:label "is_implantable"@en .
+                 rdfs:label "is implantable"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#isIvd
@@ -345,7 +452,7 @@ ns:isIvd rdf:type owl:DatatypeProperty ;
          rdfs:domain ns:Device ;
          rdfs:range xsd:boolean ;
          rdfs:comment "Boolean if the device is ivd or not"@en ;
-         rdfs:label "is_ivd"@en .
+         rdfs:label "is ivd"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#isReusable
@@ -353,7 +460,7 @@ ns:isReusable rdf:type owl:DatatypeProperty ;
               rdfs:domain ns:Device ;
               rdfs:range xsd:boolean ;
               rdfs:comment "Boolean if the device is reusable or not"@en ;
-              rdfs:label "is_reusable"@en .
+              rdfs:label "is reusable"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#manufacturerId
@@ -361,12 +468,12 @@ ns:manufacturerId rdf:type owl:DatatypeProperty ;
                   rdfs:domain ns:Manufacturer ;
                   rdfs:range xsd:string ;
                   rdfs:comment "Manufacturer identificator"@en ;
-                  rdfs:label "manufacturer_id"@en .
+                  rdfs:label "manufacturer id"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#name
 ns:name rdf:type owl:DatatypeProperty ;
-        rdfs:domain ns:Manufacturer ;
+        rdfs:domain ns:Participant ;
         rdfs:range xsd:string ;
         rdfs:comment "Name of the manufacturer"@en ;
         rdfs:label "name"@en .
@@ -385,7 +492,7 @@ ns:patientAge rdf:type owl:DatatypeProperty ;
               rdfs:domain ns:Incident ;
               rdfs:range xsd:integer ;
               rdfs:comment "Age of the patient"@en ;
-              rdfs:label "patient_age"@en .
+              rdfs:label "patient age"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#patientSex
@@ -393,7 +500,7 @@ ns:patientSex rdf:type owl:DatatypeProperty ;
               rdfs:domain ns:Incident ;
               rdfs:range xsd:string ;
               rdfs:comment "Sex of the pationt"@en ;
-              rdfs:label "patient_sex"@en .
+              rdfs:label "patient sex"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#probability
@@ -408,8 +515,8 @@ ns:probability rdf:type owl:DatatypeProperty ;
 ns:regulatoryFramework rdf:type owl:DatatypeProperty ;
                        rdfs:domain ns:Device ;
                        rdfs:range xsd:string ;
-                       rdfs:comment "Regulatory framework"@en ;
-                       rdfs:label "regulatory_framework"@en .
+                       rdfs:comment "Legal framework for the device"@en ;
+                       rdfs:label "regulatory framework"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#reportDate
@@ -417,7 +524,7 @@ ns:reportDate rdf:type owl:DatatypeProperty ;
               rdfs:domain ns:Incident ;
               rdfs:range xsd:date ;
               rdfs:comment "Date when the incident was reported"@en ;
-              rdfs:label "report_date"@en .
+              rdfs:label "report date"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#riskCategory
@@ -425,7 +532,7 @@ ns:riskCategory rdf:type owl:DatatypeProperty ;
                 rdfs:domain ns:Risk ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Category of the risk"@en ;
-                rdfs:label "risk_category"@en .
+                rdfs:label "risk category"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#riskClass
@@ -433,7 +540,7 @@ ns:riskClass rdf:type owl:DatatypeProperty ;
              rdfs:domain ns:Device ;
              rdfs:range xsd:string ;
              rdfs:comment "Class of the risk"@en ;
-             rdfs:label "risk_class"@en .
+             rdfs:label "risk class"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#riskId
@@ -441,7 +548,7 @@ ns:riskId rdf:type owl:DatatypeProperty ;
           rdfs:domain ns:Risk ;
           rdfs:range xsd:string ;
           rdfs:comment "Risk identificator"@en ;
-          rdfs:label "risk_id"@en .
+          rdfs:label "risk id"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#riskName
@@ -449,7 +556,7 @@ ns:riskName rdf:type owl:DatatypeProperty ;
             rdfs:domain ns:Risk ;
             rdfs:range xsd:string ;
             rdfs:comment "Name of the risk"@en ;
-            rdfs:label "risk_name"@en .
+            rdfs:label "risk name"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#riskType
@@ -457,7 +564,7 @@ ns:riskType rdf:type owl:DatatypeProperty ;
             rdfs:domain ns:Risk ;
             rdfs:range xsd:string ;
             rdfs:comment "Type of the risk"@en ;
-            rdfs:label "risk_type"@en .
+            rdfs:label "risk type"@en .
 
 
 ###  http://www.owl-ontologies.com/ns#scope
@@ -488,8 +595,8 @@ ns:status rdf:type owl:DatatypeProperty ;
 ns:udiDi rdf:type owl:DatatypeProperty ;
          rdfs:domain ns:Device ;
          rdfs:range xsd:string ;
-         rdfs:comment "UDI"@en ;
-         rdfs:label "udi_di"@en .
+         rdfs:comment "Device Identifier"@en ;
+         rdfs:label "udi di"@en .
 
 
 #################################################################
@@ -651,6 +758,7 @@ ns:MedicalDevice rdf:type owl:Class ;
 
 ###  http://www.owl-ontologies.com/ns#Participant
 ns:Participant rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing ;
                rdfs:comment "Superclass for all entities involved in the regulatory process"@en ;
                rdfs:label "Participant"@en .
 
@@ -720,6 +828,26 @@ ns:MAN-001 rdf:type owl:NamedIndividual , ns:Manufacturer ;
            ns:country "Ireland" ;
            rdfs:label "Medtronic plc"@en ;
            rdfs:comment "Manufacturer individual"@en .
+
+#################################################################
+#    Disjoint Classes Axioms (Fix for Pitfall P10)
+#################################################################
+
+# Los grandes bloques de dispositivos son excluyentes
+[] rdf:type owl:AllDisjointClasses ;
+   owl:members ( ns:MedicalDevice ns:IVDDevice ) .
+
+# Las entidades del proceso son excluyentes
+[] rdf:type owl:AllDisjointClasses ;
+   owl:members ( ns:Manufacturer ns:Patient ns:CompetentAuthority ) .
+
+# Las clases de riesgo de dispositivos médicos son excluyentes entre sí
+[] rdf:type owl:AllDisjointClasses ;
+   owl:members ( ns:ClassI ns:ClassIIa ns:ClassIIb ns:ClassIII ) .
+
+# Las clases de riesgo de IVD son excluyentes entre sí
+[] rdf:type owl:AllDisjointClasses ;
+   owl:members ( ns:ClassA ns:ClassB ns:ClassC ns:ClassD ) .
 
 #################################################################
 #    Rules
