@@ -157,6 +157,15 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "has manufacturer"@en .
 
 
+###  https://w3id.org/medical-device-catalogPEC2#hasPart
+:hasPart rdf:type owl:ObjectProperty ,
+                  owl:TransitiveProperty ;
+         rdfs:domain :Device ;
+         rdfs:range :Device ;
+         rdfs:comment "Inverse of isPartOf. Describes the components contained within a device."@en ;
+         rdfs:label "has part"@en .
+
+
 ###  https://w3id.org/medical-device-catalogPEC2#hasReported
 :hasReported rdf:type owl:ObjectProperty ;
              owl:inverseOf :reportedBy ;
@@ -199,6 +208,16 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:range :Incident ;
                       rdfs:comment "Inverse of affectsPatient. Links a patient to the incidents that have affected them."@en ;
                       rdfs:label "is affected by incident"@en .
+
+
+###  https://w3id.org/medical-device-catalogPEC2#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+          owl:inverseOf :hasPart ;
+          rdf:type owl:TransitiveProperty ;
+          rdfs:domain :Device ;
+          rdfs:range :Device ;
+          rdfs:comment "Transitive property to describe components that are part of a larger medical system."@en ;
+          rdfs:label "is part of"@en .
 
 
 ###  https://w3id.org/medical-device-catalogPEC2#isRiskOf
@@ -883,7 +902,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/medical-device-catalogPEC2#DEV-001
 :DEV-001 rdf:type owl:NamedIndividual ,
-                  :ClassIII ;
+                  :Device ;
          :hasManufacturer :MAN-001 ;
          :deviceName "HeartMate 3 LVAD" ;
          :isImplantable "true"^^xsd:boolean ;
@@ -901,9 +920,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/medical-device-catalogPEC2#INC-001
 :INC-001 rdf:type owl:NamedIndividual ,
                   :Incident ;
+         :associatedRisk :RSK-018 ;
          :involvesDevice :DEV-001 ;
          :incidentId "INC-001" ;
-         :severity "Critical" ;
          rdfs:comment "Serious incident reported for HeartMate 3"@en ;
          rdfs:label "Incident 001"@en .
 
@@ -917,12 +936,29 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "Medtronic plc"@en .
 
 
+###  https://w3id.org/medical-device-catalogPEC2#PresionSensor
+:PresionSensor rdf:type owl:NamedIndividual ,
+                        :Device ;
+               :isPartOf :VentilationModule ;
+               rdfs:comment "Presion sensor"@en ;
+               rdfs:label "Sensor of presion"@en .
+
+
 ###  https://w3id.org/medical-device-catalogPEC2#RSK-018
 :RSK-018 rdf:type owl:NamedIndividual ,
                   :CybersecurityRisk ;
          :riskName "Cybersecurity vulnerability" ;
+         :severity "Critical" ;
          rdfs:comment "Vulnerability risk for digital devices"@en ;
          rdfs:label "Cybersecurity Risk 018"@en .
+
+
+###  https://w3id.org/medical-device-catalogPEC2#VentilationModule
+:VentilationModule rdf:type owl:NamedIndividual ,
+                            :Device ;
+                   :isPartOf :DEV-001 ;
+                   rdfs:comment "Ventilation module"@en ;
+                   rdfs:label "Ventilation module"@en .
 
 
 #################################################################

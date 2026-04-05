@@ -270,6 +270,19 @@
     
 
 
+    <!-- https://w3id.org/medical-device-catalogPEC2#hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/medical-device-catalogPEC2#hasPart">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/medical-device-catalogPEC2#Device"/>
+        <rdfs:range rdf:resource="https://w3id.org/medical-device-catalogPEC2#Device"/>
+        <rdfs:comment xml:lang="en">Inverse of isPartOf. Describes the components contained within a device.</rdfs:comment>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/medical-device-catalogPEC2#hasReported -->
 
 
@@ -330,6 +343,20 @@
         <rdfs:range rdf:resource="https://w3id.org/medical-device-catalogPEC2#Incident"/>
         <rdfs:comment xml:lang="en">Inverse of affectsPatient. Links a patient to the incidents that have affected them.</rdfs:comment>
         <rdfs:label xml:lang="en">is affected by incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/medical-device-catalogPEC2#isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/medical-device-catalogPEC2#isPartOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/medical-device-catalogPEC2#hasPart"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/medical-device-catalogPEC2#Device"/>
+        <rdfs:range rdf:resource="https://w3id.org/medical-device-catalogPEC2#Device"/>
+        <rdfs:comment xml:lang="en">Transitive property to describe components that are part of a larger medical system.</rdfs:comment>
+        <rdfs:label xml:lang="en">is part of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1390,7 +1417,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/medical-device-catalogPEC2#DEV-001">
-        <rdf:type rdf:resource="https://w3id.org/medical-device-catalogPEC2#ClassIII"/>
+        <rdf:type rdf:resource="https://w3id.org/medical-device-catalogPEC2#Device"/>
         <hasManufacturer rdf:resource="https://w3id.org/medical-device-catalogPEC2#MAN-001"/>
         <deviceName>HeartMate 3 LVAD</deviceName>
         <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
@@ -1416,9 +1443,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/medical-device-catalogPEC2#INC-001">
         <rdf:type rdf:resource="https://w3id.org/medical-device-catalogPEC2#Incident"/>
+        <associatedRisk rdf:resource="https://w3id.org/medical-device-catalogPEC2#RSK-018"/>
         <involvesDevice rdf:resource="https://w3id.org/medical-device-catalogPEC2#DEV-001"/>
         <incidentId>INC-001</incidentId>
-        <severity>Critical</severity>
         <rdfs:comment xml:lang="en">Serious incident reported for HeartMate 3</rdfs:comment>
         <rdfs:label xml:lang="en">Incident 001</rdfs:label>
     </owl:NamedIndividual>
@@ -1438,14 +1465,39 @@
     
 
 
+    <!-- https://w3id.org/medical-device-catalogPEC2#PresionSensor -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/medical-device-catalogPEC2#PresionSensor">
+        <rdf:type rdf:resource="https://w3id.org/medical-device-catalogPEC2#Device"/>
+        <isPartOf rdf:resource="https://w3id.org/medical-device-catalogPEC2#VentilationModule"/>
+        <rdfs:comment xml:lang="en">Presion sensor</rdfs:comment>
+        <rdfs:label xml:lang="en">Sensor of presion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/medical-device-catalogPEC2#RSK-018 -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/medical-device-catalogPEC2#RSK-018">
         <rdf:type rdf:resource="https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk"/>
         <riskName>Cybersecurity vulnerability</riskName>
+        <severity>Critical</severity>
         <rdfs:comment xml:lang="en">Vulnerability risk for digital devices</rdfs:comment>
         <rdfs:label xml:lang="en">Cybersecurity Risk 018</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/medical-device-catalogPEC2#VentilationModule -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/medical-device-catalogPEC2#VentilationModule">
+        <rdf:type rdf:resource="https://w3id.org/medical-device-catalogPEC2#Device"/>
+        <isPartOf rdf:resource="https://w3id.org/medical-device-catalogPEC2#DEV-001"/>
+        <rdfs:comment xml:lang="en">Ventilation module</rdfs:comment>
+        <rdfs:label xml:lang="en">Ventilation module</rdfs:label>
     </owl:NamedIndividual>
     
 

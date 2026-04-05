@@ -139,6 +139,14 @@
 <https://w3id.org/medical-device-catalogPEC2#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a device to its manufacturer"@en .
 <https://w3id.org/medical-device-catalogPEC2#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer"@en .
 # 
+# https://w3id.org/medical-device-catalogPEC2#hasPart
+<https://w3id.org/medical-device-catalogPEC2#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/medical-device-catalogPEC2#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of isPartOf. Describes the components contained within a device."@en .
+<https://w3id.org/medical-device-catalogPEC2#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "has part"@en .
+# 
 # https://w3id.org/medical-device-catalogPEC2#hasReported
 <https://w3id.org/medical-device-catalogPEC2#hasReported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/medical-device-catalogPEC2#hasReported> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/medical-device-catalogPEC2#reportedBy> .
@@ -177,6 +185,15 @@
 <https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Incident> .
 <https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of affectsPatient. Links a patient to the incidents that have affected them."@en .
 <https://w3id.org/medical-device-catalogPEC2#isAffectedByIncident> <http://www.w3.org/2000/01/rdf-schema#label> "is affected by incident"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#isPartOf
+<https://w3id.org/medical-device-catalogPEC2#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isPartOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/medical-device-catalogPEC2#hasPart> .
+<https://w3id.org/medical-device-catalogPEC2#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/medical-device-catalogPEC2#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Transitive property to describe components that are part of a larger medical system."@en .
+<https://w3id.org/medical-device-catalogPEC2#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of"@en .
 # 
 # https://w3id.org/medical-device-catalogPEC2#isRiskOf
 <https://w3id.org/medical-device-catalogPEC2#isRiskOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -789,7 +806,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/medical-device-catalogPEC2#DEV-001
 <https://w3id.org/medical-device-catalogPEC2#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/medical-device-catalogPEC2#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/medical-device-catalogPEC2#ClassIII> .
+<https://w3id.org/medical-device-catalogPEC2#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/medical-device-catalogPEC2#Device> .
 <https://w3id.org/medical-device-catalogPEC2#DEV-001> <https://w3id.org/medical-device-catalogPEC2#hasManufacturer> <https://w3id.org/medical-device-catalogPEC2#MAN-001> .
 <https://w3id.org/medical-device-catalogPEC2#DEV-001> <https://w3id.org/medical-device-catalogPEC2#deviceName> "HeartMate 3 LVAD" .
 <https://w3id.org/medical-device-catalogPEC2#DEV-001> <https://w3id.org/medical-device-catalogPEC2#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -805,9 +822,9 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://w3id.org/medical-device-catalogPEC2#INC-001
 <https://w3id.org/medical-device-catalogPEC2#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/medical-device-catalogPEC2#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/medical-device-catalogPEC2#Incident> .
+<https://w3id.org/medical-device-catalogPEC2#INC-001> <https://w3id.org/medical-device-catalogPEC2#associatedRisk> <https://w3id.org/medical-device-catalogPEC2#RSK-018> .
 <https://w3id.org/medical-device-catalogPEC2#INC-001> <https://w3id.org/medical-device-catalogPEC2#involvesDevice> <https://w3id.org/medical-device-catalogPEC2#DEV-001> .
 <https://w3id.org/medical-device-catalogPEC2#INC-001> <https://w3id.org/medical-device-catalogPEC2#incidentId> "INC-001" .
-<https://w3id.org/medical-device-catalogPEC2#INC-001> <https://w3id.org/medical-device-catalogPEC2#severity> "Critical" .
 <https://w3id.org/medical-device-catalogPEC2#INC-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Serious incident reported for HeartMate 3"@en .
 <https://w3id.org/medical-device-catalogPEC2#INC-001> <http://www.w3.org/2000/01/rdf-schema#label> "Incident 001"@en .
 # 
@@ -819,12 +836,27 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/medical-device-catalogPEC2#MAN-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Manufacturer individual"@en .
 <https://w3id.org/medical-device-catalogPEC2#MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic plc"@en .
 # 
+# https://w3id.org/medical-device-catalogPEC2#PresionSensor
+<https://w3id.org/medical-device-catalogPEC2#PresionSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/medical-device-catalogPEC2#PresionSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#PresionSensor> <https://w3id.org/medical-device-catalogPEC2#isPartOf> <https://w3id.org/medical-device-catalogPEC2#VentilationModule> .
+<https://w3id.org/medical-device-catalogPEC2#PresionSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Presion sensor"@en .
+<https://w3id.org/medical-device-catalogPEC2#PresionSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor of presion"@en .
+# 
 # https://w3id.org/medical-device-catalogPEC2#RSK-018
 <https://w3id.org/medical-device-catalogPEC2#RSK-018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/medical-device-catalogPEC2#RSK-018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/medical-device-catalogPEC2#CybersecurityRisk> .
 <https://w3id.org/medical-device-catalogPEC2#RSK-018> <https://w3id.org/medical-device-catalogPEC2#riskName> "Cybersecurity vulnerability" .
+<https://w3id.org/medical-device-catalogPEC2#RSK-018> <https://w3id.org/medical-device-catalogPEC2#severity> "Critical" .
 <https://w3id.org/medical-device-catalogPEC2#RSK-018> <http://www.w3.org/2000/01/rdf-schema#comment> "Vulnerability risk for digital devices"@en .
 <https://w3id.org/medical-device-catalogPEC2#RSK-018> <http://www.w3.org/2000/01/rdf-schema#label> "Cybersecurity Risk 018"@en .
+# 
+# https://w3id.org/medical-device-catalogPEC2#VentilationModule
+<https://w3id.org/medical-device-catalogPEC2#VentilationModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/medical-device-catalogPEC2#VentilationModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/medical-device-catalogPEC2#Device> .
+<https://w3id.org/medical-device-catalogPEC2#VentilationModule> <https://w3id.org/medical-device-catalogPEC2#isPartOf> <https://w3id.org/medical-device-catalogPEC2#DEV-001> .
+<https://w3id.org/medical-device-catalogPEC2#VentilationModule> <http://www.w3.org/2000/01/rdf-schema#comment> "Ventilation module"@en .
+<https://w3id.org/medical-device-catalogPEC2#VentilationModule> <http://www.w3.org/2000/01/rdf-schema#label> "Ventilation module"@en .
 # 
 # 
 # 

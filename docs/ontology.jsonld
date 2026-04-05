@@ -769,7 +769,7 @@
   "@id" : "https://w3id.org/medical-device-catalogPEC2#DEV-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/medical-device-catalogPEC2#ClassIII"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -831,14 +831,14 @@
     "@language" : "en",
     "@value" : "Incident 001"
   } ],
+  "https://w3id.org/medical-device-catalogPEC2#associatedRisk" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#RSK-018"
+  } ],
   "https://w3id.org/medical-device-catalogPEC2#incidentId" : [ {
     "@value" : "INC-001"
   } ],
   "https://w3id.org/medical-device-catalogPEC2#involvesDevice" : [ {
     "@id" : "https://w3id.org/medical-device-catalogPEC2#DEV-001"
-  } ],
-  "https://w3id.org/medical-device-catalogPEC2#severity" : [ {
-    "@value" : "Critical"
   } ]
 }, {
   "@id" : "https://w3id.org/medical-device-catalogPEC2#IVDDevice",
@@ -1004,6 +1004,23 @@
     "@id" : "https://w3id.org/medical-device-catalogPEC2#Participant"
   } ]
 }, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#PresionSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Presion sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensor of presion"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#isPartOf" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#VentilationModule"
+  } ]
+}, {
   "@id" : "https://w3id.org/medical-device-catalogPEC2#RSK-018",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1019,6 +1036,9 @@
   } ],
   "https://w3id.org/medical-device-catalogPEC2#riskName" : [ {
     "@value" : "Cybersecurity vulnerability"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#severity" : [ {
+    "@value" : "Critical"
   } ]
 }, {
   "@id" : "https://w3id.org/medical-device-catalogPEC2#Recall",
@@ -1072,6 +1092,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/medical-device-catalogPEC2#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#VentilationModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ventilation module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ventilation module"
+  } ],
+  "https://w3id.org/medical-device-catalogPEC2#isPartOf" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#DEV-001"
   } ]
 }, {
   "@id" : "https://w3id.org/medical-device-catalogPEC2#actionDate",
@@ -1518,6 +1555,23 @@
     "@id" : "https://w3id.org/medical-device-catalogPEC2#Manufacturer"
   } ]
 }, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of isPartOf. Describes the components contained within a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has part"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ]
+}, {
   "@id" : "https://w3id.org/medical-device-catalogPEC2#hasReported",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1766,6 +1820,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/medical-device-catalogPEC2#isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Transitive property to describe components that are part of a larger medical system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is part of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#Device"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/medical-device-catalogPEC2#hasPart"
   } ]
 }, {
   "@id" : "https://w3id.org/medical-device-catalogPEC2#isReusable",

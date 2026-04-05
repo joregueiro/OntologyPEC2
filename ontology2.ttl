@@ -214,6 +214,21 @@ ns:hasReported rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+### Definición de la propiedad directa
+ns:isPartOf rdf:type owl:ObjectProperty , owl:TransitiveProperty ;
+            owl:inverseOf ns:hasPart ;
+            rdfs:domain ns:Device ;
+            rdfs:range ns:Device ;
+            rdfs:label "is part of"@en ;
+            rdfs:comment "Transitive property to describe components that are part of a larger medical system."@en .
+
+### Definición de la propiedad inversa
+ns:hasPart rdf:type owl:ObjectProperty , owl:TransitiveProperty ;
+           rdfs:domain ns:Device ;
+           rdfs:range ns:Device ;
+           rdfs:label "has part"@en ;
+           rdfs:comment "Inverse of isPartOf. Describes the components contained within a device."@en .
+
 ###  http://www.owl-ontologies.com/ns#actionDate
 ns:actionDate rdf:type owl:DatatypeProperty ;
               rdfs:domain ns:CorrectiveAction ;
@@ -802,32 +817,44 @@ ns:Germany rdf:type owl:NamedIndividual , ns:Participant ;
            rdfs:sameAs <http://dbpedia.org/resource/Germany> .
 
 # Instancia de Dispositivo (Basado en dispositivos.csv)
-ns:DEV-001 rdf:type owl:NamedIndividual , ns:ClassIII ;
+ns:DEV-001 rdf:type owl:NamedIndividual , ns:Device ;
            ns:deviceName "HeartMate 3 LVAD" ;
            ns:hasManufacturer ns:MAN-001 ;
            ns:isImplantable "true"^^xsd:boolean ;
            rdfs:label "HeartMate 3 LVAD"@en ;
            rdfs:comment "High-risk active implantable device"@en .
 
+# Instancia de Riesgo (Basado en riesgos.csv)
+ns:RSK-018 rdf:type owl:NamedIndividual , ns:CybersecurityRisk ;
+           ns:riskName "Cybersecurity vulnerability" ;
+           ns:severity "Critical" ;
+           rdfs:label "Cybersecurity Risk 018"@en ;
+           rdfs:comment "Vulnerability risk for digital devices"@en .
+
 # Instancia de Incidente (Basado en incidentes.csv)
 ns:INC-001 rdf:type owl:NamedIndividual , ns:Incident ;
            ns:incidentId "INC-001" ;
            ns:involvesDevice ns:DEV-001 ;
-           ns:severity "Critical" ;
+           ns:associatedRisk ns:RSK-018 ;
            rdfs:label "Incident 001"@en ;
            rdfs:comment "Serious incident reported for HeartMate 3"@en .
-
-# Instancia de Riesgo (Basado en riesgos.csv)
-ns:RSK-018 rdf:type owl:NamedIndividual , ns:CybersecurityRisk ;
-           ns:riskName "Cybersecurity vulnerability" ;
-           rdfs:label "Cybersecurity Risk 018"@en ;
-           rdfs:comment "Vulnerability risk for digital devices"@en .
 
 ns:MAN-001 rdf:type owl:NamedIndividual , ns:Manufacturer ;
            ns:name "Medtronic plc" ;
            ns:country "Ireland" ;
            rdfs:label "Medtronic plc"@en ;
            rdfs:comment "Manufacturer individual"@en .
+
+# Individuos de prueba para transitividad
+ns:PresionSensor rdf:type owl:NamedIndividual , ns:Device ;
+                 ns:isPartOf ns:VentilationModule ;
+                 rdfs:comment "Presion sensor"@en ;
+                 rdfs:label "Sensor of presion"@en .
+
+ns:VentilationModule rdf:type owl:NamedIndividual , ns:Device ;
+                     ns:isPartOf ns:DEV-001 ;
+                     rdfs:comment "Ventilation module"@en ;
+                     rdfs:label "Ventilation module"@en .
 
 #################################################################
 #    Disjoint Classes Axioms (Fix for Pitfall P10)
