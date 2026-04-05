@@ -597,7 +597,7 @@
     "@value" : "Ontology for the European catalog of medical devices (MDR/IVDR)."
   } ],
   "http://www.w3.org/2002/07/owl#backwardCompatibleWith" : [ {
-    "@id" : "https://w3id.org/medical-device-catalog/0.9.0#"
+    "@id" : "https://w3id.org/medical-device-catalogPEC2/0.9.0#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/medical-device-catalogPEC2/1.0.0#"

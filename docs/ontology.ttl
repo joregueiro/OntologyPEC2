@@ -23,7 +23,7 @@
                                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "ns" ;
                                                 <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/medical-device-catalogPEC2#" ;
                                                 rdfs:comment "Ontology for the European catalog of medical devices (MDR/IVDR)."@en ;
-                                                owl:backwardCompatibleWith <https://w3id.org/medical-device-catalog/0.9.0#> ;
+                                                owl:backwardCompatibleWith <https://w3id.org/medical-device-catalogPEC2/0.9.0#> ;
                                                 owl:versionInfo "1.0" ;
                                                 <http://xmlns.com/foaf/0.1/logo> <https://joregueiro.github.io/OntologyPEC2/logo.png> ;
                                                 <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> ;

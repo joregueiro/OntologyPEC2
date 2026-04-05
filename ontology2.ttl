@@ -11,7 +11,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://w3id.org/medical-device-catalog#> .
+@base <https://w3id.org/medical-device-catalogPEC2#> .
 
 <https://w3id.org/medical-device-catalogPEC2#> rdf:type owl:Ontology ;
     owl:versionIRI <https://w3id.org/medical-device-catalogPEC2/1.0.0#> ;
@@ -26,7 +26,7 @@
     dcterms:issued "2026-04-05"^^xsd:date ;
 
     dcterms:modified "2026-04-05"^^xsd:date ;
-    owl:backwardCompatibleWith <https://w3id.org/medical-device-catalog/0.9.0#> ;
+    owl:backwardCompatibleWith <https://w3id.org/medical-device-catalogPEC2/0.9.0#> ;
 
     vann:preferredNamespaceUri "https://w3id.org/medical-device-catalogPEC2#" ;
     vann:preferredNamespacePrefix "ns" ; 

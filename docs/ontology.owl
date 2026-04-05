@@ -32,7 +32,7 @@
         <vann:preferredNamespacePrefix>ns</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/medical-device-catalogPEC2#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">Ontology for the European catalog of medical devices (MDR/IVDR).</rdfs:comment>
-        <owl:backwardCompatibleWith rdf:resource="https://w3id.org/medical-device-catalog/0.9.0#"/>
+        <owl:backwardCompatibleWith rdf:resource="https://w3id.org/medical-device-catalogPEC2/0.9.0#"/>
         <owl:versionInfo>1.0</owl:versionInfo>
         <foaf:logo rdf:resource="https://joregueiro.github.io/OntologyPEC2/logo.png"/>
         <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
